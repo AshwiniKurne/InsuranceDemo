@@ -1,0 +1,171 @@
+// Here you can add other styles
+.c-sidebar {
+    color: #fff;
+    background: #1b4567;
+}
+.form-control {
+    background-color: transparent;
+    border: 1px solid #E3E3E3;
+    border-radius: 30px;
+    color: #2c2c2c;
+    height: auto;
+    line-height: normal;
+    font-size: 0.8571em;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out !important;
+    box-shadow: none;
+}
+.card-header:first-child {
+    background-color: #1b4567;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.09375rem;
+}
+.btn-link {
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+.c-main > .container-fluid, .c-main > .container-sm, .c-main > .container-md, .c-main > .container-lg, .c-main > .container-xl, .c-main > .container-xxl {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.c-main {
+    flex-basis: auto;
+    flex-shrink: 0;
+    flex-grow: 1;
+    min-width: 0;
+    padding-top: 1rem;
+}
+.pr-md-3, .px-md-3 {
+    padding-right: 54rem !important;
+}
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    border-radius: 25px !important;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    margin-bottom: 1.5rem;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    border-color: #d8dbe0;
+    border-radius: 25px;
+}
+.c-subheader-nav {
+    display: flex !important;
+}
+.pr-md-3, .px-md-3 {
+    padding-right: 78% !important;
+}
+textarea.form-control {
+    height: 120px !important;
+}
+.c-sidebar .c-sidebar-brand {
+    color: #fff;
+    background: rgba(0, 0, 21, 0.2);
+    align-self: baseline;
+}
+.c-sidebar {
+    position: relative;
+    display: flex;
+    flex: 0 0 256px;
+    flex-direction: column;
+    order: -1;
+    width: 220px;
+    padding: 0;
+    box-shadow: none;
+}
+.c-sidebar.c-sidebar-lg-show:not(.c-sidebar-right).c-sidebar-fixed ~ .c-wrapper, html:not([dir="rtl"]) .c-sidebar.c-sidebar-show:not(.c-sidebar-right).c-sidebar-fixed ~ .c-wrapper {
+    margin-left: 220px !important;
+}
+.page-link {
+    margin-left: 5px !important;
+    border-radius: 20px !important;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    color: white;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #ffffff;
+    background-color: #1b4567;
+    border-color: #c4c9d0 #c4c9d0 #ebedef;
+}
+th {
+    text-align: inherit;
+    background-color: #1b4567 !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+.MuiButton-root {
+    color: white !important;
+    padding: 7px !important;
+    font-size: 12px !important;
+
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: bold !important;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+}
+
+.MuiTableCell-root {
+    display: table-cell;
+    padding: 7px !important;
+    font-size: 0.875rem;
+    text-align: left;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    letter-spacing: 0.01071em;
+    vertical-align: inherit;
+}
+.c-sidebar .c-sidebar-minimizer {
+    background-color: rgba(0, 0, 21, 0.2);
+    display: none;
+}
+.MUIDataTable-responsiveStacked-9 {
+    overflow: auto;
+    padding: 1% !important;
+}
+.MuiTableCell-root {
+    display: table-cell;
+    padding: 16px;
+    font-size: 12px !important;
+    text-align: left;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    letter-spacing: 0.01071em;
+    vertical-align: inherit;
+}
+.MuiToolbar-regular {
+    min-height: 40px !important;
+}
+.MUIDataTableHeadCell-toolButton-987 {
+    min-width: 0;
+    margin-left: -8px;
+    margin-right: 8px;
+    text-transform: none;
+    font-weight: bold !important;
+}
+.MUIDataTableHeadCell-data-50 {
+    display: inline-block;
+    font-weight: bold !important;
+}
