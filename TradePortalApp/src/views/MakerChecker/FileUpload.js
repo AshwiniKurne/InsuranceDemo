@@ -56,7 +56,7 @@ const FileUpload = () => {
 
       setUploadedFile({ fileName, filePath });
 
-      // setMessage('File Uploaded');
+      setMessage('File Uploaded');
       console.log("after upload");
 
       setData({ fileName, fileType, fileSize, filePath });
@@ -74,7 +74,7 @@ const FileUpload = () => {
       var row = document.createElement('tr');
       console.log("ash2");
       for (var i = 0; i < data2.length; i++) {
-        console.log("ash3 ", i);
+        console.log("SG_ash3 ", data2.length);
         var td = document.createElement('td'); // create a td node
         
         if (i == data2.length - 1) {
@@ -83,12 +83,9 @@ const FileUpload = () => {
           var path = { filePath }.filePath;
 
           console.log("file path ", path);
-          // td.innerHTML = '<a href= "' + path + '" >View Document</a>'
-          //td.innerHTML =<Link to={`/public/`+path}>View Document</Link>
-          // td.innerHTML ='<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=http%3A%2F%2Fieee802%2Eorg%3A80%2Fsecmail%2FdocIZSEwEqHFr%2Edoc" width="100%" height="100%" frameborder="0">This is an embedded <a target="_blank" href="http://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="http://office.com/webapps">Office Online</a>.</iframe>'
-          // td.innerHTML = '<iframe src="'+path+'">'
+          
           var button = document.createElement("button");
-          button.innerHTML = "View Document";
+          button.innerHTML = "View";
           button.onclick = function(){
             document.getElementById('viewDoc').src = path;
           };
@@ -105,8 +102,9 @@ const FileUpload = () => {
 
       var button = document.createElement("button");
       button.innerHTML = "Delete";
-      button.onclick = function(){
-        alert('Delete Called');
+      button.onclick = function(index){
+        alert('Delete Called', index);
+        console.log("SG Index:: ", index);
         // var btn = document.getElementById
         // var row = btn.parentNode.parentNode;
         // row.parentNode.removeChild(row);
@@ -132,17 +130,18 @@ const FileUpload = () => {
 
   return (
     <Fragment>
-      {message ? <Message msg={message} /> : null}
       
-      <br />
+      
       <br />
       <table style={{width:'100%'}}>
           <tr>
-                <td style={{width:'50%',height:'500px', border: '1px solid black'}}>
+                <td style={{width:'50%',height:'500px'}}>
                   <iframe id="viewDoc" style={{width:'100%',height:'500px'}}></iframe>
                 </td>
-                <td style={{width:'50%', border: '1px solid black'}}>
-                  <form onSubmit={onSubmit}>
+                <td class="valign" style={{width:'50%'}}>
+                {message ? <Message msg={message} /> : null}
+                  <br/>
+                  <form onSubmit={onSubmit} style={{display:'flex', verticalAlign:'basline'}}>
                     <div className='custom-file mb-4'>
                       <input
                         type='file'
@@ -153,15 +152,16 @@ const FileUpload = () => {
                       <label className='custom-file-label' htmlFor='customFile'>
                         {filename}
                       </label>
+                      
                     </div>
-
-                    <Progress percentage={uploadPercentage} />
-
+                    &nbsp;&nbsp;
+                    {/* <Progress percentage={uploadPercentage} /> */}
                     <input
                       type='submit'
                       value='Upload'
                       className='btn btn-primary btn-block mt-4'
                     />
+                    
                 </form>
                 <br/>
                   <table id="docTable" style={{ width: '100%', border: '1px solid black', padding: '15px' }}>

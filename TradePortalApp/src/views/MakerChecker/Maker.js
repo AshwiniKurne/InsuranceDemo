@@ -668,8 +668,6 @@ const Collapses = () => {
                                         <CFormGroup row className="my-0">
 
                                             <div className='container mt-4'>
-												
-			
 												<FileUpload />
 											</div>
 
