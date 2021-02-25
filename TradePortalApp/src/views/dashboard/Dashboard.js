@@ -218,7 +218,7 @@ export default class test2 extends Component {
 
                                     <br />
                                     <CCardHeader id="headingTwo">
-                                        <h5 className="m-0 p-0">Reference Details</h5>
+                                        <h5 className="m-0 p-0">Rejected Cases</h5>
                                     </CCardHeader>
                                     <CCardBody>
                                         <MUIDataTable data={inboxData} columns={rejColumns} options={options} />
