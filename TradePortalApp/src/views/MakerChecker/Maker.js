@@ -132,7 +132,7 @@ const Collapses = () => {
 
                                         General Details
 
-                  </CNavLink>
+                                     </CNavLink>
 
                                 </CNavItem>
 
@@ -736,6 +736,9 @@ const Collapses = () => {
 
                     <Link to="/dashboard">
 
+                        <CButton color="primary" className="px-4">Save</CButton> &nbsp;
+                        <CButton color="primary" className="px-4">Close</CButton>&nbsp;
+                        <CButton color="primary" className="px-4">Trash</CButton>&nbsp;
                         <CButton color="primary" className="px-4">Submit</CButton>
 
                     </Link>

@@ -66,11 +66,11 @@ const FileUpload = () => {
       data2.push({ fileType }.fileType);
       data2.push({ fileSize }.fileSize);
       data2.push('');
-      console.log("ash1", data2.length);
-      console.log("ash111", data2[0]);
-      console.log("ash1", data2[1]);
+      
       // console.log("data "+data);
       var tableD = document.getElementById("docTable");
+      alert("Row Len:: "+ tableD.rows.length);
+      var rowLen = tableD.rows.length;
       var row = document.createElement('tr');
       console.log("ash2");
       for (var i = 0; i < data2.length; i++) {
@@ -100,14 +100,17 @@ const FileUpload = () => {
       }
       var td = document.createElement('td');
 
-      var button = document.createElement("button");
-      button.innerHTML = "Delete";
-      button.onclick = function(index){
-        alert('Delete Called', index);
-        console.log("SG Index:: ", index);
-        // var btn = document.getElementById
-        // var row = btn.parentNode.parentNode;
-        // row.parentNode.removeChild(row);
+      // var button = document.createElement("button");
+
+      // add a button control.
+      var button = document.createElement('input');
+      // set the attributes.
+      button.setAttribute('type', 'button');
+      button.setAttribute('value', 'Remove');
+      
+      button.id= rowLen;
+      button.onclick = function(){
+        alert('Delete Called', this.id);
       };
       td.appendChild(button); 
       row.appendChild(td);
@@ -170,7 +173,7 @@ const FileUpload = () => {
                         <th className='table-header'>File Name</th>
                         <th className='table-header'>File Type</th>
                         <th className='table-header'>File Size</th>
-                        <th className='table-header'>View Document</th>
+                        <th className='table-header'>View</th>
                         <th className='table-header'>Delete</th>
                       </tr>
                     </thead>
@@ -190,15 +193,5 @@ const FileUpload = () => {
   
 };
 
-
-
-      
-
-
-// function deleteRow(btn) {
-//   console.log('inside delete');
-// var row = btn.parentNode.parentNode;
-// row.parentNode.removeChild(row);
-// }
 
 export default FileUpload;
