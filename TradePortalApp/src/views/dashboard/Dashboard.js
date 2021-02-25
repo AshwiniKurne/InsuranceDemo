@@ -186,9 +186,6 @@ export default class test2 extends Component {
                             <CCardHeader>
                                 Inbox
                             </CCardHeader>
-                            <div class="column">
-                                <CButton color="primary" className="px-4">Create New</CButton>
-                            </div>
                             <div class="tabCheck">
                             <CTabs activeTab="new">
                             <CNav variant="tabs">
