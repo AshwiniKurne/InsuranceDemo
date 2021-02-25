@@ -1,9 +1,9 @@
-const inboxData = [
+const rejData = [
 
 
 
     [
-        
+        "89807",
         "LC",
         "Lodgement",
         "Issuance",
@@ -12,11 +12,12 @@ const inboxData = [
         "USD",
         "72552",
         "Sam Mathews",
+        "24631245",
         "92991265",
         "10:30 AM"
     ],
     [
-       
+        "31752",
         "LC",
         "Lodgement",
         "Issuance",
@@ -25,11 +26,12 @@ const inboxData = [
         "USD",
         "54210",
         "John Almaida",
+        "79774987",
         "21551965",
         "10:04 AM"
     ],
     [
-        
+        "12436",
         "LC",
         "Lodgement",
         "Issuance",
@@ -38,11 +40,12 @@ const inboxData = [
         "USD",
         "46541",
         "Dwyane Rushhill",
+        "36991879",
         "25355519",
         "2:30 PM"
     ],
     [
-        
+        "26741",
         "LC",
         "Lodgement",
         "Issuance",
@@ -51,11 +54,12 @@ const inboxData = [
         "USD",
         "85085",
         "Jaffery Dsouza",
+        "57612625",
         "91921721",
         "2:12 PM"
     ],
     [
-        
+        "19270",
         "LC",
         "Lodgement",
         "Issuance",
@@ -64,11 +68,12 @@ const inboxData = [
         "USD",
         "84606",
         "Jaffin Mahen",
+        "53385560",
         "29430238",
         "11:54 AM"
     ],
     [
-       
+        "49395",
         "LC",
         "Lodgement",
         "Issuance",
@@ -77,11 +82,12 @@ const inboxData = [
         "USD",
         "59620",
         "Ken Dcosta",
+        "41044359",
         "78773170",
         "4:21 PM"
     ],
     [
-       
+        "14812",
         "LC",
         "Lodgement",
         "Issuance",
@@ -90,11 +96,12 @@ const inboxData = [
         "USD",
         "33282",
         "Ashwini Kurne",
+        "55159543",
         "52838775",
         "6:10 PM"
     ],
     [
-        
+        "23947",
         "Collection",
         "Import",
         "Issuance",
@@ -103,11 +110,12 @@ const inboxData = [
         "USD",
         "23962",
         "Aparna Pandey",
+        "43147308",
         "49442826",
         "1:45 PM"
     ],
     [
-       
+        "65400",
         "Collection",
         "Export",
         "Issuance",
@@ -116,6 +124,7 @@ const inboxData = [
         "USD",
         "65139",
         "Sanchay Gupta",
+        "23901250",
         "96064947",
         "5:17 PM"
     ]
@@ -124,4 +133,4 @@ const inboxData = [
 
 ]
 
-export default inboxData
+export default rejData

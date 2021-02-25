@@ -42,7 +42,7 @@ const Maker = React.lazy(()=>import('./views/MakerChecker/Maker'));
 const test = React.lazy(()=>import('./views/MakerChecker/test'));
 const test2 = React.lazy(()=>import('./views/MakerChecker/test2'));
 const newDashboard = React.lazy(()=>import('./views/dashboard/newDashboard'));
-
+const launchCase = React.lazy(()=>import('./views/dashboard/launchCase'));
 
 
 const routes = [
@@ -90,7 +90,8 @@ const routes = [
   { path: '/MakerChecker/Maker', name: 'Maker', component: Maker},
   { path: '/MakerChecker/test', name: 'test', component: test},
   { path: '/MakerChecker/test2', name: 'test2', component: test2},
-  { path: '/newDashboard', name: 'Dashboard', component: newDashboard}
+  { path: '/newDashboard', name: 'Dashboard', component: newDashboard},
+  { path: '/launchCase', name: 'launchCase', component: launchCase},
   
 ];
 

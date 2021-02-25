@@ -11,6 +11,13 @@ const _nav =  [
   },
   {
     _tag: 'CSidebarNavItem',
+    name: 'Launch Case',
+    to: '/launchCase',
+    icon: <CIcon name="cil-home" customClasses="c-sidebar-nav-icon"/>
+    
+  },
+  {
+    _tag: 'CSidebarNavItem',
     name: 'Inbox',
     to: '/dashboard',
     // icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>

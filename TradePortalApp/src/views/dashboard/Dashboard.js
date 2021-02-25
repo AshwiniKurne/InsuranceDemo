@@ -1,7 +1,8 @@
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import MUIDataTable from "mui-datatables";
 import React, { Component } from 'react';
-import inboxData from '../users/inboxData'
+import inboxData from '../users/inboxData';
+import rejData from '../users/rejData';
 import { Link } from 'react-router-dom';
 import {
     CCard,
@@ -30,11 +31,7 @@ export default class test2 extends Component {
 
 
         const columns = [
-            {
-                name: "BDTxnNo",
-                label: "Txn No"
 
-            },
             {
                 name: "BDProduct",
                 label: "Product"
@@ -67,10 +64,7 @@ export default class test2 extends Component {
                 name: "PartyName",
                 label: "Party Name"
             },
-            {
-                name: "BillRefNo",
-                label: "Bill Ref No"
-            },
+            
             {
                 name: "CustomerPortalRefNo",
                 label: "Customer Portal Ref No"
@@ -137,8 +131,8 @@ export default class test2 extends Component {
                 label: "Party Name"
             },
             {
-                name: "BillRefNo",
-                label: "Bill Ref No"
+                name: "BankRefRefNo",
+                label: "Bank Ref No"
             },
             {
                 name: "CustomerPortalRefNo",
@@ -218,7 +212,7 @@ export default class test2 extends Component {
                                         <h5 className="m-0 p-0">Rejected Cases</h5>
                                     </CCardHeader>
                                     <CCardBody>
-                                        <MUIDataTable data={inboxData} columns={rejColumns} options={options} />
+                                        <MUIDataTable data={rejData} columns={rejColumns} options={options} />
                                     </CCardBody>
                                 </CTabPane>
 

@@ -14,7 +14,9 @@ const inboxData1 = [
         "Party Name": "Sam Mathews",
         "Bill Ref No": "24631245",
         "Customer Portal Ref No": "92991265",
-        "Entry Time": "10:30 AM"
+        "Date Time": "10:30 AM",
+        "Status" : 'Active'
+
     },
     {
         "Txn_No": "31752",
@@ -28,7 +30,8 @@ const inboxData1 = [
         "Party Name": "John Almaida",
         "Bill Ref No": "79774987",
         "Customer Portal Ref No": "21551965",
-        "Entry Time": "10:04 AM"
+        "Date Time": "10:04 AM",
+        "Status" : 'Active'
     },
     {
         "Txn_No": "12436",
@@ -42,7 +45,8 @@ const inboxData1 = [
         "Party Name": "Dwyane Rushhill",
         "Bill Ref No": "36991879",
         "Customer Portal Ref No": "25355519",
-        "Entry Time": "2:30 PM"
+        "Date Time": "2:30 PM",
+        "Status" : 'Active'
     },
     {
         "Txn_No": "26741",
@@ -56,7 +60,8 @@ const inboxData1 = [
         "Party Name": "Jaffery Dsouza",
         "Bill Ref No": "57612625",
         "Customer Portal Ref No": "91921721",
-        "Entry Time": "2:12 PM"
+        "Date Time": "2:12 PM",
+        "Status" : 'Active'
     },
     {
         "Txn_No": "19270",
@@ -70,7 +75,8 @@ const inboxData1 = [
         "Party Name": "Jaffin Mahen",
         "Bill Ref No": "53385560",
         "Customer Portal Ref No": "29430238",
-        "Entry Time": "11:54 AM"
+        "Date Time": "11:54 AM",
+        "Status" : 'Active'
     },
     {
         "Txn_No": "49395",
@@ -84,7 +90,8 @@ const inboxData1 = [
         "Party Name": "Ken Dcosta",
         "Bill Ref No": "41044359",
         "Customer Portal Ref No": "78773170",
-        "Entry Time": "4:21 PM"
+        "Date Time": "4:21 PM",
+        "Status" : 'Active'
     },
     {
         "Txn_No": "14812",
@@ -98,7 +105,8 @@ const inboxData1 = [
         "Party Name": "Ashwini Kurne",
         "Bill Ref No": "55159543",
         "Customer Portal Ref No": "52838775",
-        "Entry Time": "6:10 PM"
+        "Date Time": "6:10 PM",
+        "Status" : 'Active'
     },
     {
         "Txn_No": "23947",
@@ -112,7 +120,8 @@ const inboxData1 = [
         "Party Name": "Aparna Pandey",
         "Bill Ref No": "43147308",
         "Customer Portal Ref No": "49442826",
-        "Entry Time": "1:45 PM"
+        "Date Time": "1:45 PM",
+        "Status" : 'Active'
     },
     {
         "Txn_No": "65400",
@@ -126,7 +135,8 @@ const inboxData1 = [
         "Party Name": "Sanchay Gupta",
         "Bill Ref No": "23901250",
         "Customer Portal Ref No": "96064947",
-        "Entry Time": "5:17 PM"
+        "Date Time": "5:17 PM",
+        "Status" : 'Active'
     }
     
     
