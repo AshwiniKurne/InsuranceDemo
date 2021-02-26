@@ -33,6 +33,10 @@ export default class test2 extends Component {
         const columns = [
 
             {
+                name: "CustomerPortalRefNo",
+                label: "Customer Portal Ref No"
+            },
+			{
                 name: "BDProduct",
                 label: "Product"
             },
@@ -45,33 +49,28 @@ export default class test2 extends Component {
                 label: "Operation"
             },
             {
-                name: "CustID",
-                label: "Cust ID"
+                name: "BDCurrency",
+                label: "Currency"
+            },
+			{
+                name: "BDAmount",
+                label: "Amount"
             },
             {
                 name: "BDAccountNo",
                 label: "Account No"
             },
-            {
-                name: "BDCurrency",
-                label: "Currency"
-            },
-            {
-                name: "BDAmount",
-                label: "Amount"
-            },
-            {
-                name: "PartyName",
-                label: "Party Name"
-            },
+            
             
             {
-                name: "CustomerPortalRefNo",
-                label: "Customer Portal Ref No"
+                name: "BenfName",
+                label: "Beneficiary Name"
             },
+            
+           
             {
                 name: "EntryTime",
-                label: "Entry Time"
+                label: "Entry Date Time"
             },
             {
                 name: "Action",
@@ -93,11 +92,12 @@ export default class test2 extends Component {
         ];
 
         const rejColumns = [
-            {
-                name: "BDTxnNo",
-                label: "Txn No"
-
+            
+			{
+                name: "CustomerPortalRefNo",
+                label: "Customer Portal Ref No"
             },
+			
             {
                 name: "BDProduct",
                 label: "Product"
@@ -111,36 +111,36 @@ export default class test2 extends Component {
                 label: "Operation"
             },
             {
-                name: "CustID",
-                label: "Cust ID"
+                name: "BDCurrency",
+                label: "Currency"
+            },
+			{
+                name: "BDAmount",
+                label: "Amount"
             },
             {
                 name: "BDAccountNo",
                 label: "Account No"
             },
+            
+            
             {
-                name: "BDCurrency",
-                label: "Currency"
+                name: "BenefName",
+                label: "Beneficiary Name"
             },
-            {
-                name: "BDAmount",
-                label: "Amount"
-            },
-            {
-                name: "PartyName",
-                label: "Party Name"
+			{
+                name: "BDTxnNo",
+                label: "Txn No"
+
             },
             {
                 name: "BankRefRefNo",
                 label: "Bank Ref No"
             },
-            {
-                name: "CustomerPortalRefNo",
-                label: "Customer Portal Ref No"
-            },
+            
             {
                 name: "EntryTime",
-                label: "Entry Time"
+                label: "Entry Date Time"
             },
             {
                 name: "Action",
