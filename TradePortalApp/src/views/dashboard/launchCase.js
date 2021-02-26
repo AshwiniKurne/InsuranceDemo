@@ -4,11 +4,10 @@ import {
     CCardBody,
     CCardHeader,
     CCol,
-    CDataTable,
     CRow,
-    CLink,
     CLabel,
     CInput,
+    CSelect,
     CFormGroup,CButton
 } from '@coreui/react';
 import FileUpload from '../MakerChecker/FileUpload';
@@ -31,16 +30,35 @@ const launchCase = () => {
                             <CFormGroup row className="my-0">
 
                                 <div className='container mt-4'>
-
-                                    <CLabel htmlFor="Product">Product</CLabel>
-                                    <CInput id="productl" placeholder="Enter your Product Name" />
-                                    <br />
-                                    <CLabel htmlFor="SubProduct">Sub Product</CLabel>
-                                    <CInput id="subproductl" placeholder="Enter your Sub Product Name" />
-                                    <br />
-                                    <CLabel htmlFor="Operation">Operation</CLabel>
-                                    <CInput id="operationl" placeholder="Enter your Operation Name" />
-                                    <br />
+                                <CFormGroup row className="my-0">
+                                    <CCol>
+                                        <CLabel htmlFor="Product">Product</CLabel>
+                                        <CSelect id="select"  >
+                                            <option value="0" >Please select Product</option>
+                                            <option value="1">LC</option>
+                                            <option value="2">BG</option>
+                                            <option value="3">Collection</option>
+                                        </CSelect>
+                                    </CCol>
+                                    <CCol>
+                                        <CLabel htmlFor="SubProduct">Sub Product</CLabel>
+                                        <CSelect id="select"  >
+                                            <option value="0" >Please select Sub Product</option>
+                                            <option value="1">Lodgement</option>
+                                            <option value="2">Import</option>
+                                            <option value="3">Export</option>
+                                        </CSelect>
+                                    </CCol>
+                                    <CCol>
+                                        <CLabel htmlFor="Operation">Operation</CLabel>
+                                        <CSelect id="select"  >
+                                            <option value="0" >Please select Operation</option>
+                                            <option value="1">Issuance</option>
+                                            <option value="2">BG</option>
+                                            <option value="3">Collection</option>
+                                        </CSelect>
+                                    </CCol>
+                                    </CFormGroup>
                                     <div>
                                     <FileUpload />
                                     </div>
@@ -55,7 +73,7 @@ const launchCase = () => {
                                             </Link>
                                         </CCol>
                                     </CRow>
-                                </div>
+                                    </div>
 
                             </CFormGroup>
                         </CCardBody>
