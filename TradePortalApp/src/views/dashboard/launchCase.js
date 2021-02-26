@@ -69,7 +69,7 @@ const launchCase = () => {
                                     <CRow>
                                         <CCol xs="6">
                                             <Link to="/dashboard">
-                                                <CButton color="primary" className="px-4">Submit</CButton>
+                                                <CButton color="primary" className="px-4">Launch Case</CButton>
                                             </Link>
                                         </CCol>
                                     </CRow>

@@ -4,12 +4,20 @@ import {
   CHeader,
   CToggler,
   CSubheader,
+  CHeaderNav,
   CBreadcrumbRouter
 } from '@coreui/react'
 
 
 // routes config
 import routes from '../routes'
+
+import { 
+  TheHeaderDropdown,
+  TheHeaderDropdownMssg,
+  TheHeaderDropdownNotif,
+  TheHeaderDropdownTasks
+}  from './index'
 
 const TheHeader = () => {
   const dispatch = useDispatch()
@@ -28,8 +36,13 @@ const TheHeader = () => {
   return (
     <CHeader withSubheader>
       
+
+
+
       
-      <CSubheader className="px-3 justify-content-between">
+
+    <div class="col-sm-10">
+    <CSubheader className="px-3 justify-content-between">
       <CToggler
         inHeader
         className="ml-md-3 d-lg-none"
@@ -44,11 +57,25 @@ const TheHeader = () => {
           className="border-0 c-subheader-nav m-0 px-0 px-md-3" 
           routes={routes} 
         />
+        
           <div className="d-md-down-none mfe-2 c-subheader-nav">
             
+        
           </div>
+
       </CSubheader>
+
+    </div>
+    <div class="col-sm-2">
+      <CHeaderNav className="px-3">
+            <TheHeaderDropdownNotif/>
+            <TheHeaderDropdown/>
+        </CHeaderNav>
+</div>
+
     </CHeader>
+
+    
   )
 }
 

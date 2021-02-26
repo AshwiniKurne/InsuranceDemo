@@ -65,7 +65,7 @@
     display: flex !important;
 }
 .pr-md-3, .px-md-3 {
-    padding-right: 78% !important;
+    padding-right: 70% !important;
 }
 textarea.form-control {
     height: 120px !important;
@@ -199,4 +199,11 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 }
 #productl,#subproductl,#operationl{
     width :50% !important;
+}
+.MuiTable-root {
+    width: 100%;
+    display: table;
+    border-spacing: 0;
+    text-align-last: center;
+    border-collapse: collapse;
 }
