@@ -207,8 +207,8 @@ const Collapses = () => {
                                             </CCol>
                                             <CCol xs="4">
                                                 <CFormGroup>
-                                                    <CLabel htmlFor="company">Customer Portal Ref No.</CLabel>
-                                                    <CInput id="company" placeholder="Enter your Customer Portal Ref No." disabled />
+                                                    <CLabel htmlFor="company">Ref No.</CLabel>
+                                                    <CInput id="company" placeholder="Enter your Ref No." disabled />
                                                 </CFormGroup>
                                             </CCol>
                                         </CFormGroup>

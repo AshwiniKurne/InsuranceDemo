@@ -6,13 +6,12 @@ import {
     CCol,
     CRow,
     CLabel,
-    CInput,
     CSelect,
+    CProgress,
     CFormGroup,CButton
 } from '@coreui/react';
 import FileUpload from '../MakerChecker/FileUpload';
 import { Link } from 'react-router-dom';
-
 
 const launchCase = () => {
     return (
@@ -73,6 +72,7 @@ const launchCase = () => {
                                             </Link>
                                         </CCol>
                                     </CRow>
+
                                     </div>
 
                             </CFormGroup>

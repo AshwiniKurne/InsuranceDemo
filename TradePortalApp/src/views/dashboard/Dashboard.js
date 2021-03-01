@@ -34,7 +34,7 @@ export default class test2 extends Component {
 
             {
                 name: "CustomerPortalRefNo",
-                label: "Customer Portal Ref No"
+                label: "Ref No"
             },
 			{
                 name: "BDProduct",
@@ -95,7 +95,7 @@ export default class test2 extends Component {
             
 			{
                 name: "CustomerPortalRefNo",
-                label: "Customer Portal Ref No"
+                label: "Ref No"
             },
 			
             {

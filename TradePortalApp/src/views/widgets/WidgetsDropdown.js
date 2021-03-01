@@ -41,8 +41,8 @@ const WidgetsDropdown = () => {
             <CDropdownMenu className="pt-0" placement="bottom-end">
               <CDropdownItem disabled>Weekly</CDropdownItem>
               <CDropdownItem>Monthly</CDropdownItem>
+              <CDropdownItem>Quaterly</CDropdownItem>
               <CDropdownItem>Half Yearly</CDropdownItem>
-              <CDropdownItem>Yearly</CDropdownItem>
             </CDropdownMenu>
           </CDropdown>
 
@@ -72,10 +72,10 @@ const WidgetsDropdown = () => {
               <CIcon name="cil-settings"/>
             </CDropdownToggle>
             <CDropdownMenu className="pt-0" placement="bottom-end">
-              <CDropdownItem disabled>Weekly</CDropdownItem>
+            <CDropdownItem disabled>Weekly</CDropdownItem>
               <CDropdownItem>Monthly</CDropdownItem>
+              <CDropdownItem>Quaterly</CDropdownItem>
               <CDropdownItem>Half Yearly</CDropdownItem>
-              <CDropdownItem>Yearly</CDropdownItem>
             </CDropdownMenu>
           </CDropdown>
 
@@ -105,10 +105,10 @@ const WidgetsDropdown = () => {
               <CIcon name="cil-settings"/>
             </CDropdownToggle>
             <CDropdownMenu className="pt-0" placement="bottom-end">
-              <CDropdownItem disabled>Weekly</CDropdownItem>
+            <CDropdownItem disabled>Weekly</CDropdownItem>
               <CDropdownItem>Monthly</CDropdownItem>
+              <CDropdownItem>Quaterly</CDropdownItem>
               <CDropdownItem>Half Yearly</CDropdownItem>
-              <CDropdownItem>Yearly</CDropdownItem>
             </CDropdownMenu>
           </CDropdown>
         </CWidgetDropdown>
@@ -134,10 +134,10 @@ const WidgetsDropdown = () => {
               <CIcon name="cil-settings"/>
             </CDropdownToggle>
             <CDropdownMenu className="pt-0" placement="bottom-end">
-              <CDropdownItem disabled>Weekly</CDropdownItem>
+            <CDropdownItem disabled>Weekly</CDropdownItem>
               <CDropdownItem>Monthly</CDropdownItem>
+              <CDropdownItem>Quaterly</CDropdownItem>
               <CDropdownItem>Half Yearly</CDropdownItem>
-              <CDropdownItem>Yearly</CDropdownItem>
             </CDropdownMenu>
           </CDropdown>
         </CWidgetDropdown>

@@ -207,3 +207,14 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     text-align-last: center;
     border-collapse: collapse;
 }
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+.card-header:first-child {
+    background-color: #3d6d94;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.0rem;
+}

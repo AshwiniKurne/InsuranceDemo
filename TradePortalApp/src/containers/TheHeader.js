@@ -14,9 +14,7 @@ import routes from '../routes'
 
 import { 
   TheHeaderDropdown,
-  TheHeaderDropdownMssg,
-  TheHeaderDropdownNotif,
-  TheHeaderDropdownTasks
+  TheHeaderDropdownNotif
 }  from './index'
 
 const TheHeader = () => {
@@ -35,11 +33,6 @@ const TheHeader = () => {
 
   return (
     <CHeader withSubheader>
-      
-
-
-
-      
 
     <div class="col-sm-10">
     <CSubheader className="px-3 justify-content-between">

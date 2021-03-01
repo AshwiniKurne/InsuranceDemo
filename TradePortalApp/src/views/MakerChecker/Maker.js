@@ -3,7 +3,7 @@ import FileUpload from './FileUpload';
 import { Link } from 'react-router-dom'
 
 import {
-
+    CAlert,
     CButton,
 
     CCard,
@@ -13,8 +13,6 @@ import {
     CCardHeader,
 
     CCol,
-
-    CCollapse,
 
     CFormGroup,
 
@@ -122,6 +120,16 @@ const Collapses = () => {
 
                     <CCardBody>
 
+                    <CAlert color="primary">
+                                    <CRow>
+                                        <CCol sm="3"><b>Product</b> : LC</CCol>
+                                        <CCol sm="3"><b>Sub Product</b> : Lodgement</CCol>
+                                        <CCol sm="3"><b>Operation</b> : Issuance</CCol>
+                                        <CCol sm="3"><b>Ref No.</b> : 3487534</CCol>
+                                    </CRow>
+                                </CAlert>
+                                
+
                         <CTabs activeTab="general">
 
                             <CNav variant="tabs">
@@ -167,8 +175,8 @@ const Collapses = () => {
                             <CTabContent>
 
                                 <CTabPane data-tab="general">
-
-                                    <br />
+                                <br />
+                                    
 
                                     <CCardHeader id="headingOne">
 
@@ -282,7 +290,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">PAN No.</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your PAN Code" />
+                                                    <CInput id="company" placeholder="Enter your PAN Code" value="BANGD8362F" disabled/>
 
                                                 </CFormGroup>
 
@@ -415,9 +423,9 @@ const Collapses = () => {
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">Customer Portal Ref No.</CLabel>
+                                                    <CLabel htmlFor="company">Ref No.</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your Customer Portal Ref No." value="3487534" disabled/>
+                                                    <CInput id="company" placeholder="Enter your Ref No." value="3487534" disabled/>
 
                                                 </CFormGroup>
 

@@ -13,7 +13,7 @@ const _nav =  [
     _tag: 'CSidebarNavItem',
     name: 'Launch Case',
     to: '/launchCase',
-    icon: <CIcon name="cil-home" customClasses="c-sidebar-nav-icon"/>
+    icon: <CIcon name="cil-paper-plane" customClasses="c-sidebar-nav-icon"/>
     
   },
   {
