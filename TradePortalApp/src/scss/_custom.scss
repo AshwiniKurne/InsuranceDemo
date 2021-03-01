@@ -218,3 +218,13 @@ table {
     font-weight: bold;
     font-size: 1.0rem;
 }
+.modal-dialog {
+    width: 35%;
+    margin: 0.5rem;
+    pointer-events: none;
+    position: fixed !important;
+    top: 32%;
+    left: 40%;
+    display: block !important;
+    z-index: 1000005;
+}

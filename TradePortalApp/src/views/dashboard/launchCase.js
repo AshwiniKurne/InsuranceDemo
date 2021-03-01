@@ -1,4 +1,5 @@
-import React, { lazy } from 'react'
+
+import React, { Fragment, useState } from 'react';
 import {
     CCard,
     CCardBody,
@@ -8,12 +9,18 @@ import {
     CLabel,
     CSelect,
     CProgress,
-    CFormGroup,CButton
+    CFormGroup,CButton,CModal,CModalBody,CModalFooter
 } from '@coreui/react';
 import FileUpload from '../MakerChecker/FileUpload';
 import { Link } from 'react-router-dom';
 
-const launchCase = () => {
+const LaunchCase = () => {
+	const [modal, setModal] = useState(false);
+
+	const toggle = ()=>{
+    setModal(!modal);
+	}
+	
     return (
 
         <>
@@ -66,11 +73,22 @@ const launchCase = () => {
                                     <br />
                                     <br />
                                     <CRow>
-                                        <CCol xs="6">
-                                            <Link to="/dashboard">
-                                                <CButton color="primary" className="px-4">Launch Case</CButton>
-                                            </Link>
-                                        </CCol>
+              <CCol xs="6">
+                                            
+				<CButton color="primary" onClick={toggle} className="px-4">Launch Case</CButton>
+				<CModal show={modal} onClose={toggle}>
+					 <CModalBody>Case created successfully with Ref no. 1234567
+					 </CModalBody>
+					<CModalFooter>
+					<Link to="/dashboard">
+					<CButton color="primary">OK</CButton>
+					</Link>
+					{' '}
+					
+					</CModalFooter>
+				
+				</CModal>                           
+              </CCol>
                                     </CRow>
 
                                     </div>
@@ -85,4 +103,4 @@ const launchCase = () => {
     )
 }
 
-export default launchCase
+export default LaunchCase
