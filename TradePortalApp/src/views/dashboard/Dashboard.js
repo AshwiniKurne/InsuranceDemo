@@ -1,5 +1,6 @@
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import MUIDataTable from "mui-datatables";
+import CustomToolbar from "./customToolbar";
 import React, { Component } from 'react';
 import inboxData from '../users/inboxData';
 import rejData from '../users/rejData';
@@ -165,7 +166,16 @@ export default class test2 extends Component {
 
             filterType: 'dropdown',
             responsive: 'stacked',
-            selectableRows: false
+            selectableRows: false,
+           
+            onDownload: (buildHead, buildBody, columns, data) => {
+                return "\uFEFF" + buildHead(columns) + buildBody(data); 
+            } ,
+            customToolbar: () => {
+                return (
+                  <CustomToolbar />
+                );
+              }
         };
 
         return (

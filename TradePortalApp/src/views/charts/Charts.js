@@ -14,10 +14,41 @@ import {
   CChartPolarArea
 } from '@coreui/react-chartjs'
 import { DocsLink } from 'src/reusable'
+import html2canvas from "html2canvas";
+const pdfConverter = require("jspdf");
 
 const Charts = () => {
+	
+	
+  const div2PDF = e => {
+    /////////////////////////////
+    // Hide/show button if you need
+    /////////////////////////////
+
+    const but = e.target;
+    but.style.display = "none";
+    let input = window.document.getElementsByClassName("div2PDF")[0];
+
+    html2canvas(input).then(canvas => {
+      const img = canvas.toDataURL("image/png");
+      const pdf = new pdfConverter("l", "pt");
+      pdf.addImage(
+        img,
+        "png",
+        input.offsetLeft,
+        input.offsetTop,
+        input.clientWidth,
+        input.clientHeight
+      );
+      pdf.save("chart.pdf");
+      but.style.display = "block";
+    });
+  };
+	
 
   return (
+  <div>
+        <div className="div2PDF">
     <CCardGroup columns className = "cols-2" >
       <CCard>
         <CCardHeader>
@@ -209,6 +240,11 @@ const Charts = () => {
         </CCardBody>
       </CCard>
     </CCardGroup>
+	</div>
+        <div>
+          <button onClick={e => this.div2PDF(e)}>Export 2 PDF</button>
+        </div>
+     </div>
   )
 }
 
