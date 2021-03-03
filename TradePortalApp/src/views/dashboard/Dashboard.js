@@ -19,14 +19,45 @@ import {
     CTabPane,
     CTabs
   } from '@coreui/react'
+  import UserContext from '../pages/login/UserContext';
 
 export default class test2 extends Component {
-    state = {
-        page: 0,
-        count: 1,
-        data: [["Loading your Tasks..."]],
-        isLoading: false
-    };
+    static contextType = UserContext;
+
+
+  constructor(){
+    super();
+    this.state={
+      userN:'',
+      page: 0,
+      count: 1,
+      data: [["Loading your Tasks..."]],
+      isLoading: false
+  
+    }
+    
+    console.log("value of user state "+this.state.userN); 
+  }
+
+  componentDidMount() {
+    const user = this.context;
+
+    console.log(JSON.stringify(user)) ;
+    console.log(user);
+    console.log(user.user.name);
+    this.setData(user.user.name);
+  }
+  
+  setData = (e) =>{
+
+    this.setState({
+      userN : e,
+    })
+    console.log("value of user state2 "+this.state.userN); 
+  }
+  
+  
+  
 
     render() {
 

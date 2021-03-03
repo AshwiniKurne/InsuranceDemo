@@ -14,9 +14,46 @@ import {
   CInputGroupText,
   CRow
 } from '@coreui/react'
-import CIcon from '@coreui/icons-react'
+import CIcon from '@coreui/icons-react';
+import UserContext from './UserContext';
 
-const Login = () => {
+
+export default class Login extends React.Component {
+static contextType = UserContext;
+
+constructor(){
+  super();
+  this.state={
+    userName:'',
+
+  }
+  
+  
+}
+
+handleChange(event) {
+  console.log("username ash",event.target.value);
+  this.setState({
+    
+    userName : event.target.value
+  })
+    
+console.log("username "+this.state.userName);
+}
+
+
+onSubmit = () => {
+  
+  console.log("on submit ",usernm);
+  const { user, setUser } = usernm;
+  console.log("user on submit1 ",user);
+  const newUser = { name: this.state.userName, loggedIn: true };
+  setUser(newUser);
+  console.log("user on submit2 ",newUser);
+  this.props.history.push("/"); 
+}
+
+  render() {
   return (
     <div className="c-app c-default-layout flex-row align-items-center">
       <CContainer>
@@ -34,7 +71,7 @@ const Login = () => {
                           <CIcon name="cil-user" />
                         </CInputGroupText>
                       </CInputGroupPrepend>
-                      <CInput type="text" placeholder="Username" autoComplete="username" />
+                      <CInput type="text" placeholder="Username" onChange={ this.handleChange.bind(this)} name="userValue" autoComplete="username" />
                     </CInputGroup>
                     <CInputGroup className="mb-4">
                       <CInputGroupPrepend>
@@ -47,7 +84,7 @@ const Login = () => {
                     <CRow>
                       <CCol xs="6">
                       <Link to="/newDashboard">
-                          <CButton color="primary" className="px-4">Login</CButton>
+                          <CButton color="primary" className="px-4" onClick={this.onSubmit()}>Login</CButton>
                         </Link>
                       </CCol>
                       <CCol xs="6" className="text-right">
@@ -71,5 +108,6 @@ const Login = () => {
     </div>
   )
 }
+}
 
-export default Login
+

@@ -10,7 +10,7 @@ import {
 } from '@coreui/react'
 
 import usersData from '../users/inboxData1'
-
+import UserContext from '../pages/login/UserContext';
 const getBadge = Status => {
   switch (Status) {
     case 'Active': return 'success'
@@ -24,8 +24,33 @@ const fields = ['Txn_No','Product', 'Sub-Product', 'Operation', 'Currency', 'Amo
 
 const WidgetsDropdown = lazy(() => import('../widgets/WidgetsDropdown.js'))
 
+class newDashboard extends React.Component {
+  static contextType = UserContext;
+  constructor(){
+    super();
+    this.state={
+      userName:'',
+  
+    }
+  }
 
-const newDashboard = () => {
+  componentDidMount() {
+    const user = this.context;
+  
+      console.log(JSON.stringify(user)) ;
+      console.log(user);
+      console.log(user.user.name);
+      this.setData(user.user.name);
+    }
+
+    setData = (e) =>{
+
+      this.setState({
+        userN : e,
+      })
+      console.log("value of user state2 "+this.state.userN); 
+    }
+render(){
   return (
     
     <>
@@ -68,5 +93,5 @@ const newDashboard = () => {
     </>
   )
 }
-
+}
 export default newDashboard

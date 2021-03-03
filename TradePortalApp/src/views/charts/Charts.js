@@ -15,6 +15,7 @@ import {
 } from '@coreui/react-chartjs'
 import { DocsLink } from 'src/reusable'
 import html2canvas from "html2canvas";
+
 const pdfConverter = require("jspdf");
 
 const Charts = () => {
@@ -27,8 +28,8 @@ const Charts = () => {
 
     const but = e.target;
     but.style.display = "none";
-    let input = window.document.getElementsByClassName("div2PDF")[0];
-
+    let input = document.getElementsByClassName("div2PDF")[0];
+    console.log("input ",input);
     html2canvas(input).then(canvas => {
       const img = canvas.toDataURL("image/png");
       const pdf = new pdfConverter("l", "pt");
@@ -242,7 +243,7 @@ const Charts = () => {
     </CCardGroup>
 	</div>
         <div>
-          <button onClick={e => this.div2PDF(e)}>Export 2 PDF</button>
+          <button onClick={div2PDF}>Export 2 PDF</button>
         </div>
      </div>
   )
