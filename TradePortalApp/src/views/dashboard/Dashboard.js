@@ -199,14 +199,7 @@ export default class test2 extends Component {
             responsive: 'stacked',
             selectableRows: false,
            
-            onDownload: (buildHead, buildBody, columns, data) => {
-                return "\uFEFF" + buildHead(columns) + buildBody(data); 
-            } ,
-            customToolbar: () => {
-                return (
-                  <CustomToolbar />
-                );
-              }
+           
         };
 
         return (
