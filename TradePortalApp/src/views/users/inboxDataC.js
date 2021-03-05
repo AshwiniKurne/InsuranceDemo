@@ -1,9 +1,4 @@
-
-
-
-
-
-const inboxData = [
+const inboxDataC = [
 
 
 
