@@ -9,8 +9,9 @@ import {
   CRow
 } from '@coreui/react'
 
-import usersData from '../users/inboxData1'
-import UserContext from '../pages/login/UserContext';
+import usersData from '../users/inboxData1';
+import UserContext from '../../UserContext';
+
 const getBadge = Status => {
   switch (Status) {
     case 'Active': return 'success'
@@ -26,21 +27,21 @@ const WidgetsDropdown = lazy(() => import('../widgets/WidgetsDropdown.js'))
 
 class newDashboard extends React.Component {
   static contextType = UserContext;
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state={
-      userName:'',
+      userN:'',
   
     }
   }
 
   componentDidMount() {
     const user = this.context;
-  
-      console.log(JSON.stringify(user)) ;
-      console.log(user);
-      console.log(user.user.name);
-      this.setData(user.user.name);
+
+    console.log(JSON.stringify(user)) ;
+    console.log(user);
+    console.log(user.user.name);
+    this.setData(user.user.name);
     }
 
     setData = (e) =>{

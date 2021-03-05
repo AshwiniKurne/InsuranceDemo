@@ -18,15 +18,15 @@ import {
     CTabContent,
     CTabPane,
     CTabs
-  } from '@coreui/react'
-  import UserContext from '../pages/login/UserContext';
+  } from '@coreui/react';
+  import UserContext from '../../UserContext';
 
 export default class test2 extends Component {
     static contextType = UserContext;
 
 
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state={
       userN:'',
       page: 0,

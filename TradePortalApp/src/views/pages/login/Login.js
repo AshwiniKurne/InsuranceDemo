@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ Component ,useState} from 'react'
 import { Link } from 'react-router-dom'
 import {
   CButton,
@@ -15,26 +15,26 @@ import {
   CRow
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react';
-import UserContext from './UserContext';
+import UserContext from '../../../UserContext';
 
 
-export default class Login extends React.Component {
-static contextType = UserContext;
+export default class Login extends Component {
 
+  
 constructor(){
   super();
   this.state={
     userName:'',
 
   }
-  
+ 
   
 }
-
+static contextType = UserContext;
 handleChange(event) {
   console.log("username ash",event.target.value);
+  console.log("username ash2",this.state.userName);
   this.setState({
-    
     userName : event.target.value
   })
     
@@ -43,17 +43,16 @@ console.log("username "+this.state.userName);
 
 
 onSubmit = () => {
+  console.log("context "+JSON.stringify(this.context));
+  const { user, setUser } = this.context;
   
-  console.log("on submit ",usernm);
-  const { user, setUser } = usernm;
-  console.log("user on submit1 ",user);
   const newUser = { name: this.state.userName, loggedIn: true };
   setUser(newUser);
-  console.log("user on submit2 ",newUser);
   this.props.history.push("/"); 
 }
 
   render() {
+   
   return (
     <div className="c-app c-default-layout flex-row align-items-center">
       <CContainer>
@@ -84,7 +83,7 @@ onSubmit = () => {
                     <CRow>
                       <CCol xs="6">
                       <Link to="/newDashboard">
-                          <CButton color="primary" className="px-4" onClick={this.onSubmit()}>Login</CButton>
+                          <CButton color="primary" className="px-4" onClick={this.onSubmit}>Login</CButton>
                         </Link>
                       </CCol>
                       <CCol xs="6" className="text-right">
@@ -106,7 +105,7 @@ onSubmit = () => {
         </CRow>
       </CContainer>
     </div>
-  )
+  );
 }
 }
 
