@@ -60,9 +60,8 @@ export default class test2 extends Component {
   
 
     render() {
-
-
-        const columns = [
+        let columns=[];
+        {this.state.userN =='Maker'?( columns = [
 
             {
                 name: "CustomerPortalRefNo",
@@ -121,9 +120,71 @@ export default class test2 extends Component {
                 }
             },
 
-        ];
+        ]):(
+            columns = [
 
-        const rejColumns = [
+                {
+                    name: "CustomerPortalRefNo",
+                    label: "Ref No"
+                },
+                {
+                    name: "BDProduct",
+                    label: "Product"
+                },
+                {
+                    name: "BDSubProduct",
+                    label: "Sub Product"
+                },
+                {
+                    name: "BDOperation",
+                    label: "Operation"
+                },
+                {
+                    name: "BDCurrency",
+                    label: "Currency"
+                },
+                {
+                    name: "BDAmount",
+                    label: "Amount"
+                },
+                {
+                    name: "BDAccountNo",
+                    label: "Account No"
+                },
+                
+                
+                {
+                    name: "BenfName",
+                    label: "Beneficiary Name"
+                },
+                
+               
+                {
+                    name: "EntryTime",
+                    label: "Entry Date Time"
+                },
+                {
+                    name: "Action",
+                    options: {
+                        filter: false,
+                        sort: false,
+    
+                        customBodyRender: (value, tableMeta, updateValue) => {
+                            const { data } = this.state;
+                            let rowData = data[tableMeta.rowIndex];
+    
+                            return (
+                              <Link to='/MakerChecker/Checker' ><PlayArrowIcon /></Link>
+                            );
+                        }
+                    }
+                },
+    
+            ]
+        )}
+        
+        let rejColumns =[];
+        {this.state.userN =='Maker'?( rejColumns = [
             
 			{
                 name: "CustomerPortalRefNo",
@@ -191,7 +252,76 @@ export default class test2 extends Component {
                 }
             },
 
-        ];
+        ]):( rejColumns = [
+            
+			{
+                name: "CustomerPortalRefNo",
+                label: "Ref No"
+            },
+			
+            {
+                name: "BDProduct",
+                label: "Product"
+            },
+            {
+                name: "BDSubProduct",
+                label: "Sub Product"
+            },
+            {
+                name: "BDOperation",
+                label: "Operation"
+            },
+            {
+                name: "BDCurrency",
+                label: "Currency"
+            },
+			{
+                name: "BDAmount",
+                label: "Amount"
+            },
+            {
+                name: "BDAccountNo",
+                label: "Account No"
+            },
+            
+            
+            {
+                name: "BenefName",
+                label: "Beneficiary Name"
+            },
+			{
+                name: "BDTxnNo",
+                label: "Txn No"
+
+            },
+            {
+                name: "BankRefRefNo",
+                label: "Bank Ref No"
+            },
+            
+            {
+                name: "EntryTime",
+                label: "Entry Date Time"
+            },
+            {
+                name: "Action",
+                options: {
+                    filter: false,
+                    sort: false,
+
+                    customBodyRender: (value, tableMeta, updateValue) => {
+                        const { data } = this.state;
+                        let rowData = data[tableMeta.rowIndex];
+
+                        return (
+                          <Link to='/MakerChecker/Checker' ><PlayArrowIcon /></Link>
+                        );
+                    }
+                }
+            },
+
+        ])}
+        
         const { data, isLoading } = this.state;
         const options = {
 
