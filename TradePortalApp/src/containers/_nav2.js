@@ -27,25 +27,8 @@ const _nav =  [
     icon: <CIcon name="cil-envelope-open" customClasses="c-sidebar-nav-icon"/>
     
   },
-  {
-    _tag: 'CSidebarNavTitle',
-    _children: ['Theme']
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Maker Screen',
-    //to: '/theme/colors',
-    
-    to :'/MakerChecker/Maker',
-    icon: 'cil-user',
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Checker Screen',
-    //to: '/theme/typography',
-    to :'/MakerChecker/Checker',
-    icon: 'cil-user',
-  },
+ 
+ 
   {
     _tag: 'CSidebarNavTitle',
     _children: ['Components']
@@ -66,20 +49,7 @@ const _nav =  [
     icon: 'cil-scrubber',
     
   },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'test',
-    to: '/MakerChecker/test',
-    icon: 'cil-scrubber',
-    
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'test2',
-    to: '/MakerChecker/test2',
-    icon: 'cil-scrubber',
-    
-  },
+ 
   {
     _tag: 'CSidebarNavDivider',
     className: 'm-2'

@@ -53,7 +53,7 @@ export default class test2 extends Component {
     this.setState({
       userN : e,
     })
-    console.log("value of user state2 "+this.state.userN); 
+    console.log("value of user inboxpage "+this.state.userN); 
   }
   
   
@@ -198,9 +198,47 @@ export default class test2 extends Component {
             filterType: 'dropdown',
             responsive: 'stacked',
             selectableRows: false,
-           
-           
+        
+            customToolbar: () => {
+                return (
+                  <CustomToolbar />
+                );
+              }
         };
+
+        let inboxData =[];
+ {this.state.userN =='Maker'?( inboxData = [
+    [ "92991265","LC","Lodgement","Issuance","USD","53992","39014177160","Sam Mathews","10:30 AM"],
+    ["21551965","LC","Lodgement","Issuance","USD","19103","15494862853","John Almaida","10:04 AM"],
+    ["25355519","LC","Lodgement","Issuance","USD","48544","61991875450","Dwyane Rushhill","2:30 PM"],
+    ["91921721","LC","Lodgement","Issuance","USD","21525","37934808227","Jaffery Dsouza","2:12 PM"],
+    ["29430238","LC","Lodgement","Issuance","USD","12047","28033677916","Jaffin Mahen","11:54 AM"],
+    
+ ]):( inboxData = [
+    ["78773170","LC","Lodgement","Issuance","USD","68007","88923439809","Ken Dcosta","4:21 PM"],
+    ["52838775","LC","Lodgement","Issuance","USD","15852","26346547852","Ashwini Kurne","6:10 PM"],
+    ["49442826","Collection","Import","Issuance","USD","78694","70936878051","Aparna Pandey","1:45 PM"],
+    ["96064947","Collection","Export","Issuance","USD","29989","51514445397","Sanchay Gupta","5:17 PM"]
+    
+ ])}
+
+ let rejData =[];
+ {this.state.userN =='Maker'?( rejData = [ 
+    ["28963122","LC","Lodgement","Issuance","USD","52562","69014177160","Chintan Kumar","89807","92991265","1:30 AM"],
+    ["29051965","LC","Lodgement","Issuance","USD","54686","1433442853","Abhijit Rai","54210","79774987", "11:12 AM"],
+    ["29155519","LC","Lodgement","Issuance","USD","34678","56741875450","Ravish Chahal","46541","36991879","2:40 PM"],
+    ["59612625","LC","Lodgement","Issuance","USD","45689","12674808227","Erica Dsouza","85085","91921721","7:12 PM"],
+    ["54085560","LC","Lodgement","Issuance","USD","95623","98323677916","Swati Sharma","84606","29430238","12:54 AM"],
+    
+    ]):(rejData = [ 
+    ["20873170","LC","Lodgement","Issuance","USD","90001","58973439809","Ken hyun","59620","41044359","8:21 PM"],
+    ["78838775","LC","Lodgement","Issuance","USD","48932","45986547852","Sharad Balodi","33282","55159543","3:10 PM"],
+    ["46742826","Collection","Import","Issuance","USD","89673","33446878051","Karan Rathod","23962","43147308","6:45 PM"],
+    ["93104947","Collection","Export","Issuance", "USD","58964","76874445397","Shiv Shinde","65139","23901250","2:17 PM"]
+    ]
+    )}
+
+
 
         return (
             <div>
@@ -235,7 +273,10 @@ export default class test2 extends Component {
                                 <CTabPane data-tab="new">
                                     <br />
                                     <CCardBody>
-                                        <MUIDataTable data={inboxData} columns={columns} options={options} />
+                                    {this.state.userN == 'Maker'?(
+                                        <MUIDataTable data={inboxData} columns={columns} options={options} />):(
+                                            <MUIDataTable data={inboxData} columns={columns} options={options} />      
+                                        )}
                                     </CCardBody>
                                </CTabPane>
 
@@ -246,7 +287,10 @@ export default class test2 extends Component {
                                         <h5 className="m-0 p-0">Rejected Cases</h5>
                                     </CCardHeader>
                                     <CCardBody>
-                                        <MUIDataTable data={rejData} columns={rejColumns} options={options} />
+                                    {this.state.userN == 'Maker'?(  
+                                        <MUIDataTable data={rejData} columns={rejColumns} options={options} />):(
+                                            <MUIDataTable data={rejData} columns={rejColumns} options={options} />  
+                                        )}
                                     </CCardBody>
                                 </CTabPane>
 
