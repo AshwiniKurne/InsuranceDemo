@@ -302,7 +302,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Account No</CLabel>
 
-                                                    <CSelect id="select" disabled >
+                                                    <CSelect id="select" disabled value="1">
 
                                                         <option value="0" >Please select Account Number</option>
 
@@ -328,7 +328,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">GST No</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your GST No" disabled/>
+                                                    <CInput id="company" placeholder="Enter your GST No" value="Datamatics" disabled/>
 
                                                 </CFormGroup>
 
@@ -340,7 +340,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Currency </CLabel>
 
-                                                    <CSelect id="select" disabled >
+                                                    <CSelect id="select" disabled value="1">
                                                         <option value="0" >Please select Currency</option>
                                                         <option value="1">USD</option>
                                                         <option value="2">EUR</option>
@@ -359,7 +359,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Amount</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your Amount" disabled />
+                                                    <CInput id="company" placeholder="Enter your Amount" value="234563" disabled />
 
                                                 </CFormGroup>
 
@@ -401,7 +401,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Bill Ref No.</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your Bill Ref No." disabled/>
+                                                    <CInput id="company" placeholder="Enter your Bill Ref No." value="78773170" disabled/>
 
                                                 </CFormGroup>
 
@@ -441,7 +441,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Limit ID</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your Limit ID" disabled/>
+                                                    <CInput id="company" placeholder="Enter your Limit ID" value ='342435'disabled/>
 
                                                 </CFormGroup>
 
@@ -453,7 +453,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Charges</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your Charges" disabled />
+                                                    <CInput id="company" placeholder="Enter your Charges" value ='6877' disabled />
 
                                                 </CFormGroup>
 
@@ -465,7 +465,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Margin %</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your Margin %" disabled/>
+                                                    <CInput id="company" placeholder="Enter your Margin %" value ='20%'disabled/>
 
                                                 </CFormGroup>
 
@@ -481,7 +481,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Other Bank Ref No</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your Other Bank Ref No" disabled />
+                                                    <CInput id="company" placeholder="Enter your Other Bank Ref No" value ='89765' disabled />
 
                                                 </CFormGroup>
 
@@ -521,7 +521,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Name</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your Party Name" disabled/>
+                                                    <CInput id="company" placeholder="Enter your Party Name" value ='XYZ' disabled/>
 
                                                 </CFormGroup>
 
@@ -533,7 +533,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Address</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your Party Address" disabled/>
+                                                    <CInput id="company" placeholder="Enter your Party Address" value ='ATCS Office,Sanpada' disabled/>
 
                                                 </CFormGroup>
 
@@ -545,7 +545,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="select">Country</CLabel>
 
-                                                    <CSelect id="select" disabled >
+                                                    <CSelect id="select" value ='12' disabled >
 
                                                         <option value="0" >Please select Party Country</option>
 
@@ -597,7 +597,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Place of Expiry</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter Place of Expiry" disabled />
+                                                    <CInput id="company" placeholder="Enter Place of Expiry" value ='xxx' disabled />
 
                                                 </CFormGroup>
 
@@ -609,7 +609,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Date of Expiry</CLabel>
 
-                                                    <CInput type="date" id="date-input" name="date-input" placeholder="date" disabled />
+                                                    <CInput type="date" id="date-input" name="date-input" placeholder="date" value ='19-03-2021' disabled />
 
                                                 </CFormGroup>
 
@@ -621,7 +621,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Description of Goods</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter Description of Goods"disabled />
+                                                    <CInput id="company" placeholder="Enter Description of Goods" value ='xxx' disabled />
 
                                                 </CFormGroup>
 
@@ -637,7 +637,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Party Account No./IBAN</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter Party Account No./IBAN" disabled />
+                                                    <CInput id="company" placeholder="Enter Party Account No./IBAN" value ='234555' disabled />
 
                                                 </CFormGroup>
 
@@ -649,7 +649,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">BIC/BSB Code</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter BIC/BSB Code" disabled/>
+                                                    <CInput id="company" placeholder="Enter BIC/BSB Code" value ='1234' disabled/>
 
                                                 </CFormGroup>
 
@@ -665,7 +665,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Advising Bank Name & Address</CLabel>
 
-                                                    <CTextarea id="company" placeholder="Enter Advising Bank Name & Address" disabled/>
+                                                    <CTextarea id="company" placeholder="Enter Advising Bank Name & Address" value ='xxc' disabled/>
 
                                                 </CFormGroup>
 
@@ -677,7 +677,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Reimbursing Bank Name & Address</CLabel>
 
-                                                    <CTextarea id="company" placeholder="Enter Reimbursing Bank Name & Address" disabled/>
+                                                    <CTextarea id="company" placeholder="Enter Reimbursing Bank Name & Address" value ='xxxv' disabled/>
 
                                                 </CFormGroup>
 
@@ -689,7 +689,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Advise Through Bank Name & Address</CLabel>
 
-                                                    <CTextarea id="company" placeholder="Enter Advise Through Bank Name & Address" disabled/>
+                                                    <CTextarea id="company" placeholder="Enter Advise Through Bank Name & Address" value ='ccc' disabled/>
 
                                                 </CFormGroup>
 
