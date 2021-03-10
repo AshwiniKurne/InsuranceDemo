@@ -36,7 +36,7 @@ const _nav =  [
       {
         _tag: 'CSidebarNavItem',
         name: 'MIS View',
-        to: '/charts/MISCharts',
+        to: '/mischarts',
       },
       {
         _tag: 'CSidebarNavItem',
