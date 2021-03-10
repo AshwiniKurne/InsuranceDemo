@@ -409,9 +409,7 @@ export default class test2 extends Component {
                                 <CTabPane data-tab="rej">
 
                                     <br />
-                                    <CCardHeader id="headingTwo">
-                                        <h5 className="m-0 p-0">Rejected Cases</h5>
-                                    </CCardHeader>
+                                    
                                     <CCardBody>
                                     {this.state.userN == 'Maker'?(  
                                         <MUIDataTable data={rejData} columns={rejColumns} options={options} />):(
