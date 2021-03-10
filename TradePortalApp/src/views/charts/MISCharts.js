@@ -106,7 +106,7 @@ const Collapses = () => {
 
     }
 
-    const columns1 = [{name: "PRODUCT",label: "PRODUCT"},{name: "TRANSACTIONID",label: "TRANSACTION ID"},{name: "OPERATION",label: "OPERATION"},{name: "BeneNAME",label: "Bene NAME"},{name: "ACCOUNTNO",label: "ACCOUNT NO"},{name: "CURRENCY",label: "CURRENCY"},{name: "AMOUNT",label: "AMOUNT"},{name: "CURRENTSTATUS",label: "CURRENT STATUS"},   {name: "REFERENCENO",label: "REFERENCE NO"}]
+    const columns1 = [{name: "PRODUCT",label: "Product"},{name: "TRANSACTIONID",label: "Transaction Id"},{name: "OPERATION",label: "Operation"},{name: "BeneNAME",label: "Beneficiary Name"},{name: "ACCOUNTNO",label: "Account No."},{name: "CURRENCY",label: "Currency"},{name: "AMOUNT",label: "Amount"},{name: "CURRENTSTATUS",label: "Current Status"},   {name: "REFERENCENO",label: "Reference No"}]
  
  
     const columns2 = [{name: "UserID",label: "User ID"},{name: "Product",label: "Product"},{name: "Operation",label: "Operation"},{name: "Role",label: "Role"},{name: "NoofTxn",label: "No of Txn"}]
@@ -115,7 +115,7 @@ const Collapses = () => {
     const columns3 = [{name: "SrNo",label: "Sr. No"},{name: "WID",label: "WID"},{name: "Product",label: "Product"},{name: "Operation",label: "Operation"},{name: "Currency",label: "Currency"},{name: "Amount",label: " Amount "},{name: "RejectionDate",label: "Rejection Date"},{name: "RejectReason",label: "Reject Reason"}]
    
    
-    const columns4 = [{name: "SrNo",label: "Sr. No."},{name: "PRODUCT",label: "PRODUCT"},{name: "OPERATION",label: "OPERATION"},{name: "TotalNoofTxn",label: "Total No of Txn"}]
+    const columns4 = [{name: "SrNo",label: "Sr. No."},{name: "PRODUCT",label: "Product"},{name: "OPERATION",label: "Operation"},{name: "TotalNoofTxn",label: "Total No of Txn"}]
    
    
     const columns5 = [{name: "Status",label: "Status"},{name: "No of Txns",label: "No of Txns"}]
@@ -176,7 +176,7 @@ const data5 = [
 
                                     <CNavLink data-tab="TF_TXN">
 
-                                        TF_TXN Reports
+                                        Transactional Report
 
                                      </CNavLink>
 
@@ -185,7 +185,7 @@ const data5 = [
                                 <CNavItem>
 
                                     <CNavLink data-tab="Productivity">
-                                        Productivity Reports
+                                        Productivity Report
                                     </CNavLink>
 
                                 </CNavItem>
@@ -193,43 +193,19 @@ const data5 = [
 
                                     <CNavLink data-tab="Rejection">
 
-                                      Rejection Reports
+                                      Rejection Report
 
                                      </CNavLink>
 
                                 </CNavItem>
-                                <CNavItem>
-
-                                    <CNavLink data-tab="Total_TXN">
-
-                                        Total_TXN Reports
-
-                                    </CNavLink>
-
-                                </CNavItem>
-                                 <CNavItem>
-
-                                    <CNavLink data-tab="Status">
-
-                                        Status Reports
-
-                                    </CNavLink>
-
-                                </CNavItem>
-                                
+ 
 
                             </CNav>
 
                             <CTabContent>
 
                                 <CTabPane data-tab="TF_TXN">
-                                <br />
-                                    
-                                    <CCardHeader id="headingOne">
-
-                                        <h5 className="m-0 p-0">TF_TXN Reports</h5>
-
-                                    </CCardHeader>
+                                
 
                                     <CCardBody>
 
@@ -244,14 +220,7 @@ const data5 = [
 
                                 <CTabPane data-tab="Productivity">
 
-                                    <br />
-
-                                    <CCardHeader id="headingTwo">
-
-                                        <h5 className="m-0 p-0">Productivity Reports</h5>
-
-                                    </CCardHeader>
-
+                                    
                                     <CCardBody>
 
                                          <MUIDataTable data={data2} columns={columns2} options={options} />
@@ -263,14 +232,6 @@ const data5 = [
 
                                 <CTabPane data-tab="Rejection">
 
-                                    <br />
-
-                                    <CCardHeader id="headingThree">
-
-                                        <h5 className="m-0 p-0">Rejection Reports</h5>
-
-                                    </CCardHeader>
-
                                     <CCardBody>
 
                                         <MUIDataTable data={data3} columns={columns3} options={options} />
@@ -278,37 +239,9 @@ const data5 = [
 
                                 </CTabPane>
 
-                                <CTabPane data-tab="Total_TXN">
+ 
 
-                                    <br />
-
-                                    <CCardHeader id="headingOne">
-
-                                        <h5 className="m-0 p-0">Total_TXN Reports</h5>
-
-                                    </CCardHeader>
-                                    <CCardBody>
-                                        
-                                         <MUIDataTable data={data4} columns={columns4} options={options} />
-                                    </CCardBody>
-
-                                </CTabPane>
-
-                                <CTabPane data-tab="Status">
-
-                                    <br />
-
-                                    <CCardHeader id="headingOne">
-
-                                        <h5 className="m-0 p-0">Status Reports</h5>
-
-                                    </CCardHeader>
-                                    <CCardBody>
-                                        <MUIDataTable data={data5} columns={columns5} options={options} />
-                                        
-                                    </CCardBody>
-
-                                </CTabPane>
+                                
 
                             </CTabContent>
 
