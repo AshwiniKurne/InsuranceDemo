@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import Message from './Message';
 import Progress from './Progress';
 import axios from 'axios';
@@ -27,6 +27,19 @@ const FileUpload = () => {
     setFileSize(e.target.files[0].size);
   };
 
+  useEffect(() => {
+    var tableD = document.getElementById("docTable");
+      console.log("Row Len:: "+ tableD.rows.length);
+      if(tableD.rows.length >2) {
+          // alert("Greater than 2");
+          document.getElementById("noDocs").style.display="none";
+          document.getElementById("docsAvail").style.display="";
+      }else {
+        // alert("Less than 2");
+          document.getElementById("noDocs").style.display="";
+          document.getElementById("docsAvail").style.display="none";
+      }
+  });
 
   
 
@@ -69,7 +82,10 @@ const FileUpload = () => {
       
       // console.log("data "+data);
       var tableD = document.getElementById("docTable");
-      alert("Row Len:: "+ tableD.rows.length);
+      // alert("Row Len:: "+ tableD.rows.length);
+
+
+
       var rowLen = tableD.rows.length;
       var row = document.createElement('tr');
       console.log("ash2");
@@ -136,15 +152,45 @@ const FileUpload = () => {
       
       
       <br />
-      <table style={{width:'100%'}}>
+      <div id="noDocs">
+          
+          <form onSubmit={onSubmit} style={{display:'flex', verticalAlign:'basline'}}>
+                    
+                    <div className='custom-file mb-4'>
+                      <input
+                        type='file'
+                        className='custom-file-input'
+                        id='customFile'
+                        onChange={onChange}
+                      />
+                      <label className='custom-file-label' htmlFor='customFile'>
+                        {filename}
+                      </label>
+                      
+                    </div>
+                    &nbsp;&nbsp;
+                    {/* <Progress percentage={uploadPercentage} /> */}
+                    <input
+                      type='submit'
+                      value='Upload'
+                      className='btn btn-primary btn-block mt-4'
+                    />
+                    
+                </form>
+      </div>
+
+      <div id="docsAvail">
+          
+          <table style={{width:'100%'}}>
           <tr>
-                <td style={{width:'50%',height:'500px'}}>
+                <td style={{width:'50%',height:'500px'}} id="viewerId">
                   <iframe id="viewDoc" style={{width:'100%',height:'500px'}}></iframe>
                 </td>
                 <td class="valign" style={{width:'50%'}}>
                 {message ? <Message msg={message} /> : null}
                   <br/>
                   <form onSubmit={onSubmit} style={{display:'flex', verticalAlign:'basline'}}>
+                    
                     <div className='custom-file mb-4'>
                       <input
                         type='file'
@@ -184,6 +230,10 @@ const FileUpload = () => {
                 </td>
             </tr>
         </table>
+      </div>
+
+
+      
       
 
       
