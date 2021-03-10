@@ -82,7 +82,7 @@ const FileUpload = () => {
       
       // console.log("data "+data);
       var tableD = document.getElementById("docTable");
-      alert("Row Len:: "+ tableD.rows.length);
+      // alert("Row Len:: "+ tableD.rows.length);
 
 
 
