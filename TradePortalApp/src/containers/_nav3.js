@@ -27,12 +27,24 @@ const _nav =  [
     _children: ['Components']
   },
   
-  
   {
-    _tag: 'CSidebarNavItem',
+    _tag: 'CSidebarNavDropdown',
     name: 'Reports',
-    to: '/charts',
-    icon: 'cil-chart-pie'
+    route: '/reports',
+    icon: 'cil-puzzle',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'MIS View',
+        to: '/charts/MISCharts',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Charts View',
+        to: '/charts',
+        icon: 'cil-chart-pie'
+      }
+    ],
   },
   
   {

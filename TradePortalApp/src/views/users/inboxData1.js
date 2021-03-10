@@ -12,7 +12,7 @@ const inboxData1 = [
         "Currency": "USD",
         "Amount": "72552",
         "Party Name": "Sam Mathews",
-        "Bill Ref No": "24631245",
+        "Bank Ref No": "24631245",
         "Ref No": "92991265",
         "Date Time": "10:30 AM",
         "Status" : 'Active'
@@ -28,7 +28,7 @@ const inboxData1 = [
         "Currency": "USD",
         "Amount": "54210",
         "Party Name": "John Almaida",
-        "Bill Ref No": "79774987",
+        "Bank Ref No": "79774987",
         "Ref No": "21551965",
         "Date Time": "10:04 AM",
         "Status" : 'Active'
@@ -43,7 +43,7 @@ const inboxData1 = [
         "Currency": "USD",
         "Amount": "46541",
         "Party Name": "Dwyane Rushhill",
-        "Bill Ref No": "36991879",
+        "Bank Ref No": "36991879",
         "Ref No": "25355519",
         "Date Time": "2:30 PM",
         "Status" : 'Active'
@@ -58,7 +58,7 @@ const inboxData1 = [
         "Currency": "USD",
         "Amount": "85085",
         "Party Name": "Jaffery Dsouza",
-        "Bill Ref No": "57612625",
+        "Bank Ref No": "57612625",
         "Ref No": "91921721",
         "Date Time": "2:12 PM",
         "Status" : 'Active'
@@ -73,7 +73,7 @@ const inboxData1 = [
         "Currency": "USD",
         "Amount": "84606",
         "Party Name": "Jaffin Mahen",
-        "Bill Ref No": "53385560",
+        "Bank Ref No": "53385560",
         "Ref No": "29430238",
         "Date Time": "11:54 AM",
         "Status" : 'Active'
@@ -88,7 +88,7 @@ const inboxData1 = [
         "Currency": "USD",
         "Amount": "59620",
         "Party Name": "Ken Dcosta",
-        "Bill Ref No": "41044359",
+        "Bank Ref No": "41044359",
         "Ref No": "78773170",
         "Date Time": "4:21 PM",
         "Status" : 'Active'
@@ -103,7 +103,7 @@ const inboxData1 = [
         "Currency": "USD",
         "Amount": "33282",
         "Party Name": "Ashwini Kurne",
-        "Bill Ref No": "55159543",
+        "Bank Ref No": "55159543",
         "Ref No": "52838775",
         "Date Time": "6:10 PM",
         "Status" : 'Active'
@@ -118,7 +118,7 @@ const inboxData1 = [
         "Currency": "USD",
         "Amount": "23962",
         "Party Name": "Aparna Pandey",
-        "Bill Ref No": "43147308",
+        "Bank Ref No": "43147308",
         "Ref No": "49442826",
         "Date Time": "1:45 PM",
         "Status" : 'Active'
@@ -133,7 +133,7 @@ const inboxData1 = [
         "Currency": "USD",
         "Amount": "65139",
         "Party Name": "Sanchay Gupta",
-        "Bill Ref No": "23901250",
+        "Bank Ref No": "23901250",
         "Ref No": "96064947",
         "Date Time": "5:17 PM",
         "Status" : 'Active'

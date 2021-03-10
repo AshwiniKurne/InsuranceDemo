@@ -21,7 +21,7 @@ const getBadge = Status => {
     default: return 'primary'
   }
 }
-const fields = ['Txn_No','Product', 'Sub-Product', 'Operation', 'Currency', 'Amount', 'Party Name', 'Bill Ref No', 'Ref No', 'Date Time','Status']
+const fields = ['Txn_No','Product', 'Sub-Product', 'Operation', 'Currency', 'Amount', 'Party Name', 'Bank Ref No', 'Ref No', 'Date Time','Status']
 
 const WidgetsDropdown = lazy(() => import('../widgets/WidgetsDropdown.js'))
 
