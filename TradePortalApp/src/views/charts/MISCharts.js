@@ -176,7 +176,7 @@ const data5 = [
 
                                     <CNavLink data-tab="TF_TXN">
 
-                                        TF_TXN Reports
+                                        Transactional Report
 
                                      </CNavLink>
 
@@ -185,7 +185,7 @@ const data5 = [
                                 <CNavItem>
 
                                     <CNavLink data-tab="Productivity">
-                                        Productivity Reports
+                                        Productivity Report
                                     </CNavLink>
 
                                 </CNavItem>
@@ -193,22 +193,12 @@ const data5 = [
 
                                     <CNavLink data-tab="Rejection">
 
-                                      Rejection Reports
+                                      Rejection Report
 
                                      </CNavLink>
 
                                 </CNavItem>
-                                <CNavItem>
-
-                                    <CNavLink data-tab="Total_TXN">
-
-                                        Total_TXN Reports
-
-                                    </CNavLink>
-
-                                </CNavItem>
-                                 
-                                
+ 
 
                             </CNav>
 
@@ -249,13 +239,7 @@ const data5 = [
 
                                 </CTabPane>
 
-                                <CTabPane data-tab="Total_TXN">
-                                    <CCardBody>
-                                        
-                                         <MUIDataTable data={data4} columns={columns4} options={options} />
-                                    </CCardBody>
-
-                                </CTabPane>
+ 
 
                                 
 
