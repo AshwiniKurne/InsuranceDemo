@@ -329,11 +329,7 @@ export default class test2 extends Component {
             responsive: 'stacked',
             selectableRows: false,
         
-            customToolbar: () => {
-                return (
-                  <CustomToolbar />
-                );
-              }
+           
         };
 
         let inboxData =[];
