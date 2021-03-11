@@ -205,28 +205,21 @@ const data5 = [
                             <CTabContent>
 
                                 <CTabPane data-tab="TF_TXN">
-                                
 
                                     <CCardBody>
 
                                     <MUIDataTable data={data1} columns={columns1} options={options} />
-
                                         
                                     </CCardBody>
-
-
 
                                 </CTabPane>
 
                                 <CTabPane data-tab="Productivity">
-
                                     
                                     <CCardBody>
 
                                          <MUIDataTable data={data2} columns={columns2} options={options} />
                                     </CCardBody>
-
-
 
                                 </CTabPane>
 
@@ -238,10 +231,6 @@ const data5 = [
                                     </CCardBody>
 
                                 </CTabPane>
-
- 
-
-                                
 
                             </CTabContent>
 

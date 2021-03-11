@@ -106,8 +106,6 @@ const Collapses = () => {
 
     }
 
-
-
     return (
 
         <>
@@ -203,47 +201,6 @@ const Collapses = () => {
                                                 </CFormGroup>
 
                                             </CCol>
-
-                                            <CCol xs="4">
-
-                                                <CFormGroup>
-
-                                                    <CLabel htmlFor="company">Product</CLabel>
-
-                                                    <CInput id="company" placeholder="Enter your Product Name" value="LC" disabled/>
-
-                                                </CFormGroup>
-
-                                            </CCol>
-
-                                            <CCol xs="4">
-
-                                                <CFormGroup>
-
-                                                    <CLabel htmlFor="company">Sub Product</CLabel>
-
-                                                    <CInput id="company" placeholder="Enter your Sub Product Name" value="Lodgement" disabled />
-
-                                                </CFormGroup>
-
-                                            </CCol>
-
-                                        </CFormGroup>
-
-                                        <CFormGroup row className="my-0">
-
-                                            <CCol xs="4">
-
-                                                <CFormGroup>
-
-                                                    <CLabel htmlFor="company">Operation</CLabel>
-
-                                                    <CInput id="company" placeholder="Enter your Operation name" value="Issuance" disabled/>
-
-                                                </CFormGroup>
-
-                                            </CCol>
-
                                             <CCol xs="4">
 
                                                 <CFormGroup>
@@ -267,8 +224,10 @@ const Collapses = () => {
                                                 </CFormGroup>
 
                                             </CCol>
-
+                                            
                                         </CFormGroup>
+
+
 
                                         <CFormGroup row className="my-0">
 
@@ -302,7 +261,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Account No</CLabel>
 
-                                                    <CSelect id="select"  >
+                                                    <CSelect id="select" >
 
                                                         <option value="0" >Please select Account Number</option>
 
@@ -313,7 +272,8 @@ const Collapses = () => {
                                                         <option value="3">6757658658279</option>
 
                                                     </CSelect>
-
+                                                    
+                                                    
                                                 </CFormGroup>
 
                                             </CCol>
@@ -399,7 +359,7 @@ const Collapses = () => {
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">Bill Ref No.</CLabel>
+                                                    <CLabel htmlFor="company">Bank Ref No.</CLabel>
 
                                                     <CInput id="company" placeholder="Enter your Bill Ref No." disabled/>
 
@@ -423,22 +383,6 @@ const Collapses = () => {
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">Ref No.</CLabel>
-
-                                                    <CInput id="company" placeholder="Enter your Ref No." value="3487534" disabled/>
-
-                                                </CFormGroup>
-
-                                            </CCol>
-
-                                        </CFormGroup>
-
-                                        <CFormGroup row className="my-0">
-
-                                            <CCol xs="4">
-
-                                                <CFormGroup>
-
                                                     <CLabel htmlFor="company">Limit ID</CLabel>
 
                                                     <CInput id="company" placeholder="Enter your Limit ID" />
@@ -446,6 +390,11 @@ const Collapses = () => {
                                                 </CFormGroup>
 
                                             </CCol>
+                                        </CFormGroup>
+
+                                        <CFormGroup row className="my-0">
+
+                                            
 
                                             <CCol xs="4">
 
@@ -471,10 +420,6 @@ const Collapses = () => {
 
                                             </CCol>
 
-                                        </CFormGroup>
-
-                                        <CFormGroup row className="my-0">
-
                                             <CCol xs="4">
 
                                                 <CFormGroup>
@@ -485,13 +430,8 @@ const Collapses = () => {
 
                                                 </CFormGroup>
 
-                                            </CCol>
-
-
-
+                                                </CCol>
                                         </CFormGroup>
-
-
 
                                     </CCardBody>
 
