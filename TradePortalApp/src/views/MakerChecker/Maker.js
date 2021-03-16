@@ -52,7 +52,9 @@ const Collapses = () => {
 
     const [fade, setFade] = useState(true)
 
-
+    const[value1,setValue] =useState()
+	
+	const[value2,setValue2] =useState()
 
     const toggle = (e) => {
 
@@ -62,7 +64,29 @@ const Collapses = () => {
 
     }
 
+    const handleChange =(e) =>{
+		
+		console.log("on change value ",e.target.value);
+        var val =e.target.value;
 
+        if(val ==0){
+            console.log("inside if 0");
+            setValue2('');
+        }else if(val ==1){
+            console.log("inside if 1");
+            setValue2('27AABCU9603R1ZN');
+
+        }else if(val ==2){
+            console.log("inside if 2");
+            setValue2('17AARCU9453W1ZN');
+
+        }else{
+            console.log("inside if 3");
+            setValue2('24AKBER9343Y1KL');
+
+        }
+
+	}
 
     const toggleMulti = (type) => {
 
@@ -261,7 +285,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Account No</CLabel>
 
-                                                    <CSelect id="select" >
+                                                    <CSelect id="select"  onChange={handleChange} >
 
                                                         <option value="0" >Please select Account Number</option>
 
@@ -288,7 +312,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">GST No</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your GST No" disabled/>
+                                                    <CInput id="company" placeholder="Enter your GST No" value ={value2} disabled/>
 
                                                 </CFormGroup>
 

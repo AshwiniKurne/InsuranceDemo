@@ -43,6 +43,8 @@ export default class test2 extends Component {
     console.log(user);
     console.log(user.user.name);
     this.setData(user.user.name);
+
+    document.getElementById("CustSearch").style.display="none";
   }
   
   setData = (e) =>{
@@ -54,7 +56,10 @@ export default class test2 extends Component {
   }
   
   
-  
+   search(){
+    console.log("inside search"); 
+    document.getElementById("CustSearch").style.display="";
+	}
 
     render() {
         let columns=[];
@@ -226,7 +231,7 @@ export default class test2 extends Component {
     <CCol xs="4">
 
         <CFormGroup>
-            <CButton color="primary" className="px-4">Search</CButton>
+            <CButton color="primary" className="px-4" onClick={this.search.bind(this)}>Search</CButton>
         </CFormGroup>
 
     </CCol>
@@ -236,12 +241,14 @@ export default class test2 extends Component {
 </CCardBody>
 
 
-
-                            <CCardHeader>
-                                Customer Search
-                            </CCardHeader>
-                            <div class="tabCheck">
+                            <div id="CustSearch">
+                            &nbsp;&nbsp; &nbsp;&nbsp;<CLabel >
+                           <h5 className="m-0 p-0"> Customer Search Result</h5>
+                               
+                            </CLabel>
+                            
                                 <MUIDataTable data={inboxData} columns={columns} options={options} />
+                            
                             </div>
                         </CCard>
                     </CCol>
