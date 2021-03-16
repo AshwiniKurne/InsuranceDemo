@@ -35,6 +35,14 @@ const _nav =  [
   },
   
   {
+    _tag: 'CSidebarNavItem',
+    name: 'Customer Search',
+    to: '/CustomerSearch',
+    icon: <CIcon name="cil-envelope-open" customClasses="c-sidebar-nav-icon"/>
+    
+  },
+
+  {
     _tag: 'CSidebarNavDropdown',
     name: 'Reports',
     route: '/reports',
