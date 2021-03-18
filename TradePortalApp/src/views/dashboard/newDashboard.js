@@ -70,7 +70,6 @@ render(){
               hover
               striped
               bordered
-              sorter
               size="sm"
               itemsPerPage={7}
               pagination

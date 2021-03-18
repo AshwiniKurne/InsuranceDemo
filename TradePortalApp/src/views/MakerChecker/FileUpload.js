@@ -101,7 +101,7 @@ const FileUpload = () => {
           console.log("file path ", path);
           
           var button = document.createElement("button");
-          button.innerHTML = "View";
+          button.innerHTML = '<i class="fa fa-close"></i>';
           button.onclick = function(){
             document.getElementById('viewDoc').src = path;
           };
@@ -156,7 +156,7 @@ const FileUpload = () => {
           
           <form onSubmit={onSubmit} style={{display:'flex', verticalAlign:'basline'}}>
                     
-                    <div className='custom-file mb-4'>
+                    <div className='custom-file mb-4' style={{width:'31%'}}>
                       <input
                         type='file'
                         className='custom-file-input'
@@ -170,12 +170,13 @@ const FileUpload = () => {
                     </div>
                     &nbsp;&nbsp;
                     {/* <Progress percentage={uploadPercentage} /> */}
+                    <div className='custom-file-a mb-4' style={{width:'55%'}}>
                     <input
                       type='submit'
                       value='Upload'
                       className='btn btn-primary btn-block mt-4'
                     />
-                    
+                    </div>
                 </form>
       </div>
 
@@ -204,7 +205,7 @@ const FileUpload = () => {
                       
                     </div>
                     &nbsp;&nbsp;
-                    {/* <Progress percentage={uploadPercentage} /> */}
+                    
                     <input
                       type='submit'
                       value='Upload'
