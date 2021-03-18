@@ -222,7 +222,7 @@ table {
     display: table-cell;
     padding: 7px !important;
     font-size: 0.875rem;
-    text-align: center !important;
+    text-align: left !important;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 200 !important;
     line-height: 1.43;
@@ -281,4 +281,15 @@ table {
     height: calc(1.5em + 0.75rem + 2px);
     margin-bottom: 0;
     bottom: -7px !important;
+}
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+    padding: 2px;
+}
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    color: white;
+    background-color: #718a64;
 }
