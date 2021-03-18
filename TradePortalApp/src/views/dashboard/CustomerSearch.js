@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import inboxData from '../users/inboxData';
 import rejData from '../users/rejData';
 import { Link } from 'react-router-dom';
+import CIcon from '@coreui/icons-react'
 import {
     CCard,
     CCardBody,
@@ -239,7 +240,8 @@ export default class test2 extends Component {
     <CCol xs="4">
 
         <CFormGroup>
-            <CButton color="primary" className="px-4" onClick={this.search.bind(this)}>Search</CButton>
+            <CButton color="info" className="px-4" onClick={this.search.bind(this)}>
+            <CIcon name="cid-search" />&nbsp;Search</CButton>
         </CFormGroup>
 
     </CCol>

@@ -749,10 +749,10 @@ const Collapses = () => {
 
                     <Link to="/dashboard">
 
-                    <CButton color="primary" className="px-4"><CIcon name="cil-check" />&nbsp;Save</CButton> &nbsp;
-                        <CButton color="primary" className="px-4"><CIcon name="cil-x" />&nbsp;Close</CButton>&nbsp;
-                        <CButton color="primary" className="px-4"><CIcon name="cil-x" />&nbsp;Trash</CButton>&nbsp;
-                        <CButton color="primary" className="px-4"><CIcon name="cil-cursor" />&nbsp;Submit</CButton>
+                    <CButton color="info" className="px-4"><CIcon name="cil-save" />&nbsp;Save</CButton> &nbsp;
+                        <CButton color="dark" className="px-4"><CIcon name="cil-x" />&nbsp;Close</CButton>&nbsp;
+                        <CButton color="danger" className="px-4"><CIcon name="cil-trash" />&nbsp;Trash</CButton>&nbsp;
+                        <CButton color="success" className="px-4"><CIcon name="cil-cursor" />&nbsp;Submit</CButton>
 
                     </Link>
 

@@ -75,7 +75,7 @@ const LaunchCase = () => {
                                     <CRow>
               <CCol xs="6">
                                             
-				<CButton color="primary" onClick={toggle} className="px-4"><CIcon name="cil-cursor" />&nbsp;Launch Case</CButton>
+				<CButton color="success" onClick={toggle} className="px-4"><CIcon name="cil-cursor" />&nbsp;Launch Case</CButton>
 				<CModal show={modal} onClose={toggle}>
 					 <CModalBody>Case created successfully with Ref no. 1234567
 					 </CModalBody>
