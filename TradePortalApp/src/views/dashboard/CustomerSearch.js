@@ -65,10 +65,7 @@ export default class test2 extends Component {
         let columns=[];
         columns = [
 
-            {
-                name: "CustomerPortalRefNo",
-                label: "Ref No"
-            },
+           
 			{
                 name: "BDProduct",
                 label: "Product"
@@ -89,17 +86,27 @@ export default class test2 extends Component {
                 name: "BDAmount",
                 label: "Amount"
             },
-            {
-                name: "BDAccountNo",
-                label: "Account No"
-            },
-            
-            
-            {
+			{
                 name: "BenfName",
                 label: "Beneficiary Name"
             },
+			{
+                name: "BankRefNo",
+                label: "Bank Ref No"
+            },
+			{
+                name: "CustomerPortalRefNo",
+                label: "Ref No"
+            },
+            {
+                name: "TxnNo",
+                label: "Txn No"
+            },
             
+            {
+                name: "CurrentStatus",
+                label: "Current Status"
+            },
            
             {
                 name: "EntryTime",
@@ -137,11 +144,12 @@ export default class test2 extends Component {
 
         let inboxData =[];
  inboxData = [
-    [ "92991265","LC","Lodgement","Issuance","USD","53992","39014177160","Sam Mathews","07-03-2021 10:30 AM"],
-    ["21551965","LC","Lodgement","Issuance","USD","19103","15494862853","John Almaida","11-03-2021 10:04 AM"],
-    ["25355519","LC","Lodgement","Issuance","USD","48544","61991875450","Dwyane Rushhill","09-03-2021 2:30 PM"],
-    ["91921721","LC","Lodgement","Issuance","USD","21525","37934808227","Jaffery Dsouza","11-03-2021 2:12 PM"],
-    ["29430238","LC","Lodgement","Issuance","USD","12047","28033677916","Jaffin Mahen","02-03-2021 11:54 AM"]
+    [ "LC","Lodgement","Issuance","USD","53992","Sam Mathews","4623857","92991265","39014177160","Active","07-03-2021 10:30 AM"],
+	[ "LC","Lodgement","Issuance","USD","19103","John Almaida","1278965","21551965","15494862853","Active","11-03-2021 10:04 AM"],
+	[ "LC","Lodgement","Issuance","USD","48544","Dwyane Rushhill","6785436","25355519","61991875450","Active","09-03-2021 2:30 PM"],
+   [ "LC","Lodgement","Issuance","USD","21525","Jaffery Dsouza","9453621","91921721","37934808227","Active","11-03-2021 2:12 PM"],
+   [ "LC","Lodgement","Issuance","USD","21525","Jaffin Mahen","9075445","29430238","28033677916","Active","02-03-2021 11:54 AM"],
+  
  ]  
  
 

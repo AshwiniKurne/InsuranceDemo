@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import {
     CAlert,
     CButton,
-
+    
     CCard,
 
     CCardBody,
@@ -38,10 +38,9 @@ import {
 
 } from '@coreui/react';
 
-
+import CIcon from '@coreui/icons-react'
 
 const Collapses = () => {
-
 
 
     const [collapse, setCollapse] = useState(false)
@@ -750,10 +749,10 @@ const Collapses = () => {
 
                     <Link to="/dashboard">
 
-                        <CButton color="primary" className="px-4">Save</CButton> &nbsp;
-                        <CButton color="primary" className="px-4">Close</CButton>&nbsp;
-                        <CButton color="primary" className="px-4">Trash</CButton>&nbsp;
-                        <CButton color="primary" className="px-4">Submit</CButton>
+                    <CButton color="primary" className="px-4"><CIcon name="cil-check" />&nbsp;Save</CButton> &nbsp;
+                        <CButton color="primary" className="px-4"><CIcon name="cil-x" />&nbsp;Close</CButton>&nbsp;
+                        <CButton color="primary" className="px-4"><CIcon name="cil-x" />&nbsp;Trash</CButton>&nbsp;
+                        <CButton color="primary" className="px-4"><CIcon name="cil-cursor" />&nbsp;Submit</CButton>
 
                     </Link>
 

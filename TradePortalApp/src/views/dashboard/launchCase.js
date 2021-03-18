@@ -12,7 +12,7 @@ import {
 } from '@coreui/react';
 import FileUpload from '../MakerChecker/FileUpload';
 import { Link } from 'react-router-dom';
-
+import CIcon from '@coreui/icons-react'
 const LaunchCase = () => {
 	const [modal, setModal] = useState(false);
 
@@ -75,7 +75,7 @@ const LaunchCase = () => {
                                     <CRow>
               <CCol xs="6">
                                             
-				<CButton color="primary" onClick={toggle} className="px-4">Launch Case</CButton>
+				<CButton color="primary" onClick={toggle} className="px-4"><CIcon name="cil-cursor" />&nbsp;Launch Case</CButton>
 				<CModal show={modal} onClose={toggle}>
 					 <CModalBody>Case created successfully with Ref no. 1234567
 					 </CModalBody>

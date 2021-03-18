@@ -101,7 +101,7 @@ const FileUpload = () => {
           console.log("file path ", path);
           
           var button = document.createElement("button");
-          button.innerHTML = '<i class="fa fa-close"></i>';
+          button.innerHTML = "<i class='fa fa-close'></i>";
           button.onclick = function(){
             document.getElementById('viewDoc').src = path;
           };
