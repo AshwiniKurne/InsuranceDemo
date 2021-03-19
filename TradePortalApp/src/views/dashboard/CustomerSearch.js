@@ -232,7 +232,6 @@ export default class test2 extends Component {
     </CCol>
 
 </CFormGroup>
-
 </CCardBody>
 
 
