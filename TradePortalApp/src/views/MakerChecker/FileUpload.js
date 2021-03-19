@@ -103,12 +103,19 @@ const FileUpload = () => {
           
           var button = document.createElement("button");
           //button.innerHTML = '<FontAwesomeIcon icon={faHome} />';
-          button.innerHTML = "&#128065;"
+          button.innerHTML = "&#128065; "
           button.className ='btn';
           button.onclick = function(){
             document.getElementById('viewDoc').src = path;
           };
+          var button1 = document.createElement('button');
+      // set the attributes.
+      
+      //button.setAttribute('type', 'button');
+      button1.innerHTML = "&#10060;";
+      button1.className ='btn';
           td.appendChild(button); 
+          td.appendChild(button1); 
           row.appendChild(td);
 
         } else {
@@ -117,24 +124,24 @@ const FileUpload = () => {
         }
 
       }
-      var td = document.createElement('td');
 
+     
       // var button = document.createElement("button");
 
       // add a button control.
-      var button1 = document.createElement('button');
+      //var button1 = document.createElement('button');
       // set the attributes.
       
       //button.setAttribute('type', 'button');
-      button1.innerHTML = "&#10060;";
-      button1.className ='btn';
+      // button1.innerHTML = "&#10060;";
+      // button1.className ='btn';
       //button.setAttribute('value', '&#10060;');
       
       // button.id= rowLen;
       // button.onclick = function(){
       //   alert('Delete Called', this.id);
       // };
-       td.appendChild(button1); 
+       //td.appendChild(button1); 
       row.appendChild(td);
        console.log("ash4");
        tableD.appendChild(row);
@@ -188,7 +195,7 @@ const FileUpload = () => {
 
       <div id="docsAvail">
           
-          <table style={{width:'100%'}}>
+          <table id="docTable1" style={{width:'100%'}}>
           <tr>
                 <td style={{width:'50%',height:'500px'}} id="viewerId">
                   <iframe id="viewDoc" style={{width:'100%',height:'500px'}}></iframe>
@@ -226,8 +233,8 @@ const FileUpload = () => {
                         <th className='table-header'>File Name</th>
                         <th className='table-header'>File Type</th>
                         <th className='table-header'>File Size</th>
-                        <th className='table-header'>View</th>
-                        <th className='table-header'>Delete</th>
+                        <th className='table-header'>Action</th>
+                       
                       </tr>
                     </thead>
                     <tbody>

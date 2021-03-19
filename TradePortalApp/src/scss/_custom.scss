@@ -301,3 +301,10 @@ table {
 .marginCheck {
     margin-top: 22px;
 }
+#docTable1,#docTable{
+    border-collapse :inherit !important;
+    
+}
+#docTable{
+border: 1px solid black;
+}
