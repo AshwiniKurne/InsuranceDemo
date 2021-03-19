@@ -3,8 +3,9 @@ import Message from './Message';
 import Progress from './Progress';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-
-
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import CIcon from '@coreui/icons-react'
 
 const FileUpload = () => {
 
@@ -101,7 +102,9 @@ const FileUpload = () => {
           console.log("file path ", path);
           
           var button = document.createElement("button");
-          button.innerHTML = "<i class='fa fa-close'></i>";
+          //button.innerHTML = '<FontAwesomeIcon icon={faHome} />';
+          button.innerHTML = "&#128065;"
+          button.className ='btn';
           button.onclick = function(){
             document.getElementById('viewDoc').src = path;
           };
@@ -119,20 +122,23 @@ const FileUpload = () => {
       // var button = document.createElement("button");
 
       // add a button control.
-      var button = document.createElement('input');
+      var button1 = document.createElement('button');
       // set the attributes.
-      button.setAttribute('type', 'button');
-      button.setAttribute('value', 'Remove');
       
-      button.id= rowLen;
-      button.onclick = function(){
-        alert('Delete Called', this.id);
-      };
-      td.appendChild(button); 
+      //button.setAttribute('type', 'button');
+      button1.innerHTML = "&#10060;";
+      button1.className ='btn';
+      //button.setAttribute('value', '&#10060;');
+      
+      // button.id= rowLen;
+      // button.onclick = function(){
+      //   alert('Delete Called', this.id);
+      // };
+       td.appendChild(button1); 
       row.appendChild(td);
-      console.log("ash4");
-      tableD.appendChild(row);
-      console.log("after append");
+       console.log("ash4");
+       tableD.appendChild(row);
+       console.log("after append");
 
     } catch (err) {
       /*  if (err.response.status === 500) {
