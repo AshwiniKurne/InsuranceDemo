@@ -237,13 +237,13 @@ export default class test2 extends Component {
 
     </CCol>
 
-    <CCol xs="4">
-
-        <CFormGroup>
-            <CButton color="info" className="px-4" onClick={this.search.bind(this)}>
-            <CIcon name="cid-search" />&nbsp;Search</CButton>
-        </CFormGroup>
-
+    <CCol xs="4" style={{marginTop:'22px'}}>
+        
+            <CFormGroup>
+                <CButton color="info" className="px-4" onClick={this.search.bind(this)}>
+                <CIcon name="cid-search" />&nbsp;Search</CButton>
+            </CFormGroup>
+        
     </CCol>
 
 </CFormGroup>
