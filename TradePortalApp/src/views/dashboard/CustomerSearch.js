@@ -113,22 +113,6 @@ export default class test2 extends Component {
                 name: "EntryTime",
                 label: "Entry Date Time"
             },
-            {
-                name: "Action",
-                options: {
-                    filter: false,
-                    sort: false,
-
-                    customBodyRender: (value, tableMeta, updateValue) => {
-                        const { data } = this.state;
-                        let rowData = data[tableMeta.rowIndex];
-
-                        return (
-                          <Link to='/MakerChecker/Maker' ><PlayArrowIcon /></Link>
-                        );
-                    }
-                }
-            },
 
         ]
 
@@ -145,11 +129,11 @@ export default class test2 extends Component {
 
         let inboxData =[];
  inboxData = [
-    [ "LC","Lodgement","Issuance","USD","53992","Sam Mathews","4623857","92991265","39014177160","Active","07-03-2021 10:30 AM"],
-	[ "LC","Lodgement","Issuance","USD","19103","John Almaida","1278965","21551965","15494862853","Active","11-03-2021 10:04 AM"],
-	[ "LC","Lodgement","Issuance","USD","48544","Dwyane Rushhill","6785436","25355519","61991875450","Active","09-03-2021 2:30 PM"],
+    [ "LC","Lodgement","Issuance","USD","53992","Sam Mathews","4623857","92991265","39014177160","Active","7-03-2021 10:30 AM"],
+	[ "LC","Lodgement","Issuance","USD","19103","John Almaida","1278965","21551965","15494862853","Active","11-03-2021 7:04 AM"],
+	[ "LC","Lodgement","Issuance","USD","48544","Dwyane Rushhill","6785436","25355519","61991875450","Active","9-03-2021 2:30 PM"],
    [ "LC","Lodgement","Issuance","USD","21525","Jaffery Dsouza","9453621","91921721","37934808227","Active","11-03-2021 2:12 PM"],
-   [ "LC","Lodgement","Issuance","USD","21525","Jaffin Mahen","9075445","29430238","28033677916","Active","02-03-2021 11:54 AM"],
+   [ "LC","Lodgement","Issuance","USD","21525","Jaffin Mahen","9075445","29430238","28033677916","Active","2-03-2021 11:54 AM"],
   
  ]  
  
@@ -240,8 +224,9 @@ export default class test2 extends Component {
     <CCol xs="4" style={{marginTop:'22px'}}>
         
             <CFormGroup>
-                <CButton color="info" className="px-4" onClick={this.search.bind(this)}>
-                <CIcon name="cid-search" />&nbsp;Search</CButton>
+                <CButton color="warning" className="px-4" onClick={this.search.bind(this)}>
+                Search</CButton>
+
             </CFormGroup>
         
     </CCol>
