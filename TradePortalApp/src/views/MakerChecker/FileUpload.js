@@ -7,6 +7,7 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CIcon from '@coreui/icons-react'
 import {CButton,CCardFooter} from '@coreui/react';
+import e from 'cors';
 const FileUpload = () => {
 
   
@@ -41,7 +42,7 @@ const FileUpload = () => {
           document.getElementById("docsAvail").style.display="none";
       }
   });
-
+ 
   
 
   const onSubmit = async e => {
@@ -110,10 +111,16 @@ const FileUpload = () => {
           };
           var button1 = document.createElement('button');
       // set the attributes.
-      
+      var btnName = "button"+rowLen;
+      alert("butttton "+btnName);
       //button.setAttribute('type', 'button');
       button1.innerHTML = "&#10060;";
       button1.className ='btn';
+      button1.onclick = function(){
+         alert('Delete Called' +btnName);
+         removeRow(btnName); 
+
+        };
           td.appendChild(button); 
           td.appendChild(button1); 
           row.appendChild(td);
@@ -125,27 +132,11 @@ const FileUpload = () => {
 
       }
 
-     
-      // var button = document.createElement("button");
-
-      // add a button control.
-      //var button1 = document.createElement('button');
-      // set the attributes.
-      
-      //button.setAttribute('type', 'button');
-      // button1.innerHTML = "&#10060;";
-      // button1.className ='btn';
-      //button.setAttribute('value', '&#10060;');
-      
-      // button.id= rowLen;
-      // button.onclick = function(){
-      //   alert('Delete Called', this.id);
-      // };
-       //td.appendChild(button1); 
       row.appendChild(td);
        console.log("ash4");
        tableD.appendChild(row);
        console.log("after append");
+       
 
     } catch (err) {
       /*  if (err.response.status === 500) {
@@ -157,8 +148,52 @@ const FileUpload = () => {
 
     }
   };
+  const removeRow= btnName =>{
+    alert("value of btnname "+btnName);
+    var table2 = document.getElementById("docTable");
+     console.log(table2);
+     var rowCount = table2.rows.length;  
+      console.log("ash1 "+rowCount);
+     // for (var i = 0; i < rowCount; i++) {  
+               var row = table2.rows[2];  
+                console.log(row);
+                 var rowObj = row.cells[0].childNodes[0]; 
+                 console.log("rowObj");
+                 console.log(rowObj);
+              //  if (rowObj.name == btnName) { 
+              //    alert("insode obj") ;
+              //       table2.deleteRow(i);  
+              //       rowCount--;  
+              //   }  
+       //}  
+          
+         
+  }
   
   
+  // function removeRow(btnName){
+  //   alert("value of btnname "+btnName);
+  //   try {  
+  //     var table2 = document.getElementById("docTable");
+  //     console.dir(table2);
+  //     var rowCount = table2.rows.length;  
+  //     alert("ash1 "+rowCount);
+  //     for (var i = 0; i < rowCount; i++) {  
+  //         var row = table2.rows[i];  
+  //         console.dir(row);
+  //         var rowObj = row.cells[0].childNodes[0];  
+  //         if (rowObj.name == btnName) { 
+  //           alert("insode obj") ;
+  //             table2.deleteRow(i);  
+  //             rowCount--;  
+  //         }  
+  //     }  
+  // } catch (e) {  
+  //     alert(e);  
+  // }  
+  // }
+
+
 
   return (
     <Fragment>
