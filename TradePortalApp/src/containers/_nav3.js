@@ -21,12 +21,37 @@ const _nav =  [
     icon: <CIcon name="cil-envelope-open" customClasses="c-sidebar-nav-icon"/>
     
   },
-  
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Trash Cases',
+    to: '/trashedCases',
+    // icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>
+    icon: <CIcon name="cil-trash" customClasses="c-sidebar-nav-icon"/>
+    
+  },
   {
     _tag: 'CSidebarNavTitle',
     _children: ['Components']
   },
-  
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: 'UMS',
+    route: '/reports',
+    icon: 'cil-puzzle',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Add User',
+        to: '/addUser',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Assign Role',
+        to: '/assignRole',
+       
+      }
+    ],
+  },
   {
     _tag: 'CSidebarNavDropdown',
     name: 'Reports',

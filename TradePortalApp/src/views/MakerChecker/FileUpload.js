@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment, useState, useEffect,useContext  } from 'react';
 import Message from './Message';
 import Progress from './Progress';
 import axios from 'axios';
@@ -8,9 +8,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CIcon from '@coreui/icons-react'
 import {CButton,CCardFooter} from '@coreui/react';
 import e from 'cors';
+import UserContext from '../../UserContext';
 const FileUpload = () => {
-
-  
+  const user = useContext(UserContext);
+  console.log("user1 value "+user.user.name);
   const [file, setFile] = useState('');
   const [filename, setFilename] = useState('Choose File');
   const [fileType, setFileType] = useState('');
@@ -30,6 +31,8 @@ const FileUpload = () => {
   };
 
   useEffect(() => {
+    
+    
     var tableD = document.getElementById("docTable");
       console.log("Row Len:: "+ tableD.rows.length);
       if(tableD.rows.length >2) {
@@ -75,13 +78,13 @@ const FileUpload = () => {
       console.log("after upload");
 
       setData({ fileName, fileType, fileSize, filePath });
-
+      console.log("user name upload "+user.user.name);
       var data2 = [];
       data2.push({ fileName }.fileName);
       data2.push({ fileType }.fileType);
       data2.push({ fileSize }.fileSize);
+      data2.push(user.user.name);
       data2.push('');
-      
       // console.log("data "+data);
       var tableD = document.getElementById("docTable");
       // alert("Row Len:: "+ tableD.rows.length);
@@ -275,6 +278,7 @@ const FileUpload = () => {
                         <th className='table-header'>File Name</th>
                         <th className='table-header'>File Type</th>
                         <th className='table-header'>File Size</th>
+                        <th className='table-header'>Attached By</th>
                         <th className='table-header'>Action</th>
                        
                       </tr>

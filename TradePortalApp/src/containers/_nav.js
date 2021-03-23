@@ -28,6 +28,14 @@ const _nav =  [
     
   },
   {
+    _tag: 'CSidebarNavItem',
+    name: 'Trash Cases',
+    to: '/trashedCases',
+    // icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>
+    icon: <CIcon name="cil-trash" customClasses="c-sidebar-nav-icon"/>
+    
+  },
+  {
     _tag: 'CSidebarNavTitle',
     _children: ['Theme']
   },
@@ -50,7 +58,25 @@ const _nav =  [
     _tag: 'CSidebarNavTitle',
     _children: ['Components']
   },
-  
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: 'UMS',
+    route: '/reports',
+    icon: 'cil-puzzle',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Add User',
+        to: '/addUser',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Assign role',
+        to: '/assignRole',
+        
+      }
+    ],
+  },
   
   {
     _tag: 'CSidebarNavItem',

@@ -45,12 +45,14 @@ const test = React.lazy(()=>import('./views/MakerChecker/test'));
 const test2 = React.lazy(()=>import('./views/MakerChecker/test2'));
 const newDashboard = React.lazy(()=>import('./views/dashboard/newDashboard'));
 const launchCase = React.lazy(()=>import('./views/dashboard/launchCase'));
-
+const trashedCases =React.lazy(()=>import('./views/dashboard/trashedCases'));
+const addUser =React.lazy(()=>import('./views/dashboard/addUser'));
+const assignRole =React.lazy(()=>import('./views/dashboard/assignRole'));
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Inbox', component: Dashboard },
-  { path: '/CustomerSearch', name: 'CustomerSearch', component: CustomerSearch },
+  { path: '/CustomerSearch', name: 'Transaction Search', component: CustomerSearch },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
@@ -96,7 +98,9 @@ const routes = [
   { path: '/MakerChecker/test2', name: 'test2', component: test2},
   { path: '/newDashboard', name: 'Dashboard', component: newDashboard},
   { path: '/launchCase', name: 'launchCase', component: launchCase},
-  
+  { path: '/trashedCases', name: 'Trash Cases', component: trashedCases},
+  { path: '/addUser', name: 'Add user', component: addUser},
+  { path: '/assignRole', name: 'Assign role', component: assignRole},
 ];
 
 export default routes;

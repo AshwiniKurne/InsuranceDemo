@@ -155,8 +155,31 @@ export default class test2 extends Component {
 <CCardBody>
 
 <CFormGroup row className="my-0">
+<CCol xs="3">
 
-    <CCol xs="4">
+<CFormGroup>
+
+    <CLabel htmlFor="company">From Date</CLabel>
+
+    <CInput type="date" id="date-input" name="date-input" placeholder="date" />
+
+</CFormGroup>
+
+</CCol>
+<CCol xs="3">
+
+<CFormGroup>
+
+    <CLabel htmlFor="company">To Date</CLabel>
+
+    <CInput type="date" id="date-input" name="date-input" placeholder="date" />
+
+</CFormGroup>
+
+</CCol>
+
+
+    <CCol xs="3">
 
         <CFormGroup>
 
@@ -167,7 +190,7 @@ export default class test2 extends Component {
         </CFormGroup>
 
     </CCol>
-    <CCol xs="4">
+        <CCol xs="3">
 
         <CFormGroup>
 
@@ -179,25 +202,27 @@ export default class test2 extends Component {
 
     </CCol>
 
-    <CCol xs="4">
-
-        <CFormGroup>
-
-            <CLabel htmlFor="company">Transaction No</CLabel>
-
-            <CInput id="company" placeholder="" />
-
-        </CFormGroup>
-
-    </CCol>
     
 </CFormGroup>
 
 
 
 <CFormGroup row className="my-0">
+<CCol xs="3">
 
-    <CCol xs="4">
+<CFormGroup>
+
+    <CLabel htmlFor="company">Transaction No</CLabel>
+
+    <CInput id="company" placeholder="" />
+
+</CFormGroup>
+
+</CCol>
+
+
+
+    <CCol xs="3">
 
         <CFormGroup>
 
@@ -209,7 +234,7 @@ export default class test2 extends Component {
 
     </CCol>
 
-    <CCol xs="4">
+    <CCol xs="3">
 
         <CFormGroup>
 
@@ -221,7 +246,7 @@ export default class test2 extends Component {
 
     </CCol>
 
-    <CCol xs="4" style={{marginTop:'22px'}}>
+    <CCol xs="3" style={{marginTop:'22px'}}>
         
             <CFormGroup>
                 <CButton color="warning" className="px-4" onClick={this.search.bind(this)} >
@@ -237,7 +262,7 @@ export default class test2 extends Component {
 
                             <div id="CustSearch">
                             &nbsp;&nbsp; &nbsp;&nbsp;<CLabel >
-                           <h5 className="m-0 p-0"> Customer Search Result</h5>
+                           <h5 className="m-0 p-0"> Transaction Search Result</h5>
                                
                             </CLabel>
                             
