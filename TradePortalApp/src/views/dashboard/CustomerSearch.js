@@ -224,9 +224,9 @@ export default class test2 extends Component {
     <CCol xs="4" style={{marginTop:'22px'}}>
         
             <CFormGroup>
-                <CButton color="warning" className="px-4" onClick={this.search.bind(this)}>
-                Search</CButton>
-
+                <CButton color="warning" className="px-4" onClick={this.search.bind(this)} >
+                <CIcon name="cilSearch" />&nbsp;Search</CButton>
+                
             </CFormGroup>
         
     </CCol>

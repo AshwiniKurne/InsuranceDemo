@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CIcon from '@coreui/icons-react'
-
+import {CButton,CCardFooter} from '@coreui/react';
 const FileUpload = () => {
 
   
@@ -184,11 +184,14 @@ const FileUpload = () => {
                     &nbsp;&nbsp;
                     {/* <Progress percentage={uploadPercentage} /> */}
                     <div className='custom-file-a mb-4' style={{width:'55%'}}>
-                    <input
+                    {/* <input
                       type='submit'
-                      value='Upload'
-                      className='btn btn-primary btn-block mt-4'
-                    />
+                      value="&#128206;&nbsp;Upload"
+                      className='btn btn-primary btn-block mt-2'
+                      
+                    /> */}
+                     <CButton type="submit" color="warning" className="px-4"><CIcon name="cilCloudUpload" />&nbsp;Upload</CButton> &nbsp;
+                    
                     </div>
                 </form>
       </div>
@@ -217,13 +220,17 @@ const FileUpload = () => {
                       </label>
                       
                     </div>
-                    &nbsp;&nbsp;
+                    &nbsp;
                     
-                    <input
+                    {/* <input
                       type='submit'
-                      value='Upload'
-                      className='btn btn-primary btn-block mt-4'
-                    />
+                      value="&#x21eb;&nbsp;Upload "
+                      className='btn btn-primary btn-block mt-2'
+                    /> */}
+                     
+                     <CButton id ="uploadbutton"type="submit" color="warning" className="px-4"><CIcon name="cilCloudUpload" />&nbsp;Upload</CButton> 
+                     
+                    
                     
                 </form>
                 <br/>
