@@ -277,7 +277,7 @@ table {
 }
 .custom-file-a {
     position: relative;
-    display: inline-block;
+    display: contents;
     width: 100%;
     height: calc(1.5em + 0.75rem + 2px);
     margin-bottom: 0;
@@ -310,4 +310,22 @@ border: 1px solid black;
 }
 #uploadbutton{
     display: inline-flex !important;
+}
+a {
+    text-decoration: none;
+    background-color: transparent;
+    color: green;
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #718a64;
+    border-color: #718a64;
+}
+.MUIDataTableHeadCell-fixedHeader-803 {
+    top: 0px;
+    z-index: 100;
+    position: sticky;
+    background-color: #fff;
+    font-weight: bold !important;
 }
