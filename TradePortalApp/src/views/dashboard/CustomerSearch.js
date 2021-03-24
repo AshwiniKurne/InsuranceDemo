@@ -145,7 +145,7 @@ export default class test2 extends Component {
                 <CRow>
                     <CCol>
                         <CCard>
-
+                           
                         <CCardHeader id="headingOne">
                             <h5 className="m-0 p-0">Search Criteria</h5>
                         </CCardHeader>

@@ -61,8 +61,8 @@ const _nav =  [
   {
     _tag: 'CSidebarNavDropdown',
     name: 'UMS',
-    route: '/reports',
-    icon: 'cil-puzzle',
+    
+    icon: 'cil-user',
     _children: [
       {
         _tag: 'CSidebarNavItem',

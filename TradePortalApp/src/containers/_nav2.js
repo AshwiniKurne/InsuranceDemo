@@ -45,14 +45,14 @@ const _nav =  [
     _tag: 'CSidebarNavItem',
     name: 'Transaction Search',
     to: '/CustomerSearch',
-    icon: <CIcon name="cil-envelope-open" customClasses="c-sidebar-nav-icon"/>
+    icon: <CIcon name="cil-search" customClasses="c-sidebar-nav-icon"/>
     
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: 'UMS',
-    route: '/reports',
-    icon: 'cil-puzzle',
+   
+    icon: 'cil-user',
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -82,7 +82,7 @@ const _nav =  [
         _tag: 'CSidebarNavItem',
         name: 'Charts View',
         to: '/charts',
-        icon: 'cil-chart-pie'
+        
       }
     ],
   },

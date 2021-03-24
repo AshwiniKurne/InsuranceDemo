@@ -52,7 +52,15 @@ const Collapses = () => {
 
     const [fade, setFade] = useState(true)
 
+    const[modal,setModal] =useState(false)
 
+    const toggle2 = (e) => {
+
+        setModal(!modal);
+
+        e.preventDefault()
+
+    }
 
     const toggle = (e) => {
 
@@ -762,13 +770,13 @@ const Collapses = () => {
                 <CCol xs="8">
 
                     <Link to="/dashboard">
-                        <CButton color="success" onClick={toggle} className="px-4"><CIcon name="cil-cursor" />&nbsp;Copy & Create</CButton>
+                        <CButton color="success" onClick={toggle2} className="px-4"><CIcon name="cil-cursor" />&nbsp;Copy & Create</CButton>
                     </Link>
 
                 </CCol>
 
-                {/* <CModal show={modal} onClose={toggle}>
-					 <CModalBody>Case Created Successfully with Reference No 3434563.
+                <CModal show={modal} onClose={toggle2}>
+					 <CModalBody>Case has been Copied and Created Successfully with Reference No 3434563.
 					 </CModalBody>
 					<CModalFooter>
 					<Link to="/dashboard">
@@ -778,7 +786,7 @@ const Collapses = () => {
 					
 					</CModalFooter>
 				
-				</CModal>    */}
+				</CModal>   
 
 
             </CRow>
