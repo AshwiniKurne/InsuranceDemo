@@ -61,7 +61,7 @@ const _nav =  [
       },
       {
         _tag: 'CSidebarNavItem',
-        name: 'Assign role',
+        name: 'User Role Mapping',
         to: '/assignRole',
        
       }
