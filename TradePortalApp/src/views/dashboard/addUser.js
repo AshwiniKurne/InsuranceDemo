@@ -55,54 +55,94 @@ const AddUser = () => {
       <CCardBody>
         <CForm action="" method="post" encType="multipart/form-data" className="form-horizontal">
           
-          <CFormGroup row>
-            <CCol md="3">
-              <CLabel htmlFor="text-input">Username</CLabel>
-            </CCol>
-            <CCol xs="12" md="9">
-              <CInput id="text-input" name="text-input" placeholder="Enter Username" />
-              
-            </CCol>
-          </CFormGroup>
-          <CFormGroup row>
-            <CCol md="3">
-              <CLabel htmlFor="text-input">UserID</CLabel>
-            </CCol>
-            <CCol xs="12" md="9">
-              <CInput id="text-input" name="text-input" placeholder="Enter UserID" />
-              
-            </CCol>
-          </CFormGroup>
-          <CFormGroup row>
-            <CCol md="3">
-              <CLabel htmlFor="email-input">Email Id</CLabel>
-            </CCol>
-            <CCol xs="12" md="9">
-              <CInput type="email" id="email-input" name="email-input" placeholder="Enter Email" autoComplete="email"/>
-              
-            </CCol>
-          </CFormGroup>
-          <CFormGroup row>
-            <CCol md="3">
-              <CLabel htmlFor="password-input">Password</CLabel>
-            </CCol>
+              <CForm action="" method="post">
+                <CRow>
+                  <CCol sm="4">
+                    <CFormGroup>
+                      <CInputGroup>
+                        <CInputGroupPrepend>
+                          <CInputGroupText>Username</CInputGroupText>
+                        </CInputGroupPrepend>
+                        <CInput type="email" id="username3" name="username3" autoComplete="name"/>
+                        <CInputGroupAppend>
+                          <CInputGroupText><CIcon name="cil-user" /></CInputGroupText>
+                        </CInputGroupAppend>
+                      </CInputGroup>
+                    </CFormGroup>
+                  </CCol>
+                  <CCol sm="4">
+                    <CFormGroup>
+                      <CInputGroup>
+                        <CInputGroupPrepend>
+                          <CInputGroupText>User Id</CInputGroupText>
+                        </CInputGroupPrepend>
+                        <CInput type="email" id="userId" name="userId" autoComplete="username"/>
+                        <CInputGroupAppend>
+                          <CInputGroupText><CIcon name="cil-user" /></CInputGroupText>
+                        </CInputGroupAppend>
+                      </CInputGroup>
+                    </CFormGroup>
+                  </CCol>
+                  <CCol sm="4">
+                    <CFormGroup>
+                      <CInputGroup>
+                        <CInputGroupPrepend>
+                          <CInputGroupText>Email</CInputGroupText>
+                        </CInputGroupPrepend>
+                        <CInput type="email" id="email" name="email" autoComplete="current-password"/>
+                        <CInputGroupAppend>
+                          <CInputGroupText><CIcon name="cil-envelope-closed" /></CInputGroupText>
+                        </CInputGroupAppend>
+                      </CInputGroup>
+                    </CFormGroup>
+                  </CCol>
+                </CRow>
+
+                <CRow>
+                  <CCol sm="4">
+                  <CFormGroup>
+                      <CInputGroup>
+                        <CInputGroupPrepend>
+                          <CInputGroupText>Password</CInputGroupText>
+                        </CInputGroupPrepend>
+                        <CInput type="password" id="password3" name="password3" autoComplete="current-password"/>
+                        <CInputGroupAppend>
+                          <CInputGroupText><CIcon name="cil-asterisk" /></CInputGroupText>
+                        </CInputGroupAppend>
+                      </CInputGroup>
+                    </CFormGroup>
+                  </CCol>
+                  <CCol sm="4">
+                    <CFormGroup>
+                      <CInputGroup>
+                        <CInputGroupPrepend>
+                          <CInputGroupText>Confirm Password</CInputGroupText>
+                        </CInputGroupPrepend>
+                        <CInput type="password" id="password3" name="password3" autoComplete="current-password"/>
+                        <CInputGroupAppend>
+                          <CInputGroupText><CIcon name="cil-asterisk" /></CInputGroupText>
+                        </CInputGroupAppend>
+                      </CInputGroup>
+                    </CFormGroup>
+                  </CCol>
+                  <CCol sm="4">
+                    
+                  </CCol>
+                </CRow>
+
+                
+              </CForm>
             
             <CCol xs="12" md="9">
               <CInput type="password" id="password-input" name="password-input" placeholder="Password" autoComplete="new-password" />
               
             </CCol>
-          </CFormGroup>
-          <CFormGroup row>
-            <CCol md="3">
-              <CLabel htmlFor="password-input">Confirmed Password</CLabel>
-            </CCol>
-            
-            <CCol xs="12" md="9">
-              <CInput type="password" id="password-input" name="password-input" placeholder="Password" autoComplete="new-password" />
-              
-            </CCol>
-          </CFormGroup>
           
+          
+
+
+
+
           
           
         </CForm>

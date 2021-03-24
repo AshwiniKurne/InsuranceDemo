@@ -137,10 +137,20 @@ const Charts = () => {
           />
         </CCardBody>
       </CCard>
+
+      <CCard>
+        <CCardHeader>
+          Work Summary
+        </CCardHeader>
+        <CCardBody>
+          
+        </CCardBody>
+      </CCard>
+
     </CCardGroup>
 	</div>
         <div>
-          
+        <iframe src="https://blog.bitsrc.io/best-practices-in-using-iframes-with-react-6193feaa1e08" width="100%"></iframe>
         </div>
      </div>
   )
