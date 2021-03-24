@@ -19,14 +19,14 @@ const WidgetsDropdown = () => {
       <CCol sm="6" lg="3">
         <CWidgetDropdown
           color="gradient-primary"
-          header="340"
+          header="320"
           text="Request Initiated"
           footerSlot={
             <ChartLineSimple
               pointed
               className="c-chart-wrapper mt-3 mx-3"
               style={{height: '70px'}}
-              dataPoints={[65, 59, 84, 84, 51, 55, 40]}
+              dataPoints={[65, 59, 34, 47, 50, 25, 40]}
               pointHoverBackgroundColor="primary"
               label=""
               labels="months"
@@ -51,8 +51,9 @@ const WidgetsDropdown = () => {
 
       <CCol sm="6" lg="3">
         <CWidgetDropdown
+        
           color="gradient-info"
-          header="250"
+          header="112"
           text="Request Pending"
           footerSlot={
             <ChartLineSimple
@@ -85,14 +86,15 @@ const WidgetsDropdown = () => {
       <CCol sm="6" lg="3">
         <CWidgetDropdown
           color="gradient-warning"
-          header="120"
+          header="178"
           text="Request Processed"
           footerSlot={
             <ChartLineSimple
               className="mt-3"
+              pointed
               style={{height: '70px'}}
               backgroundColor="rgba(255,255,255,.2)"
-              dataPoints={[78, 81, 80, 45, 34, 12, 40]}
+              dataPoints={[28, 41, 30, 15, 24, 32, 10]}
               options={{ elements: { line: { borderWidth: 2.5 }}}}
               pointHoverBackgroundColor="warning"
               label=""
@@ -124,6 +126,7 @@ const WidgetsDropdown = () => {
               className="mt-3 mx-3"
               style={{height: '70px'}}
               backgroundColor="rgb(250, 152, 152)"
+              dataPoints={[5,10, 12, 15, 9, 14, 7, 10]}
               label=""
               labels="months"
             />
