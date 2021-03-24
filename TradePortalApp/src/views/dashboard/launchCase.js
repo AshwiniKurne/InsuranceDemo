@@ -92,9 +92,10 @@ const LaunchCase = () => {
                                         </CSelect>
                                     </CCol>
                                     <CCol>
+                                    <div class="buttonAlign">
                                       <CButton color="warning" className="px-4" onClick={search.bind(this)} >
 									  <CIcon name="cilSearch" />&nbsp;Submit</CButton>
-                                        
+                                        </div>
                                     </CCol>
 								</CFormGroup>
 								
@@ -107,9 +108,10 @@ const LaunchCase = () => {
                                         <CInput id="Reference" placeholder="Enter Reference No" />
                                     </CCol>
                                     <CCol>
-                                    <CButton color="warning" className="px-4" onClick={search2.bind(this)} >
-									  <CIcon name="cilSearch" />&nbsp;Search</CButton>
-                                        
+                                        <div class="buttonAlign">
+                                            <CButton color="warning" className="px-4" onClick={search2.bind(this)} >
+                                            <CIcon name="cilSearch" />&nbsp;Search</CButton>
+                                        </div>
                                     </CCol>
                                 </CFormGroup> 
                                 </div>
@@ -125,7 +127,7 @@ const LaunchCase = () => {
                                         <CLabel htmlFor="Product">Product</CLabel>
                                         <CSelect id="select" disabled >
                                             <option value="0" >Please select Product</option>
-                                            <option value="1">LC</option>
+                                            <option value="1" selected>LC</option>
                                             <option value="2">BG</option>
                                             <option value="3">Collection</option>
                                         </CSelect>
@@ -135,7 +137,7 @@ const LaunchCase = () => {
                                         <CSelect id="select"  disabled >
                                             <option value="0" >Please select Sub Product</option>
                                             <option value="1">Lodgement</option>
-                                            <option value="2">Import</option>
+                                            <option value="2" selected>Import</option>
                                             <option value="3">Export</option>
                                         </CSelect>
                                     </CCol>
@@ -143,7 +145,7 @@ const LaunchCase = () => {
                                         <CLabel htmlFor="Operation">Operation</CLabel>
                                         <CSelect id="select" disabled >
                                             <option value="0" >Please select Operation</option>
-                                            <option value="1">Issuance</option>
+                                            <option value="1" selected>Issuance</option>
                                             <option value="2">BG</option>
                                             <option value="3">Collection</option>
                                         </CSelect>
@@ -156,37 +158,78 @@ const LaunchCase = () => {
 
                                     </CCardHeader>
                                 <br/>
-                                <CAlert color="success">
-                                    <CRow>
-                                        <CCol><b>Bill of Ladding</b></CCol>
-                                        <CCol><CSwitch
-                                            className="mr-1"
-                                            color="primary"
-                                            defaultChecked/>
-                                        </CCol>
-                                    </CRow>
-                                </CAlert>
+                                <CRow>
+                                    <CCol>
+                                        <CAlert color="success">
+                                            <CRow>
+                                                <CCol><b>Bill of Ladding</b></CCol>
+                                                <CCol><div class="floatRight" >
+                                                    <CSwitch
+                                                    className="mr-1"
+                                                    color="success"
+                                                    defaultChecked
+                                                    shape="pill"/>
+                                                    </div>
+                                                </CCol>
+                                            </CRow>
+                                        </CAlert>
 
-                                <CAlert color="success">
-                                    <CRow>
-                                        <CCol><b>Invoice</b></CCol>
-                                        <CCol><CSwitch
-                                            className="mr-1"
-                                            color="primary"
-                                            defaultChecked/>
-                                        </CCol>
-                                    </CRow>
-                                </CAlert>
-                                <CAlert color="success">
-                                    <CRow>
-                                        <CCol><b>Packing List</b></CCol>
-                                        <CCol><CSwitch
-                                            className="mr-1"
-                                            color="primary"
-                                            defaultChecked/>
-                                        </CCol>
-                                    </CRow>
-                                </CAlert>
+                                    </CCol>
+                                    <CCol>
+                                        <CAlert color="success">
+                                            <CRow>
+                                                <CCol><b>Bill of Exchange</b></CCol>
+                                                <CCol><div class="floatRight" >
+                                                    <CSwitch
+                                                    className="mr-1"
+                                                    color="success"
+                                                    defaultChecked
+                                                    shape="pill"/>
+                                                    </div>
+                                                </CCol>
+                                            </CRow>
+                                        </CAlert>
+
+                                    </CCol>
+                                    <CCol>
+                                        <CAlert color="success">
+                                            <CRow>
+                                                <CCol><b>Invoice</b></CCol>
+                                                <CCol><div class="floatRight" >
+                                                    <CSwitch
+                                                    className="mr-1"
+                                                    color="success"
+                                                    defaultChecked
+                                                    shape="pill"/>
+                                                    </div>
+                                                </CCol>
+                                            </CRow>
+                                        </CAlert>
+
+                                    </CCol>
+
+                                </CRow>
+
+                                <CRow>
+                                    <CCol sm='4'>
+                                        <CAlert color="success">
+                                            <CRow>
+                                                <CCol><b>Packing List</b></CCol>
+                                                <CCol>
+                                                    <div class="floatRight" >
+                                                    <CSwitch
+                                                    className="mr-1"
+                                                    color="success"
+                                                    defaultChecked
+                                                    shape="pill"/>
+                                                    </div>
+                                                </CCol>
+                                            </CRow>
+                                        </CAlert>
+
+                                    </CCol>
+                                    
+                                </CRow>
 
                                 </CCol>
                                 </CFormGroup>
