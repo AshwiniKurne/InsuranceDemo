@@ -660,37 +660,78 @@ const Collapses = () => {
                                             <div className='container mt-4'>
                                                 
                                 
-                                <CAlert color="success">
-                                    <CRow>
-                                        <CCol><b>Bill of Ladding</b></CCol>
-                                        <CCol><CSwitch
-                                            className="mr-1"
-                                            color="primary"
-                                            defaultChecked/>
-                                        </CCol>
-                                    </CRow>
-                                </CAlert>
+                                <CRow>
+                                    <CCol>
+                                        <CAlert color="success">
+                                            <CRow>
+                                                <CCol><b>Bill of Ladding</b></CCol>
+                                                <CCol><div class="floatRight" >
+                                                    <CSwitch
+                                                    className="mr-1"
+                                                    color="success"
+                                                    defaultChecked
+                                                    shape="pill"/>
+                                                    </div>
+                                                </CCol>
+                                            </CRow>
+                                        </CAlert>
 
-                                <CAlert color="success">
-                                    <CRow>
-                                        <CCol><b>Invoice</b></CCol>
-                                        <CCol><CSwitch
-                                            className="mr-1"
-                                            color="primary"
-                                            defaultChecked/>
-                                        </CCol>
-                                    </CRow>
-                                </CAlert>
-                                <CAlert color="success">
-                                    <CRow>
-                                        <CCol><b>Packing List</b></CCol>
-                                        <CCol><CSwitch
-                                            className="mr-1"
-                                            color="primary"
-                                            defaultChecked/>
-                                        </CCol>
-                                    </CRow>
-                                </CAlert>
+                                    </CCol>
+                                    <CCol>
+                                        <CAlert color="success">
+                                            <CRow>
+                                                <CCol><b>Bill of Exchange</b></CCol>
+                                                <CCol><div class="floatRight" >
+                                                    <CSwitch
+                                                    className="mr-1"
+                                                    color="success"
+                                                    defaultChecked
+                                                    shape="pill"/>
+                                                    </div>
+                                                </CCol>
+                                            </CRow>
+                                        </CAlert>
+
+                                    </CCol>
+                                    <CCol>
+                                        <CAlert color="success">
+                                            <CRow>
+                                                <CCol><b>Invoice</b></CCol>
+                                                <CCol><div class="floatRight" >
+                                                    <CSwitch
+                                                    className="mr-1"
+                                                    color="success"
+                                                    defaultChecked
+                                                    shape="pill"/>
+                                                    </div>
+                                                </CCol>
+                                            </CRow>
+                                        </CAlert>
+
+                                    </CCol>
+
+                                </CRow>
+
+                                <CRow>
+                                    <CCol sm='4'>
+                                        <CAlert color="success">
+                                            <CRow>
+                                                <CCol><b>Packing List</b></CCol>
+                                                <CCol>
+                                                    <div class="floatRight" >
+                                                    <CSwitch
+                                                    className="mr-1"
+                                                    color="success"
+                                                    defaultChecked
+                                                    shape="pill"/>
+                                                    </div>
+                                                </CCol>
+                                            </CRow>
+                                        </CAlert>
+
+                                    </CCol>
+                                    
+                                </CRow>
 
 											</div>
 
