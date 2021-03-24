@@ -8,7 +8,7 @@ import {
     CLabel,
     CSelect,
     CProgress,
-    CFormGroup,CButton,CModal,CModalBody,CModalFooter,CInput
+    CFormGroup,CButton,CModal,CModalBody,CModalFooter,CInput,CAlert,CSwitch
 } from '@coreui/react';
 import FileUpload from '../MakerChecker/FileUpload';
 import { Link } from 'react-router-dom';
@@ -19,6 +19,7 @@ const LaunchCase = () => {
     useEffect(() => { 
         document.getElementById("copyCreate").style.display="none";
         document.getElementById("new").style.display="none";
+        document.getElementById("secDiv").style.display="none";
     });
 	const toggle = ()=>{
     setModal(!modal);
@@ -38,7 +39,13 @@ const LaunchCase = () => {
         document.getElementById("copyCreate").style.display="none";
 	}
     
-	} 
+    }
+    
+    const search2=()=>{
+        console.log("inside search2"); 
+        document.getElementById("secDiv").style.display="";
+       
+    }
 	
 	const handleChange =(e) =>{
 		
@@ -86,7 +93,7 @@ const LaunchCase = () => {
                                     </CCol>
                                     <CCol>
                                       <CButton color="warning" className="px-4" onClick={search.bind(this)} >
-									  <CIcon name="cilSearch" />&nbsp;Copy Create/New</CButton>
+									  <CIcon name="cilSearch" />&nbsp;Submit</CButton>
                                         
                                     </CCol>
 								</CFormGroup>
@@ -100,11 +107,91 @@ const LaunchCase = () => {
                                         <CInput id="Reference" placeholder="Enter Reference No" />
                                     </CCol>
                                     <CCol>
-                                    <CButton color="warning" className="px-4" onClick={search.bind(this)} >
+                                    <CButton color="warning" className="px-4" onClick={search2.bind(this)} >
 									  <CIcon name="cilSearch" />&nbsp;Search</CButton>
                                         
                                     </CCol>
                                 </CFormGroup> 
+                                </div>
+                                <br/><br/>
+                                <div id ='secDiv'>
+                                <CCard>
+                                <br/>
+                                <CCardBody>
+                                <CFormGroup row className="my-0">
+                                <CCol>
+                                <CFormGroup row className="my-0">
+                                    <CCol>
+                                        <CLabel htmlFor="Product">Product</CLabel>
+                                        <CSelect id="select" disabled >
+                                            <option value="0" >Please select Product</option>
+                                            <option value="1">LC</option>
+                                            <option value="2">BG</option>
+                                            <option value="3">Collection</option>
+                                        </CSelect>
+                                    </CCol>
+                                    <CCol>
+                                        <CLabel htmlFor="SubProduct">Sub Product</CLabel>
+                                        <CSelect id="select"  disabled >
+                                            <option value="0" >Please select Sub Product</option>
+                                            <option value="1">Lodgement</option>
+                                            <option value="2">Import</option>
+                                            <option value="3">Export</option>
+                                        </CSelect>
+                                    </CCol>
+                                    <CCol>
+                                        <CLabel htmlFor="Operation">Operation</CLabel>
+                                        <CSelect id="select" disabled >
+                                            <option value="0" >Please select Operation</option>
+                                            <option value="1">Issuance</option>
+                                            <option value="2">BG</option>
+                                            <option value="3">Collection</option>
+                                        </CSelect>
+                                    </CCol>
+                                    </CFormGroup>
+                                
+                                <CCardHeader id="headingOne">
+
+                                        <h5 className="m-0 p-0">Document List</h5>
+
+                                    </CCardHeader>
+                                <br/>
+                                <CAlert color="success">
+                                    <CRow>
+                                        <CCol><b>Bill of Ladding</b></CCol>
+                                        <CCol><CSwitch
+                                            className="mr-1"
+                                            color="primary"
+                                            defaultChecked/>
+                                        </CCol>
+                                    </CRow>
+                                </CAlert>
+
+                                <CAlert color="success">
+                                    <CRow>
+                                        <CCol><b>Invoice</b></CCol>
+                                        <CCol><CSwitch
+                                            className="mr-1"
+                                            color="primary"
+                                            defaultChecked/>
+                                        </CCol>
+                                    </CRow>
+                                </CAlert>
+                                <CAlert color="success">
+                                    <CRow>
+                                        <CCol><b>Packing List</b></CCol>
+                                        <CCol><CSwitch
+                                            className="mr-1"
+                                            color="primary"
+                                            defaultChecked/>
+                                        </CCol>
+                                    </CRow>
+                                </CAlert>
+
+                                </CCol>
+                                </CFormGroup>
+                                </CCardBody>
+                                </CCard>
                                 </div>
                                 <div className='container mt-4' id ='new'>
                                 <CFormGroup row className="my-0">
