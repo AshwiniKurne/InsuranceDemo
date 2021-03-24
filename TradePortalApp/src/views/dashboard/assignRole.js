@@ -124,8 +124,8 @@ return (
 		
       </CCardBody>
       <CCardFooter>
-        <CButton type="submit" size="sm" color="success" onClick={toggle}><CIcon name="cil-scrubber" /> Submit</CButton>&nbsp;&nbsp;
-        <CButton type="reset" size="sm" color="warning"><CIcon name="cil-ban" /> Reset</CButton>
+        <CButton type="submit"  color="success" onClick={toggle}><CIcon name="cil-scrubber" /> Submit</CButton>&nbsp;&nbsp;
+        <CButton type="reset"  color="warning"><CIcon name="cil-ban" /> Reset</CButton>
         
         <CModal show={modal} onClose={toggle}>
 					 <CModalBody>User role assigned successfully.

@@ -1,0 +1,18 @@
+console.log("ash");
+var solution =this.solution ;
+console.log(solution);
+console.log("payload event");
+console.log(payload.eventName);
+var prefix = solution.getPrefix();
+console.log(prefix);
+/*var url1 = prefix+"_CustomerName";
+var urlValue = url1.getValue();
+console.log("url value "+urlValue);*/
+
+
+
+var url = "https://bawpuc:9444/teamworks/executecf?processApp=LOP&serviceName=Create%20Loan%20Application&branchID=2063.48ff2ccf-3336-4a6e-8a56-2008632bc5e6";
+console.log("url",url);
+return url;
+
+console.log("ash end");

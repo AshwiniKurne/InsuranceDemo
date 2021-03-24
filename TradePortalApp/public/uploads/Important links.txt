@@ -1,0 +1,20 @@
+Event types :
+https://www.ibm.com/support/knowledgecenter/SSFTN5_8.5.6/com.ibm.wbpm.wle.editor.doc/topics/event_types_understanding.html
+
+Life cycle of a coach view :
+https://www.ibm.com/support/knowledgecenter/en/SS8JB4/com.ibm.wbpm.wle.editor.doc/topics/ceventhandlers.html
+
+What is Process center, PD, BPD , Business objects etc 
+https://www.ibm.com/support/knowledgecenter/en/SSMKHH_9.0.0/com.ibm.etools.mft.doc/bc49096_.htm
+
+What is a BPD ?
+https://www.ibm.com/support/knowledgecenter/en/SSMKHH_9.0.0/com.ibm.etools.mft.doc/bc49096_.htm
+
+Architecture of BPM 
+https://www.ibm.com/support/knowledgecenter/en/SSMKHH_9.0.0/com.ibm.etools.mft.doc/bc49096_.htm
+
+How to move a token
+https://www.ibm.com/support/knowledgecenter/en/SS8JB4/com.ibm.wbpm.admin.doc/topics/tmovingtokens.html
+
+What is Performance datawarehouse?
+https://developer.ibm.com/answers/questions/165218/performance-data-warehouse-pdw-what-is-it-and-why/

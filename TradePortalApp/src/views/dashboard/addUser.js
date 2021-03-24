@@ -102,21 +102,14 @@ const AddUser = () => {
               
             </CCol>
           </CFormGroup>
-          <CFormGroup row>
-            <CCol md="3">
-              <CLabel htmlFor="date-input">Created Date</CLabel>
-            </CCol>
-            <CCol xs="12" md="9">
-              <CInput type="date" id="date-input" name="date-input" placeholder="date" />
-            </CCol>
-          </CFormGroup>
+          
           
           
         </CForm>
       </CCardBody>
       <CCardFooter>
-        <CButton type="submit" size="sm" color="success" onClick={toggle}><CIcon name="cil-scrubber" /> Submit</CButton>&nbsp;&nbsp;
-        <CButton type="reset" size="sm" color="warning"><CIcon name="cil-ban" /> Reset</CButton>
+        <CButton type="submit"  color="success" onClick={toggle}><CIcon name="cil-scrubber" /> Submit</CButton>&nbsp;&nbsp;
+        <CButton type="reset"  color="warning"><CIcon name="cil-ban" /> Reset</CButton>
         
         <CModal show={modal} onClose={toggle}>
 					 <CModalBody>User Created Successfully.

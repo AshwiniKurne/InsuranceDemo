@@ -114,7 +114,8 @@ const FileUpload = () => {
           };
           var button1 = document.createElement('button');
       // set the attributes.
-      var btnName = "button"+rowLen;
+      var newRowLen =rowLen+1;
+      var btnName = "button"+newRowLen;
       alert("butttton "+btnName);
       //button.setAttribute('type', 'button');
       button1.innerHTML = "&#10060;";
@@ -124,6 +125,7 @@ const FileUpload = () => {
          removeRow(btnName); 
 
         };
+      button1.name =btnName;
           td.appendChild(button); 
           td.appendChild(button1); 
           row.appendChild(td);
@@ -157,18 +159,18 @@ const FileUpload = () => {
      console.log(table2);
      var rowCount = table2.rows.length;  
       console.log("ash1 "+rowCount);
-     // for (var i = 0; i < rowCount; i++) {  
-               var row = table2.rows[2];  
+     for (var i = 2; i < rowCount; i++) {  
+               var row = table2.rows[i];  
                 console.log(row);
-                 var rowObj = row.cells[0].childNodes[0]; 
+                 var rowObj = row.cells[4].childNodes[1].name; 
                  console.log("rowObj");
                  console.log(rowObj);
-              //  if (rowObj.name == btnName) { 
-              //    alert("insode obj") ;
-              //       table2.deleteRow(i);  
-              //       rowCount--;  
-              //   }  
-       //}  
+                if (rowObj == btnName) { 
+                  alert("insode obj"+btnName) ;
+                    table2.deleteRow(i);  
+                    rowCount--;  
+                }  
+      }  
           
          
   }

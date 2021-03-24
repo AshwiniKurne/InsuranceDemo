@@ -131,14 +131,14 @@ const Collapses = () => {
 
                 <CCard>
 
-                    <a className='fixed-widgets' onClick={showModalcase_history}><i className='ant-avatar fixed-widgets-avatar ant-dropdown-trigger ant-avatar-circle ant-avatar-icon fa fa-history'><CIcon name ="cil-av-timer"/><i/></i><span>Case History</span></a>
+                    <a className='fixed-widgets' onClick={showModalcase_history}><i className='ant-avatar fixed-widgets-avatar ant-dropdown-trigger ant-avatar-circle ant-avatar-icon fa fa-history'><CIcon id ="audit"name ="cil-av-timer"/></i><span>Case History</span></a>
                     <Modal
                         title='Case History'
                         visible={visible}
                         onOk={handleOkcasehistory}
                         onCancel={handlecancelcasehistory}>
-
-                        <Card>
+                            
+                        <Card >
                           <Casehistory></Casehistory> 
                         </Card>
 
