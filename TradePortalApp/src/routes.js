@@ -98,7 +98,7 @@ const routes = [
   { path: '/MakerChecker/test', name: 'test', component: test},
   { path: '/MakerChecker/test2', name: 'test2', component: test2},
   { path: '/newDashboard', name: 'Dashboard', component: newDashboard},
-  { path: '/launchCase', name: 'launchCase', component: launchCase},
+  { path: '/launchCase', name: 'Launch Case', component: launchCase},
   { path: '/trashedCases', name: 'Trash Cases', component: trashedCases},
   { path: '/addUser', name: 'Add user', component: addUser},
   { path: '/assignRole', name: 'Assign role', component: assignRole},

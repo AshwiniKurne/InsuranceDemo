@@ -115,7 +115,7 @@ const FileUpload = () => {
           var button1 = document.createElement('button');
       // set the attributes.
       var btnName = "button"+rowLen;
-      alert("butttton "+btnName);
+      //alert("butttton "+btnName);
       //button.setAttribute('type', 'button');
       button1.innerHTML = "&#10060;";
       button1.className ='btn';
