@@ -337,3 +337,83 @@ a {
     text-align: left !important;
     margin-top: 23px !important;
 }
+
+//audit icon css
+.fixed-widgets{
+    position: fixed;
+    
+    z-index: 2147483640;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    cursor: pointer;
+    bottom: 50%;
+    right: 0px;
+    background: #888585fa;
+    padding: 4px;
+    border-radius: 20px 0px 0px 20px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+
+  }
+  a.fixed-widgets i.fa-history {
+    color: #333;
+    background-color: #fff;
+    -webkit-box-shadow: 0 3px 6px -4px rgba(0,0,0,.12), 0 6px 16px 0 rgba(0,0,0,.08), 0 9px 28px 8px rgba(0,0,0,.05);
+    box-shadow: 0 3px 6px -4px rgba(0,0,0,.12), 0 6px 16px 0 rgba(0,0,0,.08), 0 9px 28px 8px rgba(0,0,0,.05);
+    -webkit-transition: color .3s;
+    transition: color .3s;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 22px;
+
+}
+
+
+a.fixed-widgets span {
+    display: none;
+}
+a.fixed-widgets span {
+padding:10px;
+}
+
+a.fixed-widgets {
+    padding: 2px;
+    -moz-transition:all 0.5s ease-in-out;
+      -ms-transition:all 0.5s ease-in-out;
+        -webkit-transition:all 0.5s ease-in-out;
+          transition:all 0.5s ease-in-out;
+    display:block
+}
+a.fixed-widgets:hover i{-webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;}
+a.fixed-widgets:hover span, a.fixed-widgets i{display:inline-block;float:left;width:130px;color:#fff;   -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;}
+
+
+    .c-icon:not(.c-icon-c-s):not(.c-icon-custom-size) {
+        width: 1rem;
+        height: 1rem;
+        font-size: 1rem;
+        margin-bottom: 7px  !important;
+    }  
+
+        
