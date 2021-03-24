@@ -16,8 +16,8 @@ const getBadge = Status => {
   switch (Status) {
     case 'Active': return 'success'
     case 'Inactive': return 'secondary'
-    case 'Pending': return 'warning'
-    case 'Banned': return 'danger'
+    case 'Processed': return 'warning'
+    case 'Terminated': return 'danger'
     default: return 'primary'
   }
 }
