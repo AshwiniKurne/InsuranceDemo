@@ -138,20 +138,31 @@ const Charts = () => {
         </CCardBody>
       </CCard>
 
-      <CCard>
+      <CCard height="400px">
         <CCardHeader>
-          Work Summary
+          City Wise Transaction Report
         </CCardHeader>
         <CCardBody>
-          
+        <div>
+        <iframe src="https://bawpuc:9444/teamworks/charts/drill%20down.html" width="100%" height="450px"  scrolling="no"></iframe>
+        </div>
+        </CCardBody>
+      </CCard>
+
+      <CCard height="400px">
+        <CCardHeader>
+          Growth Report
+        </CCardHeader>
+        <CCardBody>
+        <div>
+        <iframe src="https://bawpuc:9444/teamworks/charts/Mixed%20Chart.html" width="100%" height="450px" scrolling="no"></iframe>
+        </div>
         </CCardBody>
       </CCard>
 
     </CCardGroup>
 	</div>
-        <div>
-        <iframe src="https://blog.bitsrc.io/best-practices-in-using-iframes-with-react-6193feaa1e08" width="100%"></iframe>
-        </div>
+        
      </div>
   )
 }
