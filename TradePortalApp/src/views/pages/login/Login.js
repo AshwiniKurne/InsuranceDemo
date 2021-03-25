@@ -56,7 +56,9 @@ onSubmit = () => {
   return (
 
     
-    <div className="c-app c-default-layout flex-row align-items-center">
+    
+      <div className="login_bg app flex-row align-items-center" >
+      
       <CContainer>
 
       
