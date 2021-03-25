@@ -17,7 +17,7 @@ import {
 import { DocsLink } from 'src/reusable'
 import html2canvas from "html2canvas";
 import pdfConverter from 'jspdf';
-import Iframe from 'react-iframe';
+
 
 const Charts = () => {
 	

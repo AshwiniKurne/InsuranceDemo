@@ -244,7 +244,7 @@ const FileUpload = () => {
                   <iframe id="viewDoc" style={{width:'100%',height:'500px'}}></iframe>
                 </td>
                 <td class="valign" style={{width:'50%'}}>
-                {message ? <Message msg={message} /> : null}
+                {/* {message ? <Message msg={message} /> : null} */}
                   <br/>
                   <form onSubmit={onSubmit} style={{display:'flex', verticalAlign:'basline'}}>
                     
