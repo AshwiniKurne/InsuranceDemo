@@ -15,7 +15,7 @@
     box-shadow: none;
 }
 .card-header:first-child {
-    background-color: #718a64;
+    background-color: #005930;
     border-radius: 8px;
     color: white;
     font-weight: bold;
@@ -191,7 +191,7 @@ table {
     text-align: center;
 }
 .card-header:first-child {
-    background-color: #718a64;
+    background-color: #005930;
     border-radius: 8px;
     color: white;
     font-weight: bold;
@@ -245,25 +245,25 @@ table {
 }
 .c-sidebar {
     color: #fff;
-    background: #718a64;
+    background: #005930;
 }
 .c-sidebar .c-sidebar-brand {
     color: #fff;
-    background: #718a64;
+    background: #005930;
     align-self: baseline;
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
     color: #ffffff;
-    background-color: #596f4d;
+    background-color: #048c59;
     border-color: #c4c9d0 #c4c9d0 #ebedef;
 }
 .c-sidebar .c-sidebar-nav-link:hover, .c-sidebar .c-sidebar-nav-dropdown-toggle:hover {
     color: #fff;
-    background: #596f4d;
+    background: #048c59;
 }
 .c-sidebar .c-sidebar-nav-link.c-active, .c-sidebar .c-active.c-sidebar-nav-dropdown-toggle {
     color: #fff;
-    background: #596f4d;
+    background: #048c59;
 }
 .MuiButton-label {
     width: 100%;
@@ -292,7 +292,7 @@ table {
     border-top-left-radius: 1.25rem;
     border-top-right-radius: 1.25rem;
     color: white;
-    background-color: #718a64;
+    background-color: #005930;
 }
 .nav-tabs {
     border-bottom: 1px solid;
@@ -319,8 +319,8 @@ a {
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: #718a64;
-    border-color: #718a64;
+    background-color: #005930;
+    border-color: #005930;
 }
 .MUIDataTableHeadCell-fixedHeader-803 {
     top: 0px;
@@ -433,5 +433,5 @@ a.fixed-widgets:hover span, a.fixed-widgets i{display:inline-block;float:left;wi
 
   #login {
     
-    filter: hue-rotate(233deg) !important;
+    filter: hue-rotate(657deg) !important;
 }
