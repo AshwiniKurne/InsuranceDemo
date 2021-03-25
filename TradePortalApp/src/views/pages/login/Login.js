@@ -16,7 +16,7 @@ import {
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react';
 import UserContext from '../../../UserContext';
-
+import loginPic from '../../MakerChecker/trade.jpg'
 
 export default class Login extends Component {
 
@@ -57,7 +57,7 @@ onSubmit = () => {
 
     
     
-      <div className="login_bg app flex-row align-items-center" >
+      <div id ='login' className="c-app c-default-layout flex-row align-items-center" style={{background:`url(${loginPic})`}} >
       
       <CContainer>
 
