@@ -155,19 +155,8 @@ const Charts = () => {
         </CCardHeader>
         <CCardBody>
         <div>
-        {/* <iframe allowFullScreen src="https://bawpuc:9444/teamworks/charts/Mixed%20Chart.html" width="100%" height="650px" ></iframe> */}
-        <Iframe url='https://bawpuc:9444/teamworks/charts/Mixed%20Chart.html'
-
-            id="myId"
-
-            allowFullScreen
-
-            width='100%'
-
-            height='600px'
-
-          />
-
+        <iframe allowFullScreen src="https://bawpuc:9444/teamworks/charts/GrowthReport.html" width="100%" height="450px" scrolling="no"></iframe>
+        
         </div>
         </CCardBody>
       </CCard>
