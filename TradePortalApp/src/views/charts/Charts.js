@@ -17,7 +17,7 @@ import {
 import { DocsLink } from 'src/reusable'
 import html2canvas from "html2canvas";
 import pdfConverter from 'jspdf';
-
+import Iframe from 'react-iframe';
 
 const Charts = () => {
 	
@@ -155,7 +155,19 @@ const Charts = () => {
         </CCardHeader>
         <CCardBody>
         <div>
-        <iframe src="https://bawpuc:9444/teamworks/charts/Mixed%20Chart.html" width="100%" height="450px" scrolling="no"></iframe>
+        {/* <iframe allowFullScreen src="https://bawpuc:9444/teamworks/charts/Mixed%20Chart.html" width="100%" height="650px" ></iframe> */}
+        <Iframe url='https://bawpuc:9444/teamworks/charts/Mixed%20Chart.html'
+
+            id="myId"
+
+            allowFullScreen
+
+            width='100%'
+
+            height='600px'
+
+          />
+
         </div>
         </CCardBody>
       </CCard>
