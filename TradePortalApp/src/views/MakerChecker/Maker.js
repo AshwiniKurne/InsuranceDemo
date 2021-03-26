@@ -709,7 +709,7 @@ const Collapses = () => {
 
 
 
-                    <h5 className="m-0 p-0">Remarks</h5>
+                    <h5 className="m-0 p-0" id ='remarks'>Remarks</h5>
 
                 </CCardHeader>
 

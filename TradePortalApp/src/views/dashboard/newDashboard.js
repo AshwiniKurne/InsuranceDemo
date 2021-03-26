@@ -53,43 +53,47 @@ class newDashboard extends React.Component {
     }
 render(){
   return (
-    
+   
     <>
-    <WidgetsDropdown></WidgetsDropdown>
+     {this.state.userN=="Admin"?(<div></div>):(
+       <div>
+       <WidgetsDropdown></WidgetsDropdown>
     
-    <CRow>
-        <CCol>
-          <CCard>
-            <CCardHeader>
-            Past Transactions
-            </CCardHeader>
-            <CCardBody>
-            <CDataTable
-              items={usersData}
-              fields={fields}
-              hover
-              striped
-              bordered
-              size="sm"
-              itemsPerPage={7}
-              pagination
-              scopedSlots = {{
-                'Status':
-                  (item)=>(
-                    <td>
-                      <CBadge color={getBadge(item.Status)}>
-                        {item.Status}
-                      </CBadge>
-                    </td>
-                  )
-
-              }}
-            />
-            </CCardBody>
-          </CCard>
-        </CCol>
-      </CRow>
-
+       <CRow>
+           <CCol>
+             <CCard>
+               <CCardHeader>
+               Past Transactions
+               </CCardHeader>
+               <CCardBody>
+               <CDataTable
+                 items={usersData}
+                 fields={fields}
+                 hover
+                 striped
+                 bordered
+                 size="sm"
+                 itemsPerPage={7}
+                 pagination
+                 scopedSlots = {{
+                   'Status':
+                     (item)=>(
+                       <td>
+                         <CBadge color={getBadge(item.Status)}>
+                           {item.Status}
+                         </CBadge>
+                       </td>
+                     )
+   
+                 }}
+               />
+               </CCardBody>
+             </CCard>
+           </CCol>
+         </CRow>
+         </div>
+     )}
+    
     </>
   )
 }

@@ -116,12 +116,13 @@ const FileUpload = () => {
       // set the attributes.
       var newRowLen =rowLen+1;
       var btnName = "button"+newRowLen;
-      alert("butttton "+btnName);
+      //alert("butttton "+btnName);
       //button.setAttribute('type', 'button');
       button1.innerHTML = "&#10060;";
       button1.className ='btn';
       button1.onclick = function(){
-         alert('Delete Called' +btnName);
+        //alert('Delete Called' +btnName);
+        
          removeRow(btnName); 
 
         };
@@ -154,8 +155,11 @@ const FileUpload = () => {
     }
   };
   const removeRow= btnName =>{
-    alert("value of btnname "+btnName);
-    var table2 = document.getElementById("docTable");
+    //alert("value of btnname "+btnName);
+    var check =window.confirm("Are you sure you want to delete this item?");
+    console.log("value  of check "+check);
+    if(check ==true){
+      var table2 = document.getElementById("docTable");
      console.log(table2);
      var rowCount = table2.rows.length;  
       console.log("ash1 "+rowCount);
@@ -166,11 +170,13 @@ const FileUpload = () => {
                  console.log("rowObj");
                  console.log(rowObj);
                 if (rowObj == btnName) { 
-                  alert("insode obj"+btnName) ;
+                 // alert("insode obj"+btnName) ;
                     table2.deleteRow(i);  
                     rowCount--;  
                 }  
       }  
+    }
+    
           
          
   }

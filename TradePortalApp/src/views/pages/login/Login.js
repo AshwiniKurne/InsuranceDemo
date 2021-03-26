@@ -25,6 +25,7 @@ constructor(){
   super();
   this.state={
     userName:'',
+    linkTo :'/',
 
   }
  
@@ -49,6 +50,17 @@ onSubmit = () => {
   const newUser = { name: this.state.userName, loggedIn: true };
   setUser(newUser);
   this.props.history.push("/"); 
+  console.log("username  on submit"+this.state.userName);
+
+  if(this.state.userName =='Admin'){
+    console.log("inside user admin ");
+      this.state.linkTo ='/';
+      <Link to={this.state.linkTo}></Link>
+  }
+  else{
+    this.state.linkTo ='/newDashboard';
+    <Link to={this.state.linkTo}></Link>
+  }
 }
 
   render() {
@@ -89,9 +101,10 @@ onSubmit = () => {
                     </CInputGroup>
                     <CRow>
                       <CCol xs="6">
-                      <Link to="/newDashboard">
+                        
+                      <Link to='/newDashboard'>
                           <CButton color="primary" className="px-4" onClick={this.onSubmit}>Login</CButton>
-                        </Link>
+                          </Link>
                       </CCol>
                       <CCol xs="6" className="text-right">
                         <CButton color="link" className="px-0">Forgot password?</CButton>

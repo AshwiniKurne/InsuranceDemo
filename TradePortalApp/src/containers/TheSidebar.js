@@ -20,7 +20,7 @@ import CIcon from '@coreui/icons-react'
 import navigation from './_nav';
 import navigation2 from './_nav2';
 import navigation3 from './_nav3';
-
+import navigation4 from './_nav4';
 // import sglogo from './datamatics.jpg';
 import sglogo from './Dgsl_Logo.jpg';
 
@@ -44,7 +44,7 @@ console.log("user value at sidebar ",user.user.name);
   
       </CSidebarBrand>
       <CSidebarNav>
-        {user.user.name =='Maker'?(<CCreateElement
+      {user.user.name =='Maker'?(<CCreateElement
           items={navigation2}
           components={{
             CSidebarNavDivider,
@@ -60,7 +60,17 @@ console.log("user value at sidebar ",user.user.name);
             CSidebarNavItem,
             CSidebarNavTitle
           }}
-        />):(<CCreateElement
+        />):(user.user.name == 'Admin'?(
+		<CCreateElement
+          items={navigation4}
+          components={{
+            CSidebarNavDivider,
+            CSidebarNavDropdown,
+            CSidebarNavItem,
+            CSidebarNavTitle
+          }}
+        />
+		):(<CCreateElement
           items={navigation}
           components={{
             CSidebarNavDivider,
@@ -68,7 +78,7 @@ console.log("user value at sidebar ",user.user.name);
             CSidebarNavItem,
             CSidebarNavTitle
           }}
-        />))}
+        />)))}
         
       </CSidebarNav>
       <CSidebarMinimizer className="c-d-md-down-none"/>

@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, useContext } from 'react'
 import {
   Redirect,
   Route,
@@ -8,7 +8,8 @@ import { CContainer, CFade } from '@coreui/react'
 
 // routes config
 import routes from '../routes'
-  
+import UserContext from '../UserContext'; 
+
 const loading = (
   <div className="pt-3 text-center">
     <div className="sk-spinner sk-spinner-pulse"></div>
@@ -16,12 +17,17 @@ const loading = (
 )
 
 const TheContent = () => {
+  const user =useContext(UserContext);
+console.log("user value at content ",user.user.name);
   return (
     <main className="c-main">
       <CContainer fluid>
         <Suspense fallback={loading}>
           <Switch>
-            {routes.map((route, idx) => {
+             {/* {user.user.name =='Admin'?(<Route path='/CustomerSearch'  />):
+            (<Route path='/'  />)} */}
+            
+              {routes.map((route, idx) => {
               return route.component && (
                 <Route
                   key={idx}
@@ -34,7 +40,7 @@ const TheContent = () => {
                     </CFade>
                   )} />
               )
-            })}
+            })} 
             <Redirect from="/" to="/login" />
           </Switch>
         </Suspense>

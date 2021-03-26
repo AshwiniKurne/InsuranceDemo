@@ -1,4 +1,5 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import UserContext from './UserContext';
 
 const Toaster = React.lazy(() => import('./views/notifications/toaster/Toaster'));
 const Tables = React.lazy(() => import('./views/base/tables/Tables'));
@@ -49,6 +50,7 @@ const trashedCases =React.lazy(()=>import('./views/dashboard/trashedCases'));
 const addUser =React.lazy(()=>import('./views/dashboard/addUser'));
 const assignRole =React.lazy(()=>import('./views/dashboard/assignRole'));
 const TrashCopy = React.lazy(()=>import('./views/MakerChecker/TrashCopy'));
+
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
