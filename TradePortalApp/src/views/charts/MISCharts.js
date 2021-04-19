@@ -120,6 +120,8 @@ const Collapses = () => {
    
     const columns5 = [{name: "Status",label: "Status"},{name: "No of Txns",label: "No of Txns"}]
    
+	const columns6 =[{name:"Product",label:"Product"},{name:"TRANSACTION ID",label:"Transaction Id"},{name:"OPERATION",label:"Operation"},{name:"BENE NAME",label:"Bene Name "},{name:"DUE DATE",label:"Due Date"},{name:"CURRENCY",label:"Currency"},{name:"AMOUNT",label:"Amount"},{name:"REFERENCE NO",label:"Reference No"}]
+   
     const options = {
 
         filterType: 'dropdown',
@@ -156,7 +158,15 @@ const data5 = [
 	["Pending with Bank","15"],
 ]
 
-
+const data6 =[
+	["Import LC","54678","Payments","Nil Co. Ltd","20-04-2021","USD","125678.08","LC123456098"],
+	["Import Collection","54682","Payments","Ask De ","20-04-2021","EUR","678.34","LC238754098"],
+	["Import LC","54684","Payments","Nil Co. Ltd","22-04-2021","GBP","1908079.56","LC81579568"],
+	["Import LC","54690","Payments","Pepsi Co Ltd","23-04-2021","GBP","7630283.22","LC683630470"],
+	["Import Collection","54694","Payments","3M world Ltd","27-04-2021","USD","11445085.66","LC114482275"],
+	["Import LC","54696","Payments","Nil Co. Ltd","03-05-2021","EUR","13352486.88","LC137541889"],
+	["Import LC","54699","Payments","BCE Co UK","04-05-2021","USD","13352486.88","LC137541889"]
+]
 
     return (
 
@@ -198,6 +208,15 @@ const data5 = [
                                      </CNavLink>
 
                                 </CNavItem>
+								<CNavItem>
+
+                                    <CNavLink data-tab="DueDate">
+
+                                      Due Date Report
+
+                                     </CNavLink>
+
+                                </CNavItem>
  
 
                             </CNav>
@@ -228,6 +247,15 @@ const data5 = [
                                     <CCardBody>
 
                                         <MUIDataTable data={data3} columns={columns3} options={options} />
+                                    </CCardBody>
+
+                                </CTabPane>
+								
+								 <CTabPane data-tab="DueDate">
+
+                                    <CCardBody>
+
+                                        <MUIDataTable data={data6} columns={columns6} options={options} />
                                     </CCardBody>
 
                                 </CTabPane>

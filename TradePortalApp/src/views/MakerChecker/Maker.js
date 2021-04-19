@@ -34,7 +34,7 @@ import {
 
     CTabPane,
 
-    CTabs
+    CTabs, CModal, CModalBody, CModalFooter
 
 } from '@coreui/react';
 
@@ -55,12 +55,27 @@ const Collapses = () => {
 	
 	const[value2,setValue2] =useState()
 
+    const[modal2,setModal2] =useState(false);
+
     const toggle = (e) => {
 
         setCollapse(!collapse)
 
         e.preventDefault()
 
+    }
+
+    const handleChange2 =(e)=>{
+        var amt =e.target.value;
+        console.log("amt "+amt);
+        if(amt !=''){
+        console.log("inside toggle2");
+        setModal2(!modal2);
+        }
+    }
+
+    const handleChange3=(e)=>{
+        setModal2(!modal2);
     }
 
     const handleChange =(e) =>{
@@ -342,7 +357,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Amount</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your Amount" />
+                                                    <CInput id="amt" placeholder="Enter your Amount"   onBlur={handleChange2} />
 
                                                 </CFormGroup>
 
@@ -762,6 +777,21 @@ const Collapses = () => {
 
             </CRow>
 
+            <div>
+            <CModal show={modal2} >
+                                                            <CModalBody>Your LC limit is $ 80000, which is less than Txn amount, please check
+                                                            </CModalBody>
+                                                            <CModalFooter>
+                                                               
+                                                                    <CButton color="primary" onClick ={handleChange3}>OK</CButton>
+                                                               
+                                                               
+
+                                                            </CModalFooter>
+
+                                                        </CModal>
+
+            </div>
 
 
 

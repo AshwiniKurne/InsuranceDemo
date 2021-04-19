@@ -15,7 +15,7 @@ import {
     CFormGroup,
     CInput,
     CLabel,
-    CButton
+    CButton,CSelect
   } from '@coreui/react';
   import UserContext from '../../UserContext';
 
@@ -245,17 +245,36 @@ export default class test2 extends Component {
         </CFormGroup>
 
     </CCol>
+    <CCol xs="3">
 
-    <CCol xs="3" style={{marginTop:'22px'}}>
-        
-            <CFormGroup>
-                <CButton color="warning" className="px-4" onClick={this.search.bind(this)} >
-                <CIcon name="cilSearch" />&nbsp;Search</CButton>
-                
-            </CFormGroup>
-        
+        <CFormGroup>
+
+            <CLabel htmlFor="company">Product</CLabel>
+
+            <CSelect id="select">
+            <option value="0">Please Select Product Name</option>
+            <option value="1">Import LC</option>
+            <option value="2">Import Collection</option>
+           
+            </CSelect>
+
+        </CFormGroup>
+
     </CCol>
 
+    
+
+</CFormGroup>
+<CFormGroup row className="my-0">
+<CCol xs="3" style={{marginTop:'22px'}}>
+        
+        <CFormGroup>
+            <CButton color="warning" className="px-4" onClick={this.search.bind(this)} >
+            <CIcon name="cilSearch" />&nbsp;Search</CButton>
+            
+        </CFormGroup>
+    
+</CCol>
 </CFormGroup>
 </CCardBody>
 

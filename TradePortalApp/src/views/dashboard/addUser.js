@@ -133,10 +133,7 @@ const AddUser = () => {
                 
               </CForm>
             
-            <CCol xs="12" md="9">
-              <CInput type="password" id="password-input" name="password-input" placeholder="Password" autoComplete="new-password" />
-              
-            </CCol>
+            
           
           
 
