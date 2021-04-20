@@ -517,3 +517,11 @@ a.fixed-widgets:hover span, a.fixed-widgets i{display:inline-block;float:left;wi
     background-color: #3b403e;
     border-color: #6d6d6f;
 }
+#login {
+    -webkit-filter: hue-rotate(
+930deg
+) !important;
+    filter: sepia() hue-rotate(
+1302deg
+) !important;
+}
