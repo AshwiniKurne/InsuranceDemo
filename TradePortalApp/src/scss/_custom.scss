@@ -209,7 +209,7 @@ table {
     z-index: 1000005;
 }
 .bg-primary {
-    background-color: #1b4567 !important;
+    background-color: #2d8bd8 !important;
 }
 .text-center {
     text-align: center !important;
@@ -461,4 +461,35 @@ a.fixed-widgets:hover span, a.fixed-widgets i{display:inline-block;float:left;wi
     color: #fff;
     background-color: #005930 !important;
     border-color: #005930 !important;
+}
+.c-sidebar {
+    color: #fff;
+    background: #3b403e !important;
+}
+.card-header:first-child {
+    background-color: #3b403e;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+.c-sidebar .c-sidebar-nav-link.c-active, .c-sidebar .c-active.c-sidebar-nav-dropdown-toggle, .c-sidebar .c-active.c-sidebar-nav-dropdown-toggle {
+    color: #fff;
+    background: #3b403e;
+}
+.c-sidebar .c-sidebar-nav-link:hover, .c-sidebar .c-sidebar-nav-dropdown-toggle:hover {
+    color: #fff;
+    background: #3b403e;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #ffffff;
+    background-color: #3b403e;
+    border-color: #c4c9d0 #c4c9d0 #ebedef;
+}
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    color: white;
+    background-color: #222524;
 }
