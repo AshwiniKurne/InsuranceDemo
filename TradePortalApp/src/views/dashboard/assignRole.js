@@ -90,7 +90,7 @@ return (
               <CLabel htmlFor="text-input">User Name</CLabel>
             </CCol>
             <CCol xs="12" md="9">
-              <CInput id="text-input" name="text-input" placeholder="" disabled/>
+              <CInput id="text-input" name="text-input" placeholder="" disabled value ='User001'/>
               
             </CCol>
           </CFormGroup>
@@ -99,7 +99,7 @@ return (
               <CLabel htmlFor="email-input">Email Id</CLabel>
             </CCol>
             <CCol xs="12" md="9">
-              <CInput type="email" id="email-input" name="email-input" placeholder="" autoComplete="email" disabled/>
+              <CInput type="email" id="email-input" name="email-input" placeholder="" autoComplete="email" disabled value ='user001@abcltd.com'/>
               
             </CCol>
           </CFormGroup>
@@ -110,7 +110,7 @@ return (
               <CLabel htmlFor="date-input">User Roles</CLabel>
             </CCol>
             <CCol xs="12" md="9">
-            <CSelect custom name="select" id="select">
+            <CSelect custom name="select" id="select" value="1">
                       <option value="0">Please select</option>
                       <option value="1">Maker</option>
                       <option value="2">Checker</option>

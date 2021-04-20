@@ -129,11 +129,11 @@ export default class test2 extends Component {
 
         let inboxData =[];
  inboxData = [
-    [ "LC","Lodgement","Issuance","USD","53992","Sam Mathews","4623857","92991265","39014177160","Active","7-03-2021 10:30 AM"],
-	[ "LC","Lodgement","Issuance","USD","19103","John Almaida","1278965","21551965","15494862853","Active","11-03-2021 7:04 AM"],
-	[ "LC","Lodgement","Issuance","USD","48544","Dwyane Rushhill","6785436","25355519","61991875450","Active","9-03-2021 2:30 PM"],
-   [ "LC","Lodgement","Issuance","USD","21525","Jaffery Dsouza","9453621","91921721","37934808227","Active","11-03-2021 2:12 PM"],
-   [ "LC","Lodgement","Issuance","USD","21525","Jaffin Mahen","9075445","29430238","28033677916","Active","2-03-2021 11:54 AM"],
+    [ "LC","Import","Lodgement","USD","53992","Andrew Kumar","4623857","92991265","39014177160","Active","7-03-2021 10:30 AM"],
+	[ "BG","Export","Issuance","USD","19103","Chris Dale","1278965","21551965","15494862853","Active","11-03-2021 7:04 AM"],
+	[ "LC","Import","Lodgement","USD","48544","Joe Emison","6785436","25355519","61991875450","Active","9-03-2021 2:30 PM"],
+   [ "LC","Export","Issuance","USD","21525","Susan James","9453621","91921721","37934808227","Active","11-03-2021 2:12 PM"],
+   [ "BG","Import","Issuance","USD","21525","David Smyth","9075445","29430238","28033677916","Active","2-03-2021 11:54 AM"],
   
  ]  
  
@@ -233,6 +233,23 @@ export default class test2 extends Component {
         </CFormGroup>
 
     </CCol>
+    <CCol xs="3">
+
+        <CFormGroup>
+
+            <CLabel htmlFor="company">Amount Criteria</CLabel>
+
+            <CSelect id="select">
+            <option value="0">Please Select Amount Criteria</option>
+            <option value="1">Greater than</option>
+            <option value="2">Less than</option>
+            <option value="3">Equal to </option>
+            </CSelect>
+
+        </CFormGroup>
+
+    </CCol>
+
 
     <CCol xs="3">
 
@@ -245,27 +262,27 @@ export default class test2 extends Component {
         </CFormGroup>
 
     </CCol>
-    <CCol xs="3">
-
-        <CFormGroup>
-
-            <CLabel htmlFor="company">Product</CLabel>
-
-            <CSelect id="select">
-            <option value="0">Please Select Product Name</option>
-            <option value="1">Import LC</option>
-            <option value="2">Import Collection</option>
-           
-            </CSelect>
-
-        </CFormGroup>
-
-    </CCol>
-
+    
     
 
 </CFormGroup>
 <CFormGroup row className="my-0">
+<CCol xs="3">
+
+<CFormGroup>
+
+    <CLabel htmlFor="company">Product</CLabel>
+
+    <CSelect id="select">
+    <option value="0">Please Select Product Name</option>
+    <option value="1">Import LC</option>
+    <option value="2">Import Collection</option>
+   
+    </CSelect>
+
+</CFormGroup>
+
+</CCol> 
 <CCol xs="3" style={{marginTop:'22px'}}>
         
         <CFormGroup>
