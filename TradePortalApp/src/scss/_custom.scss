@@ -314,7 +314,7 @@ border: 1px solid black;
 a {
     text-decoration: none;
     background-color: transparent;
-    color: green;
+    color: #3b403e;
 }
 .page-item.active .page-link {
     z-index: 3;
@@ -527,4 +527,8 @@ a.fixed-widgets:hover span, a.fixed-widgets i{display:inline-block;float:left;wi
 }
 .pr-md-3, .px-md-3 {
     padding-right: 69% !important;
+}
+.justify-content-between {
+    /* justify-content: space-between !important; */
+    justify-content: end !important;
 }
