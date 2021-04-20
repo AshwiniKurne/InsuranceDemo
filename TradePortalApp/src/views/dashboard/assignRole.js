@@ -64,13 +64,13 @@ return (
       <CCardBody>
         <CForm action="" method="post" encType="multipart/form-data" className="form-horizontal">
         <CFormGroup row className="my-0">
-          <CCol xs="4">
+          <CCol xs="3">
 			
 			<CFormGroup>
 
-            <CLabel htmlFor="company">UserID</CLabel>
+            <CLabel htmlFor="company">User Id</CLabel>
 
-            <CInput id="company" placeholder="Enter UserID"/>
+            <CInput id="company" placeholder="Enter User Id"/>
 
 			</CFormGroup>
           </CCol>
@@ -84,36 +84,50 @@ return (
         
 		</CCol>
         </CFormGroup>
+        <br/>
 		<div id="hiddenData" >
           <CFormGroup row>
-            <CCol md="3">
+            <CCol md="2">
               <CLabel htmlFor="text-input">Name</CLabel>
             </CCol>
-            <CCol xs="12" md="9">
+            <CCol xs="12" md="3">
               <CInput id="text-input" name="text-input" placeholder="" disabled value ='User001'/>
             </CCol>
           </CFormGroup>
           <CFormGroup row>
-            <CCol md="3">
+            <CCol md="2">
               <CLabel htmlFor="email-input">Email Id</CLabel>
             </CCol>
-            <CCol xs="12" md="9">
+            <CCol xs="12" md="3">
               <CInput type="email" id="email-input" name="email-input" placeholder="" autoComplete="email" disabled value ='user001@abcltd.com'/>
             </CCol>
           </CFormGroup>
          
          
           <CFormGroup row>
-            <CCol md="3">
+            <CCol md="2">
               <CLabel htmlFor="date-input">User Roles</CLabel>
             </CCol>
-            <CCol xs="12" md="9">
-            <CSelect custom name="select" id="select" value="1">
-                      <option value="0">Please select</option>
-                      <option value="1">Maker</option>
-                      <option value="2">Checker</option>
-                      <option value="3">Admin</option>
-                    </CSelect>
+            <CCol xs="12" md="4">
+            
+                    <CFormGroup variant="custom-checkbox" inline>
+                      <CInputCheckbox 
+                        custom 
+                        id="inline-checkbox1" 
+                        name="inline-checkbox1" 
+                        value="option1" 
+                      />
+                      <CLabel variant="custom-checkbox" htmlFor="inline-checkbox1">Maker</CLabel>
+                    </CFormGroup>
+                    <CFormGroup variant="custom-checkbox" inline>
+                      <CInputCheckbox custom id="inline-checkbox2" name="inline-checkbox2" value="option2" />
+                      <CLabel variant="custom-checkbox" htmlFor="inline-checkbox2">Checker</CLabel>
+                    </CFormGroup>
+                    <CFormGroup variant="custom-checkbox" inline>
+                      <CInputCheckbox custom id="inline-checkbox3" name="inline-checkbox3" value="option3" />
+                      <CLabel variant="custom-checkbox" htmlFor="inline-checkbox3">Admin</CLabel>
+                    </CFormGroup>
+                  
             </CCol>
           </CFormGroup>
           

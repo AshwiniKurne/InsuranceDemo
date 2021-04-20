@@ -91,16 +91,16 @@ const LaunchCase = () => {
                             <CFormGroup >
                                 <div id='firstDiv'>
                                     <CFormGroup row className="my-0">
-                                        <CCol>
+                                        <CCol xs="3">
                                             <CLabel htmlFor="CopyCreate/New">Copy Create/New</CLabel>
-                                            <CSelect id="select" onChange={handleChange} >
+                                            <CSelect id="selectCopyCreateNew" onChange={handleChange} >
                                                 <option value="0" >Please select </option>
                                                 <option value="1">Copy Create</option>
                                                 <option value="2">New</option>
 
                                             </CSelect>
                                         </CCol>
-                                        <CCol>
+                                        <CCol xs="3">
                                             <div class="buttonAlign">
                                                 <CButton color="warning" className="px-4" onClick={search.bind(this)} >
                                                     <CIcon name="cilSearch" />&nbsp;Submit</CButton>
@@ -112,11 +112,11 @@ const LaunchCase = () => {
                                 <br /><br />
                                 <div id='copyCreate'>
                                     <CFormGroup row className="my-0">
-                                        <CCol>
+                                        <CCol xs="3">
                                             <CLabel htmlFor="Reference">Reference No</CLabel>
                                             <CInput id="Reference" placeholder="Enter Reference No" />
                                         </CCol>
-                                        <CCol>
+                                        <CCol xs="3">
                                             <div class="buttonAlign">
                                                 <CButton color="warning" className="px-4" onClick={search2.bind(this)} >
                                                     <CIcon name="cilSearch" />&nbsp;Search</CButton>

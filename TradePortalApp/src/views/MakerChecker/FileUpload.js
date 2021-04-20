@@ -285,7 +285,7 @@ const FileUpload = () => {
                       <tr style={{ color: 'white', backgroundColor: 'black' }}>
                         <th className='table-header'>File Name</th>
                         <th className='table-header'>File Type</th>
-                        <th className='table-header'>File Size</th>
+                        <th className='table-header'>File Size(kb)</th>
                         <th className='table-header'>Attached By</th>
                         <th className='table-header'>Action</th>
                        

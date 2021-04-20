@@ -357,7 +357,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Amount</CLabel>
 
-                                                    <CInput id="amt" placeholder="Enter your Amount"   onBlur={handleChange2} />
+                                                    <CInput id="amt" placeholder="Enter your Amount"  />
 
                                                 </CFormGroup>
 
@@ -423,7 +423,7 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Limit ID</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your Limit ID" />
+                                                    <CInput id="company" placeholder="Enter your Limit ID" onBlur={handleChange2}/>
 
                                                 </CFormGroup>
 
