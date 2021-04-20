@@ -89,7 +89,7 @@ onSubmit = () => {
                           <CIcon name="cil-user" />
                         </CInputGroupText>
                       </CInputGroupPrepend>
-                      <CInput type="text" placeholder="Username" onChange={ this.handleChange.bind(this)} name="userValue" autoComplete="username" />
+                      <CInput type="text" placeholder="User Id" onChange={ this.handleChange.bind(this)} name="userValue" autoComplete="username" />
                     </CInputGroup>
                     <CInputGroup className="mb-4">
                       <CInputGroupPrepend>

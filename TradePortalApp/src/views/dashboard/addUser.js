@@ -61,7 +61,7 @@ const AddUser = () => {
                     <CFormGroup>
                       <CInputGroup>
                         <CInputGroupPrepend>
-                          <CInputGroupText>Username</CInputGroupText>
+                          <CInputGroupText>Name</CInputGroupText>
                         </CInputGroupPrepend>
                         <CInput type="email" id="username3" name="username3" autoComplete="name"/>
                         <CInputGroupAppend>

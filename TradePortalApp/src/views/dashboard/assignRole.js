@@ -87,11 +87,10 @@ return (
 		<div id="hiddenData" >
           <CFormGroup row>
             <CCol md="3">
-              <CLabel htmlFor="text-input">User Name</CLabel>
+              <CLabel htmlFor="text-input">Name</CLabel>
             </CCol>
             <CCol xs="12" md="9">
               <CInput id="text-input" name="text-input" placeholder="" disabled value ='User001'/>
-              
             </CCol>
           </CFormGroup>
           <CFormGroup row>
@@ -100,7 +99,6 @@ return (
             </CCol>
             <CCol xs="12" md="9">
               <CInput type="email" id="email-input" name="email-input" placeholder="" autoComplete="email" disabled value ='user001@abcltd.com'/>
-              
             </CCol>
           </CFormGroup>
          
