@@ -493,3 +493,27 @@ a.fixed-widgets:hover span, a.fixed-widgets i{display:inline-block;float:left;wi
     color: white;
     background-color: #222524;
 }
+.bg-primary {
+    background-color: #222524 !important;
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #3b403e;
+    border-color: #3b403e;
+}
+.btn-success {
+    color: #fff;
+    background-color: #3b403e !important;
+    border-color: #3b403e !important;
+}
+.btn-warning {
+    color: #4f5d73;
+    background-color: #3b403e;
+    border-color: #3b403e;
+}
+.alert-primary {
+    color: white;
+    background-color: #3b403e;
+    border-color: #6d6d6f;
+}
