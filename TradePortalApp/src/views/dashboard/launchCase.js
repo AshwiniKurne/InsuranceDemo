@@ -56,6 +56,301 @@ const LaunchCase = () => {
 
     }
 
+    const selectOperation =(e) =>{
+		
+		console.log("on change value ",e.target.value);
+        var val =e.target.value;
+
+        if(val == "1-Import-LC") {
+            var operationN = document.getElementById("operationN");
+            operationN.options.length = 0;
+
+            var newOption = document.createElement('option');
+            newOption.value="Issuance";
+            newOption.text="Issuance";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Amendment";
+            newOption.text="Amendment";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Realisation";
+            newOption.text="Realisation";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Devolvement";
+            newOption.text="Devolvement";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Crystalisation";
+            newOption.text="Crystalisation";
+            operationN.appendChild(newOption);
+        }
+        if(val == "1-Export-LC") {
+            var operationN = document.getElementById("operationN");
+            operationN.options.length = 0;
+
+            var newOption = document.createElement('option');
+            newOption.value="Advising";
+            newOption.text="Advising";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Amendment";
+            newOption.text="Amendment";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Closure";
+            newOption.text="Closure";
+            operationN.appendChild(newOption);
+        }
+        if(val == "2-Import-LC") {
+            var operationN = document.getElementById("operationN");
+            operationN.options.length = 0;
+
+            var newOption = document.createElement('option');
+            newOption.value="Lodgement";
+            newOption.text="Lodgement";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Acceptance";
+            newOption.text="Acceptance";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Realisation";
+            newOption.text="Realisation";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Closure";
+            newOption.text="Closure";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Devolvement";
+            newOption.text="Devolvement";
+            operationN.appendChild(newOption);
+
+        }
+        if(val == "2-Export-LC") {
+            var operationN = document.getElementById("operationN");
+            operationN.options.length = 0;
+
+            var newOption = document.createElement('option');
+            newOption.value="Advising";
+            newOption.text="Advising";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Amendment";
+            newOption.text="Amendment";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Closure";
+            newOption.text="Closure";
+            operationN.appendChild(newOption);
+        }
+        if(val == "3-Open Account") {
+            var operationN = document.getElementById("operationN");
+            operationN.options.length = 0;
+
+            var newOption = document.createElement('option');
+            newOption.value="Import Payment";
+            newOption.text="Import Payment";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Advance payment";
+            newOption.text="Advance payment";
+            operationN.appendChild(newOption);
+
+        }
+        if(val == "3-Import Bill") {
+            var operationN = document.getElementById("operationN");
+            operationN.options.length = 0;
+
+            var newOption = document.createElement('option');
+            newOption.value="Lodgement";
+            newOption.text="Lodgement";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Acceptance";
+            newOption.text="Acceptance";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Realisation";
+            newOption.text="Realisation";
+            operationN.appendChild(newOption);
+
+        }
+        if(val == "3-Export Bill") {
+            var operationN = document.getElementById("operationN");
+            operationN.options.length = 0;
+
+            var newOption = document.createElement('option');
+            newOption.value="Lodgement";
+            newOption.text="Lodgement";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Acceptance";
+            newOption.text="Acceptance";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Closure";
+            newOption.text="Closure";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Free of Payment";
+            newOption.text="Free of Payment";
+            operationN.appendChild(newOption);
+
+        }
+        if(val == "4-Inward Guarantee") {
+            var operationN = document.getElementById("operationN");
+            operationN.options.length = 0;
+
+            var newOption = document.createElement('option');
+            newOption.value="Issuance";
+            newOption.text="Issuance";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Amendment";
+            newOption.text="Amendment";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Closure";
+            newOption.text="Closure";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Invocation";
+            newOption.text="Invocation";
+            operationN.appendChild(newOption);
+
+        }
+        if(val == "4-Outward Guarantee") {
+            var operationN = document.getElementById("operationN");
+            operationN.options.length = 0;
+
+            var newOption = document.createElement('option');
+            newOption.value="Advising";
+            newOption.text="Advising";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Amendment";
+            newOption.text="Amendment";
+            operationN.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="Closure";
+            newOption.text="Closure";
+            operationN.appendChild(newOption);
+
+        }
+    }
+
+    const selectSubProduct =(e) =>{
+		
+		console.log("SG on change value ",e.target.value);
+        var val =e.target.value;
+
+        if(val == 1) {
+            var selProduct = document.getElementById("subProductN");
+            selProduct.options.length = 0;
+
+            var newOption = document.createElement('option');
+            newOption.value="1-Import-LC";
+            newOption.text="Import-LC";
+            selProduct.appendChild(newOption);
+            
+            var newOption = document.createElement('option');
+            newOption.value="1-Export-LC";
+            newOption.text="Export-LC";
+            selProduct.appendChild(newOption);
+            
+        }
+        if(val == 2) {
+            var selProduct = document.getElementById("subProductN");
+            selProduct.options.length = 0;
+
+            var newOption = document.createElement('option');
+            newOption.value="2-Import-LC";
+            newOption.text="Import-LC";
+            selProduct.appendChild(newOption);
+            
+            var newOption = document.createElement('option');
+            newOption.value="2-Export-LC";
+            newOption.text="Export-LC";
+            selProduct.appendChild(newOption);
+            
+        }
+        if(val == 3) {
+            var selProduct = document.getElementById("subProductN");
+            selProduct.options.length = 0;
+
+            var newOption = document.createElement('option');
+            newOption.value="3-Open Account";
+            newOption.text="Open Account";
+            selProduct.appendChild(newOption);
+            
+            var newOption = document.createElement('option');
+            newOption.value="3-Import Bill";
+            newOption.text="Import Bill";
+            selProduct.appendChild(newOption);
+
+            var newOption = document.createElement('option');
+            newOption.value="3-Export Bill";
+            newOption.text="Export Bill";
+            selProduct.appendChild(newOption);
+        }
+        if(val == 4) {
+            var selProduct = document.getElementById("subProductN");
+            selProduct.options.length = 0;
+
+            var newOption = document.createElement('option');
+            newOption.value="4-Inward Guarantee";
+            newOption.text="Inward Guarantee";
+            selProduct.appendChild(newOption);
+            
+            var newOption = document.createElement('option');
+            newOption.value="4-Outward Guarantee";
+            newOption.text="Outward Guarantee";
+            selProduct.appendChild(newOption);
+            
+        }
+        if(val == 5) {
+            var selProduct = document.getElementById("subProductN");
+            selProduct.options.length = 0;
+
+            var newOption = document.createElement('option');
+            newOption.value="5-Inward Remittance";
+            newOption.text="Inward Remittance";
+            selProduct.appendChild(newOption);
+            
+            var newOption = document.createElement('option');
+            newOption.value="5-Outward Remittance";
+            newOption.text="Outward Remittance";
+            selProduct.appendChild(newOption);
+            
+        }
+    }
+
     const handleChange = (e) => {
 
         console.log("on change value ", e.target.value);
@@ -261,29 +556,29 @@ const LaunchCase = () => {
                                     <CFormGroup row className="my-0">
                                         <CCol>
                                             <CLabel htmlFor="Product">Product</CLabel>
-                                            <CSelect id="select" >
+                                            <CSelect id="productN" onChange={selectSubProduct} >
                                                 <option value="0" >Please select Product</option>
                                                 <option value="1">LC</option>
-                                                <option value="2">BG</option>
-                                                <option value="3">Collection</option>
+                                                <option value="2">Bills Under LC</option>
+                                                <option value="3">Bill under Collection</option>
+                                                <option value="4">Guarantees</option>
+                                                <option value="5">Remittance</option>
+                                                <option value="6">Supply Chain Finance</option>
+                                                <option value="7">Invoice Discounting</option>
+                                                <option value="8">Export bill Discounting</option>
                                             </CSelect>
                                         </CCol>
                                         <CCol>
                                             <CLabel htmlFor="SubProduct">Sub Product</CLabel>
-                                            <CSelect id="select"  >
+                                            <CSelect id="subProductN"  onChange={selectOperation} >
                                                 <option value="0" >Please select Sub Product</option>
-                                                <option value="1">Lodgement</option>
-                                                <option value="2">Import</option>
-                                                <option value="3">Export</option>
+                                                
                                             </CSelect>
                                         </CCol>
                                         <CCol>
                                             <CLabel htmlFor="Operation">Operation</CLabel>
-                                            <CSelect id="select"  >
+                                            <CSelect id="operationN">
                                                 <option value="0" >Please select Operation</option>
-                                                <option value="1">Issuance</option>
-                                                <option value="2">BG</option>
-                                                <option value="3">Collection</option>
                                             </CSelect>
                                         </CCol>
                                     </CFormGroup>
