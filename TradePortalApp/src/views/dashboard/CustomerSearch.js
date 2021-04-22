@@ -239,7 +239,7 @@ export default class test2 extends Component {
 
             <CLabel htmlFor="company">Currency </CLabel>
             <CRow>
-            <CSelect>
+            <CSelect id ='selectcurrency'>
              <option value="0">Please Select Currency</option>
              <option value="1">USD</option>
              <option value="2">EUR</option>
@@ -273,8 +273,7 @@ export default class test2 extends Component {
             </CRow>
             
 
-            </CCol>
-            
+                    
 
         </CFormGroup>
 
