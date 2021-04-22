@@ -237,10 +237,10 @@ export default class test2 extends Component {
 
         <CFormGroup>
 
-            <CLabel htmlFor="company">Amount Criteria</CLabel>
+            <CLabel htmlFor="company">Currency</CLabel>
 
             <CSelect id="select">
-            <option value="0">Please Select Amount Criteria</option>
+            <option value="0">Please Select Currency</option>
             <option value="1">Greater than</option>
             <option value="2">Less than</option>
             <option value="3">Equal to </option>
@@ -256,8 +256,19 @@ export default class test2 extends Component {
         <CFormGroup>
 
             <CLabel htmlFor="company">Amount</CLabel>
+            <CRow>
 
+            <CSelect id="select">
+            <option value="0">Please Select Amount Criteria</option>
+            <option value="1">Greater than</option>
+            <option value="2">Less than</option>
+            <option value="3">Equal to </option>
+            </CSelect>
+            
             <CInput id="company" placeholder="" />
+
+            </CRow>
+            
 
         </CFormGroup>
 
