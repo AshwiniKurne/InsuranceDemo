@@ -256,7 +256,7 @@ export default class test2 extends Component {
         <CFormGroup>
 
             <CLabel htmlFor="company">Amount</CLabel>
-            <CRow>
+            <CCol>
 
             <CSelect id="select">
             <option value="0">Please Select Amount Criteria</option>
@@ -267,7 +267,7 @@ export default class test2 extends Component {
             
             <CInput id="company" placeholder="" />
 
-            </CRow>
+            </CCol>
             
 
         </CFormGroup>
