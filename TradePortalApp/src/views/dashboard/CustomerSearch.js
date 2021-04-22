@@ -273,6 +273,9 @@ export default class test2 extends Component {
             </CRow>
             
 
+            </CCol>
+            
+
         </CFormGroup>
 
     </CCol>

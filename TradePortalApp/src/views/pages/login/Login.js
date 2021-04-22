@@ -89,7 +89,7 @@ onSubmit = () => {
                           <CIcon name="cil-user" />
                         </CInputGroupText>
                       </CInputGroupPrepend>
-                      <CInput type="text" placeholder="User Id" onChange={ this.handleChange.bind(this)} name="userValue" autoComplete="username" />
+                      <CInput type="text" placeholder="Enter User Id" onChange={ this.handleChange.bind(this)} name="userValue" autoComplete="username" />
                     </CInputGroup>
                     <CInputGroup className="mb-4">
                       <CInputGroupPrepend>
@@ -97,7 +97,7 @@ onSubmit = () => {
                           <CIcon name="cil-lock-locked" />
                         </CInputGroupText>
                       </CInputGroupPrepend>
-                      <CInput type="password" placeholder="Password" autoComplete="current-password" />
+                      <CInput type="password" placeholder="Enter Password" autoComplete="current-password" />
                     </CInputGroup>
                     <CRow>
                       <CCol xs="6">
