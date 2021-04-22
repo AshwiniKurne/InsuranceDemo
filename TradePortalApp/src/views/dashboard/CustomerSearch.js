@@ -129,11 +129,11 @@ export default class test2 extends Component {
 
         let inboxData =[];
  inboxData = [
-    [ "LC","Import","Lodgement","USD","53992","Andrew Kumar","4623857","92991265","39014177160","Active","7-03-2021 10:30 AM"],
-	[ "BG","Export","Issuance","USD","19103","Chris Dale","1278965","21551965","15494862853","Active","11-03-2021 7:04 AM"],
-	[ "LC","Import","Lodgement","USD","48544","Joe Emison","6785436","25355519","61991875450","Active","9-03-2021 2:30 PM"],
-   [ "LC","Export","Issuance","USD","21525","Susan James","9453621","91921721","37934808227","Active","11-03-2021 2:12 PM"],
-   [ "BG","Import","Issuance","USD","21525","David Smyth","9075445","29430238","28033677916","Active","2-03-2021 11:54 AM"],
+    [ "Guarantees","Inward Guarantee","Issuance","USD","53992","Andrew Kumar","4623857","92991265","39014177160","Active","7-03-2021 10:30 AM"],
+	[ "LC","Import-LC","Crystalisation","USD","19103","Chris Dale","1278965","21551965","15494862853","Active","11-03-2021 7:04 AM"],
+	[ "LC","Import-LC","Amendment","USD","48544","Joe Emison","6785436","25355519","61991875450","Active","9-03-2021 2:30 PM"],
+   [ "Guarantees","Inward Guarantee","Amendment","USD","21525","Susan James","9453621","91921721","37934808227","Active","11-03-2021 2:12 PM"],
+   [ "LC","Import-LC","Issuance","USD","21525","David Smyth","9075445","29430238","28033677916","Active","2-03-2021 11:54 AM"],
   
  ]  
  
