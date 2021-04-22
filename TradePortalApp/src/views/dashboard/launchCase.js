@@ -8,11 +8,12 @@ import {
     CLabel,
     CSelect,
     CProgress,
-    CFormGroup, CButton, CModal, CModalBody, CModalFooter, CInput, CAlert, CSwitch
+    CFormGroup, CButton, CModal, CModalBody, CModalFooter, CInput, CAlert, CSwitch, CDropdown
 } from '@coreui/react';
 import FileUpload from '../MakerChecker/FileUpload';
 import { Link } from 'react-router-dom';
 import CIcon from '@coreui/icons-react'
+import { dataCategories } from '../MakerChecker/data';
 const LaunchCase = () => {
     const [modal, setModal] = useState(false);
     const[modal2,setModal2] =useState(false);
@@ -444,6 +445,8 @@ const LaunchCase = () => {
                                                                 <option value="2" selected>Import</option>
                                                                 <option value="3">Export</option>
                                                             </CSelect>
+
+                                                            
                                                         </CCol>
                                                         <CCol>
                                                             <CLabel htmlFor="Operation">Operation</CLabel>
