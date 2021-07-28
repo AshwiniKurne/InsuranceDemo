@@ -21,7 +21,7 @@ const getBadge = Status => {
     default: return 'primary'
   }
 }
-const fields = ['Txn_No','Product', 'Sub-Product', 'Operation', 'Currency', 'Amount', 'Party Name', 'Bank Ref No', 'Ref No', 'Date Time','Status']
+const fields = ['Claim ID','Claim Date', 'Policy Number', 'Policy Issue Date', 'LA Name', 'Sum Assured','Status']
 
 const WidgetsDropdown = lazy(() => import('../widgets/WidgetsDropdown.js'))
 
@@ -63,7 +63,7 @@ render(){
            <CCol>
              <CCard>
                <CCardHeader>
-               Past Transactions
+              Top Claims
                </CCardHeader>
                <CCardBody>
                <CDataTable

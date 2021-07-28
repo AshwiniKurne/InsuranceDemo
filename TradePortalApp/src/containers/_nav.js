@@ -14,7 +14,7 @@ const _nav =  [
   },
   {
     _tag: 'CSidebarNavItem',
-    name: 'Launch Case',
+    name: 'Create New Claim',
     to: '/launchCase',
     icon: <CIcon name="cil-paper-plane" customClasses="c-sidebar-nav-icon"/>
     
@@ -29,55 +29,13 @@ const _nav =  [
   },
   {
     _tag: 'CSidebarNavItem',
-    name: 'Trash Cases',
+    name: 'Search',
     to: '/trashedCases',
     // icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>
-    icon: <CIcon name="cil-trash" customClasses="c-sidebar-nav-icon"/>
+    icon: <CIcon name="cilSearch" customClasses="c-sidebar-nav-icon"/>
     
   },
-  {
-    _tag: 'CSidebarNavTitle',
-    _children: ['Theme']
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Maker Screen',
-    //to: '/theme/colors',
-    
-    to :'/MakerChecker/Maker',
-    icon: 'cil-user',
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Checker Screen',
-    //to: '/theme/typography',
-    to :'/MakerChecker/Checker',
-    icon: 'cil-user',
-  },
-  {
-    _tag: 'CSidebarNavTitle',
-    _children: ['Components']
-  },
-  {
-    _tag: 'CSidebarNavDropdown',
-    name: 'UMS',
-    
-    icon: 'cil-user',
-    _children: [
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Add User',
-        to: '/addUser',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'User Role Mapping',
-        to: '/assignRole',
-        
-      }
-    ],
-  },
-  
+ 
   {
     _tag: 'CSidebarNavItem',
     name: 'Reports',
@@ -91,25 +49,9 @@ const _nav =  [
     to: '/Login',
     icon: 'cil-scrubber',
     
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'test',
-    to: '/MakerChecker/test',
-    icon: 'cil-scrubber',
-    
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'test2',
-    to: '/MakerChecker/test2',
-    icon: 'cil-scrubber',
-    
-  },
-  {
-    _tag: 'CSidebarNavDivider',
-    className: 'm-2'
   }
+ 
+ 
 ]
 
 export default _nav

@@ -166,15 +166,15 @@ const Collapses = () => {
                                 </CAlert>
                                 
 
-                        <CTabs activeTab="general">
+                        <CTabs activeTab="Policy">
 
                             <CNav variant="tabs">
 
                                 <CNavItem>
 
-                                    <CNavLink data-tab="general">
+                                    <CNavLink data-tab="Policy">
 
-                                        General Details
+                                      Policy Details
 
                                      </CNavLink>
 
@@ -182,27 +182,23 @@ const Collapses = () => {
 
                                 <CNavItem>
 
-                                    <CNavLink data-tab="benef">
-                                        Party Details
+                                    <CNavLink data-tab="LifeAssured">
+                                        Life Assured Details
                                     </CNavLink>
 
                                 </CNavItem>
                                 <CNavItem>
 
-                                <CNavLink data-tab="ref">
-
-                                    Reference Details
-
+                                <CNavLink data-tab="Claim">
+                                    Claim Details
                                 </CNavLink>
 
                                 </CNavItem>
                                 <CNavItem>
+                                    <CNavLink data-tab="Claimant">
+                                    Claimant Details
 
-                                    <CNavLink data-tab="document">
-
-                                        Document Details
-
-                  </CNavLink>
+                                    </CNavLink>
 
                                 </CNavItem>
 
@@ -210,13 +206,13 @@ const Collapses = () => {
 
                             <CTabContent>
 
-                                <CTabPane data-tab="general">
+                                <CTabPane data-tab="Policy">
                                 <br />
                                     
 
                                     <CCardHeader id="headingOne">
 
-                                        <h5 className="m-0 p-0">General Details</h5>
+                                        <h5 className="m-0 p-0">Policy Details</h5>
 
                                     </CCardHeader>
 
@@ -232,9 +228,9 @@ const Collapses = () => {
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">Branch ID</CLabel>
+                                                    <CLabel htmlFor="company">Policy No</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your Branch ID" value="BK010" disabled/>
+                                                    <CInput id="company" placeholder="Enter your Policy No" value="" />
 
                                                 </CFormGroup>
 
@@ -243,9 +239,9 @@ const Collapses = () => {
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">Cust ID</CLabel>
+                                                    <CLabel htmlFor="company">Plan Name</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your Cust ID" value="978324" disabled/>
+                                                    <CInput id="company" placeholder="Enter your Plan Name" value="" />
 
                                                 </CFormGroup>
 
@@ -255,9 +251,9 @@ const Collapses = () => {
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">Customer Name</CLabel>
+                                                    <CLabel htmlFor="company">Policy Start Date</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your Customer Name" value="Ramson International" disabled/>
+                                                    <CInput type="date" id="date-input" name="date-input" placeholder="date" />
 
                                                 </CFormGroup>
 
@@ -273,21 +269,9 @@ const Collapses = () => {
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">IE Code</CLabel>
+                                                    <CLabel htmlFor="company">Sum Assured</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your IE Code" value="3432323534" disabled/>
-
-                                                </CFormGroup>
-
-                                            </CCol>
-
-                                            <CCol xs="4">
-
-                                                <CFormGroup>
-
-                                                    <CLabel htmlFor="company">PAN No.</CLabel>
-
-                                                    <CInput id="company" placeholder="Enter your PAN Code" value="BANGD8362F" disabled/>
+                                                    <CInput id="company" placeholder="Enter your Sum Assured" value="" />
 
                                                 </CFormGroup>
 
@@ -297,20 +281,20 @@ const Collapses = () => {
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">Account No</CLabel>
+                                                    <CLabel htmlFor="company">Policy Term</CLabel>
 
-                                                    <CSelect id="select"  onChange={handleChange} >
+                                                    <CInput id="company" placeholder="Enter your Policy Term" value="" />
 
-                                                        <option value="0" >Please select Account Number</option>
+                                                </CFormGroup>
 
-                                                        <option value="1">6757658699969</option>
+                                            </CCol>
 
-                                                        <option value="2">6757658621630</option>
+                                            <CCol xs="4">
 
-                                                        <option value="3">6757658658279</option>
+                                                <CFormGroup>
 
-                                                    </CSelect>
-                                                    
+                                                    <CLabel htmlFor="company">Premium Amount</CLabel>
+                                                    <CInput id="company" placeholder="Enter your Premium Amount" value="" />
                                                     
                                                 </CFormGroup>
 
@@ -324,9 +308,52 @@ const Collapses = () => {
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">GST No</CLabel>
+                                                    <CLabel htmlFor="company">Last Premimum Date</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your GST No" value ={value2} disabled/>
+                                                    <CInput type="date" id="date-input" name="date-input" placeholder="date" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            
+                                        </CFormGroup>
+
+                                    </CCardBody>
+
+									<br/>
+									 <CCardHeader id="headingOne">
+
+                                        <h5 className="m-0 p-0">Nominee Details</h5>
+
+                                    </CCardHeader>
+
+
+
+                                    <CCardBody>
+
+
+
+                                        <CFormGroup row className="my-0">
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Policy No</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter your Policy No" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Plan Name</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter your Plan Name" value="" />
 
                                                 </CFormGroup>
 
@@ -336,16 +363,91 @@ const Collapses = () => {
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">Currency </CLabel>
+                                                    <CLabel htmlFor="company">Policy Start Date</CLabel>
+
+                                                    <CInput type="date" id="date-input" name="date-input" placeholder="date" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            
+                                        </CFormGroup>
+
+
+
+                                       
+
+                                            
+                                       
+
+                                    </CCardBody>
+
+
+                                </CTabPane>
+
+                                <CTabPane data-tab="LifeAssured">
+
+                                    <br />
+									<CCardHeader id="headingOne">
+                                    <h5 className="m-0 p-0">Personal Details</h5>
+                            </CCardHeader>
+                            <CCardBody>
+								<CFormGroup row className="my-0">
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Date of Birth</CLabel>
+
+                                                    <CInput type="date" id="date-input" name="date-input" placeholder="date" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">First Name</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter your First Name" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Last Name</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter your Last Name" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            
+                                        </CFormGroup>
+
+
+
+                                        <CFormGroup row className="my-0">
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Gender</CLabel>
 
                                                     <CSelect id="select"  >
-                                                        <option value="0" >Please select Currency</option>
-                                                        <option value="1">USD</option>
-                                                        <option value="2">EUR</option>
-                                                        <option value="3">INR</option>
-                                                        <option value="4">AED</option>
-                                                        <option value="5">BHD</option>
-                                                    </CSelect>
+
+                                                        <option value="0" >Please select Gender </option>
+
+                                                        <option value="1">Male</option>
+
+                                                        <option value="2">Female</option>
+													</CSelect>
 
                                                 </CFormGroup>
 
@@ -355,35 +457,134 @@ const Collapses = () => {
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">Amount</CLabel>
+                                                    <CLabel htmlFor="company">Marital Status</CLabel>
 
-                                                    <CInput id="amt" placeholder="Enter your Amount"  />
+                                                    <CSelect id="select"  >
 
+                                                        <option value="0" >Please select Marital Status </option>
+
+                                                        <option value="1">Married</option>
+
+                                                        <option value="2">Unmarried</option>
+														<option value="3">Divorced</option>
+														<option value="4">widowed</option>
+														
+													</CSelect>
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Nationality</CLabel>
+                                                    <CInput id="company" placeholder="Enter your Nationality" value="" />
+                                                    
                                                 </CFormGroup>
 
                                             </CCol>
 
                                         </CFormGroup>
 
+                                        <CFormGroup row className="my-0">
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Residental Status</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter your Residental Status" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+											
+											<CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">PAN Number</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter your PAN Number" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+											
+											<CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Aadhar Number</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter your Aadhar Number" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            
+                                        </CFormGroup>
+										
+                                        <CFormGroup row className="my-0">
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Occupation</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter your Occupation" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+											
+											<CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Annual Income</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter your Annual Income" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+											
+											<CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Education</CLabel>
+
+                                                     <CSelect id="select"  >
+
+                                                        <option value="0" >Please select Education </option>
+
+                                                        <option value="1">BE</option>
+														<option value="2">BTech</option>
+                                                        <option value="3">MBBS</option>
+														<option value="4">BCOM</option>
+														<option value="5">MCOM</option>
+														<option value="6">MTech</option>
+													</CSelect>
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            
+                                        </CFormGroup>
                                     </CCardBody>
 
+									<br/>
+									 <CCardHeader id="headingOne">
 
-
-                                </CTabPane>
-
-                                <CTabPane data-tab="ref">
-
-                                    <br />
-
-
-
-                                    <CCardHeader id="headingTwo">
-
-
-
-                                        <h5 className="m-0 p-0">Reference Details</h5>
-
-
+                                        <h5 className="m-0 p-0">Contact Details</h5>
 
                                     </CCardHeader>
 
@@ -391,15 +592,28 @@ const Collapses = () => {
 
                                     <CCardBody>
 
+
+
                                         <CFormGroup row className="my-0">
 
                                             <CCol xs="4">
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">Bank Ref No.</CLabel>
+                                                    <CLabel htmlFor="company"> Address Line 1</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your Bill Ref No." disabled/>
+                                                    <CInput id="company" placeholder="Enter your Address Line 1" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Address Line 2</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter your Address Line 2" value="" />
 
                                                 </CFormGroup>
 
@@ -409,9 +623,66 @@ const Collapses = () => {
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">Bill Status</CLabel>
+                                                    <CLabel htmlFor="company">Country</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your Bill Status" value="Maker" disabled/>
+                                                    <CSelect id="select"  >
+
+                                                        <option value="0" >Please select Country </option>
+
+                                                        <option value="1">India</option>
+														<option value="2">US</option>
+                                                        <option value="3">China</option>
+														<option value="4">Japan</option>
+														<option value="5">Nepal</option>
+														<option value="6">Shrilanka</option>
+													</CSelect>
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            
+                                        </CFormGroup>
+
+										
+                                        <CFormGroup row className="my-0">
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company"> State</CLabel>
+
+                                                     <CSelect id="select"  >
+
+                                                        <option value="0" >Please select State </option>
+
+                                                        <option value="1">Maharashtra</option>
+														<option value="2">Delhi</option>
+                                                        <option value="3">Rajsthan</option>
+														<option value="4">Goa</option>
+														<option value="5">Keral</option>
+														<option value="6">Gujrat</option>
+													</CSelect>
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">City</CLabel>
+
+                                                     <CSelect id="select"  >
+
+                                                        <option value="0" >Please select City </option>
+
+                                                        <option value="1">Mumbai</option>
+														<option value="2">Pune</option>
+                                                        <option value="3">Nashik</option>
+														<option value="4">Nagpur</option>
+														
+													</CSelect>
 
                                                 </CFormGroup>
 
@@ -421,75 +692,604 @@ const Collapses = () => {
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">Limit ID</CLabel>
+                                                    <CLabel htmlFor="company">Pincode</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your Limit ID" onBlur={handleChange2}/>
+                                                    <CInput id="company" placeholder="Enter your Pincode" value="" />
 
                                                 </CFormGroup>
 
                                             </CCol>
+                                            
+                                        </CFormGroup>
+										
+										
+                                        <CFormGroup row className="my-0">
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company"> Mobile Number</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter your Mobile Number" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Landline Number</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter your Landline Number" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Email Address</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter your Email Address" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            
+                                        </CFormGroup>
+										
+										
+                                        <CFormGroup row className="my-0">
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company"> Alternate Mobile Number</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter your Alternate Mobile Number" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Alternate Email Address</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter your Alternate Email Address" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            
+                                        </CFormGroup>
+
+                                    </CCardBody>
+									<br/>
+									
+									<CCardHeader id="headingOne">
+                                    <h5 className="m-0 p-0">Bank Account Details</h5>
+									</CCardHeader>
+									<CCardBody>
+									<CFormGroup row className="my-0">
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Payout Mode</CLabel>
+
+                                                    <CSelect id="select"  >
+
+                                                        <option value="0" >Please select Payout mode </option>
+
+                                                        <option value="1">Mumbai</option>
+														<option value="2">Pune</option>
+                                                        <option value="3">Nashik</option>
+														
+														
+													</CSelect>
+
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Account Type</CLabel>
+
+                                                    <CSelect id="select"  >
+
+                                                        <option value="0" >Please select Account Type </option>
+
+                                                        <option value="1">Mumbai</option>
+														<option value="2">Pune</option>
+                                                        <option value="3">Nashik</option>
+														
+														
+													</CSelect>
+
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Bank Name</CLabel>
+
+                                                   <CSelect id="select"  >
+
+                                                        <option value="0" >Please select Bank Name </option>
+
+                                                        <option value="1">Mumbai</option>
+														<option value="2">Pune</option>
+                                                        <option value="3">Nashik</option>
+														<option value="4">Nagpur</option>
+														
+													</CSelect>
+
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            
+                                        </CFormGroup>
+
+
+
+                                        <CFormGroup row className="my-0">
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Account Number</CLabel>
+													<CInput id="company" placeholder="Enter your Nationality" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Bank Branch</CLabel>
+
+                                                    <CSelect id="select"  >
+
+                                                        <option value="0" >Please select Bank Branch </option>
+
+                                                        <option value="1">Married</option>
+
+                                                        <option value="2">Unmarried</option>
+														<option value="3">Divorced</option>
+														<option value="4">widowed</option>
+														
+													</CSelect>
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">IFSC Code</CLabel>
+                                                    <CInput id="company" placeholder="Enter your IFSC Code" value="" />
+                                                    
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                        </CFormGroup>
+
+									</CCardBody>
+									
+
+                                </CTabPane>
+
+                                <CTabPane data-tab="Claim">
+
+                                    <br />
+
+                                   							<CCardHeader id="headingOne">
+                                    <h5 className="m-0 p-0">Details of Life Assured</h5>
+                            </CCardHeader>
+                            <CCardBody>
+								<CFormGroup row className="my-0">
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Name of Life Assured</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter  Name of Life Assured" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Father's Name</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter your Father's Name" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">LA PAN</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter LA PAN" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            
+                                        </CFormGroup>
+
+
+
+                                        <CFormGroup row className="my-0">
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">LA Aadhar</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter LA Aadhar" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Date of Death</CLabel>
+												     <CInput type="date" id="date-input" name="date-input" placeholder="date" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Age of Death</CLabel>
+                                                    <CInput id="company" placeholder="Enter Age of Death" value="" />
+                                                    
+                                                </CFormGroup>
+
+                                            </CCol>
+
                                         </CFormGroup>
 
                                         <CFormGroup row className="my-0">
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Time of Death</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter time of Death" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+											
+											<CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Place of Death</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter Place of Death" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+											
+											<CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Place of Death Address</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter Place of Death Address" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            
+                                        </CFormGroup>
+										
+                                        <CFormGroup row className="my-0">
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Nature of Death</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter  Nature of Death" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+											
+											<CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Immediate Cause of Death</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter Immediate Cause of Death" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+											
+											<CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Circumstances Surrounding Death</CLabel>
+
+                                                     <CInput id="company" placeholder="Enter Circumstances Surrounding Death" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            
+                                        </CFormGroup>
+                                    </CCardBody>
+
+									<br/>
+									 <CCardHeader id="headingOne">
+
+                                        <h5 className="m-0 p-0">Employment Details OF Life Assured</h5>
+
+                                    </CCardHeader>
+
+
+
+                                    <CCardBody>
+
+
+
+                                        <CFormGroup row className="my-0">
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company"> Occupation Details</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter  Occupation Details" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Monthly Income</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter  Monthly Income" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Name of Employer</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter Name of Employer" value="" />
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            
+                                        </CFormGroup>
+
+										
+                                        <CFormGroup row className="my-0">
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Workplace</CLabel>
+
+                                                     <CInput id="company" placeholder="Enter Workplace" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Pincode</CLabel>
+													<CInput id="company" placeholder="Enter Pincode" value="" />
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Last working Location</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter  Last working Location" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            
+                                        </CFormGroup>
+										
+
+                                    </CCardBody>
+									<br/>
+									
+									<CCardHeader id="headingOne">
+                                    <h5 className="m-0 p-0">Hospitalisation of LA</h5>
+									</CCardHeader>
+									<CCardBody>
+									<CFormGroup row className="my-0">
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Was Life assured diagnosed/suffering from/treated for following illness</CLabel>
+													 <CInput id="company" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Type of Admission</CLabel>
+
+                                                    <CSelect id="select"  >
+
+                                                        <option value="0" >Please select Type of Admission </option>
+
+                                                        <option value="1">Mumbai</option>
+														<option value="2">Pune</option>
+                                                        <option value="3">Nashik</option>
+														
+														
+													</CSelect>
+
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Hospitalisation due to injury</CLabel>
+
+                                                   <CInput id="company" value="" />
+
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            
+                                        </CFormGroup>
+
+
+
+                                        <CFormGroup row className="my-0">
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Status at the time of discharge</CLabel>
+													<CInput id="company" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Medical cause on Death Certificate</CLabel>
+													<CInput id="company" value="" />
+
+
+                                                </CFormGroup>
+
+                                            </CCol>
 
                                             
 
-                                            <CCol xs="4">
-
-                                                <CFormGroup>
-
-                                                    <CLabel htmlFor="company">Charges</CLabel>
-
-                                                    <CInput id="company" placeholder="Enter your Charges" />
-
-                                                </CFormGroup>
-
-                                            </CCol>
-
-                                            <CCol xs="4">
-
-                                                <CFormGroup>
-
-                                                    <CLabel htmlFor="company">Margin %</CLabel>
-
-                                                    <CInput id="company" placeholder="Enter your Margin %" />
-
-                                                </CFormGroup>
-
-                                            </CCol>
-
-                                            <CCol xs="4">
-
-                                                <CFormGroup>
-
-                                                    <CLabel htmlFor="company">Other Bank Ref No</CLabel>
-
-                                                    <CInput id="company" placeholder="Enter your Other Bank Ref No" />
-
-                                                </CFormGroup>
-
-                                                </CCol>
                                         </CFormGroup>
 
-                                    </CCardBody>
+									</CCardBody>
+									<br/>
+									
+									<CCardHeader id="headingOne">
+                                    <h5 className="m-0 p-0">Medical Consulation history of Life Assured</h5>
+									</CCardHeader>
+									<CCardBody>
+									<CFormGroup row className="my-0">
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Name of Doctor</CLabel>
+													 <CInput id="company" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Address</CLabel>
+													<CInput id="company" value="" />
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Doctor who attended last illness</CLabel>
+
+                                                   <CInput id="company" value="" />
 
 
+                                                </CFormGroup>
 
-                                </CTabPane>
-
-                                <CTabPane data-tab="benef">
-
-                                    <br />
-
-                                    <CCardHeader id="headingThree">
-
-                                        <h5 className="m-0 p-0">Party Details</h5>
-
-                                    </CCardHeader>
+                                            </CCol>
+                                            
+                                        </CFormGroup>
 
 
-
-                                    <CCardBody>
 
                                         <CFormGroup row className="my-0">
 
@@ -497,9 +1297,45 @@ const Collapses = () => {
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">Name</CLabel>
+                                                    <CLabel htmlFor="company">Doctor who declated Death</CLabel>
+													<CInput id="company" value="" />
 
-                                                    <CInput id="company" placeholder="Enter your Party Name" />
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                        </CFormGroup>
+
+									</CCardBody>
+									
+
+                                </CTabPane>
+
+                                <CTabPane data-tab="Claimant">
+
+                                    <br />
+																<CCardHeader id="headingOne">
+                                    <h5 className="m-0 p-0">Claimant Details</h5>
+                            </CCardHeader>
+                            <CCardBody>
+								<CFormGroup row className="my-0">
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Claimant Name</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter Claimant name" value="" />
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Date of Birth</CLabel>
+
+                                                     <CInput type="date" id="date-input" name="date-input" placeholder="date" />
 
                                                 </CFormGroup>
 
@@ -511,7 +1347,25 @@ const Collapses = () => {
 
                                                     <CLabel htmlFor="company">Address</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter your Party Address" />
+                                                    <CInput id="company" placeholder="Enter Address" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            
+                                        </CFormGroup>
+
+
+
+                                        <CFormGroup row className="my-0">
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Pin Code</CLabel>
+
+                                                   <CInput id="company" placeholder="Enter Pincode" value="" />
 
                                                 </CFormGroup>
 
@@ -521,46 +1375,20 @@ const Collapses = () => {
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="select">Country</CLabel>
+                                                    <CLabel htmlFor="company">Contact No 1</CLabel>
+													 <CInput id="company" placeholder="Enter Contact No 1" value="" />
 
-                                                    <CSelect id="select"  >
+                                                </CFormGroup>
 
-                                                        <option value="0" >Please select Party Country</option>
+                                            </CCol>
 
-                                                        <option value="1">Afghanistan</option>
+                                            <CCol xs="4">
 
-                                                        <option value="2">Belgium</option>
+                                                <CFormGroup>
 
-                                                        <option value="3">Brazil</option>
-
-                                                        <option value="4">Canada</option>
-
-                                                        <option value="5">China</option>
-
-                                                        <option value="6">Malaysia</option>
-
-                                                        <option value="7">Mexico</option>
-
-                                                        <option value="8">New Zealand</option>
-
-                                                        <option value="9">Norway</option>
-
-                                                        <option value="10">Peru</option>
-
-                                                        <option value="11">Russia</option>
-
-                                                        <option value="12">India</option>
-
-                                                        <option value="13">Japan</option>
-
-                                                        <option value="14">United States of America</option>
-
-                                                        <option value="15">Thailand</option>
-
-                                                    </CSelect>
-
-
-
+                                                    <CLabel htmlFor="company">Contact No 2</CLabel>
+                                                    <CInput id="company" placeholder="Enter Contact No 2" value="" />
+                                                    
                                                 </CFormGroup>
 
                                             </CCol>
@@ -573,136 +1401,206 @@ const Collapses = () => {
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">Place of Expiry</CLabel>
+                                                    <CLabel htmlFor="company">Email ID</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter Place of Expiry" />
+                                                    <CInput id="company" placeholder="Enter Email ID" value="" />
 
                                                 </CFormGroup>
 
                                             </CCol>
-
-                                            <CCol xs="4">
+											
+											<CCol xs="4">
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">Date of Expiry</CLabel>
+                                                    <CLabel htmlFor="company">Monthly Income</CLabel>
 
-                                                    <CInput type="date" id="date-input" name="date-input" placeholder="date" />
+                                                    <CInput id="company" placeholder="Enter Monthly Income" value="" />
 
                                                 </CFormGroup>
 
                                             </CCol>
-
-                                            <CCol xs="4">
+											
+											<CCol xs="4">
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">Description of Goods</CLabel>
+                                                    <CLabel htmlFor="company">Relation with Life Assured</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter Description of Goods" />
+                                                    <CInput id="company" placeholder="Enter Relation with Life Assured" value="" />
 
                                                 </CFormGroup>
 
                                             </CCol>
 
+                                            
                                         </CFormGroup>
-
+										
                                         <CFormGroup row className="my-0">
 
                                             <CCol xs="4">
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">Party Account No./IBAN</CLabel>
+                                                    <CLabel htmlFor="company">Claimant Title</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter Party Account No./IBAN" />
+                                                    <CInput id="company" placeholder="Enter Claimant Title" value="" />
 
                                                 </CFormGroup>
 
                                             </CCol>
+											
+											<CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Claimant PAN</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter Claimant PAN" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+											
+											<CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Claimant Aadhar</CLabel>
+
+                                                     <CInput id="company" placeholder="Enter Claimant Aadhar" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            
+                                        </CFormGroup>
+										
+										<CFormGroup row className="my-0">
 
                                             <CCol xs="4">
 
                                                 <CFormGroup>
 
-                                                    <CLabel htmlFor="company">BIC/BSB Code</CLabel>
+                                                    <CLabel htmlFor="company">Is Claimant Politically Exposed Person (PEP)?</CLabel>
 
-                                                    <CInput id="company" placeholder="Enter BIC/BSB Code" />
+                                                    <CInput id="company"  value="" />
 
                                                 </CFormGroup>
 
                                             </CCol>
+											
+											<CCol xs="4">
 
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Preferred Language of Communication</CLabel>
+
+                                                    <CInput id="company"  value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+											
                                         </CFormGroup>
-
-                                        <CFormGroup row className="my-0">
-
-                                            <CCol>
-
-                                                <CFormGroup>
-
-                                                    <CLabel htmlFor="company">Advising Bank Name & Address</CLabel>
-
-                                                    <CTextarea id="company" placeholder="Enter Advising Bank Name & Address" />
-
-                                                </CFormGroup>
-
-                                            </CCol>
-
-                                            <CCol>
-
-                                                <CFormGroup>
-
-                                                    <CLabel htmlFor="company">Reimbursing Bank Name & Address</CLabel>
-
-                                                    <CTextarea id="company" placeholder="Enter Reimbursing Bank Name & Address" />
-
-                                                </CFormGroup>
-
-                                            </CCol>
-
-                                            <CCol>
-
-                                                <CFormGroup>
-
-                                                    <CLabel htmlFor="company">Advise Through Bank Name & Address</CLabel>
-
-                                                    <CTextarea id="company" placeholder="Enter Advise Through Bank Name & Address" />
-
-                                                </CFormGroup>
-
-                                            </CCol>
-
-                                            </CFormGroup>
-
-
+										
+										
+										
                                     </CCardBody>
 
+									<br/>
+									 <CCardHeader id="headingOne">
 
-
-                                </CTabPane>
-
-                                <CTabPane data-tab="document">
-
-                                    <br />
-
-                                    <CCardHeader id="headingOne">
-
-                                        <h5 className="m-0 p-0">Document Details</h5>
+                                        <h5 className="m-0 p-0">Claimant NEFT Mandate/Bank Account Details</h5>
 
                                     </CCardHeader>
+
+
+
                                     <CCardBody>
-                                        
+
+
+
                                         <CFormGroup row className="my-0">
 
-                                            <div className='container mt-4'>
-												<FileUpload />
-											</div>
+                                            <CCol xs="4">
 
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company"> Bank Account Number</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter Bank Account Number" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Account Holder Name</CLabel>
+
+                                                    <CInput id="company" placeholder="Enter Account Holder Name" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Bank Name and Branch</CLabel>
+													 <CInput id="company" placeholder="Enter Bank Name and Branch" value="" />
+
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            
                                         </CFormGroup>
 
-                                    </CCardBody>
+										
+                                        <CFormGroup row className="my-0">
 
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company"> Account Type</CLabel>
+
+                                                     <CSelect id="select"  >
+
+                                                        <option value="0" >Please select Account Type </option>
+
+                                                        <option value="1">Maharashtra</option>
+														<option value="2">Delhi</option>
+                                                        <option value="3">Rajsthan</option>
+														
+													</CSelect>
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">IFSC Code</CLabel>
+
+													 <CInput id="company" placeholder="Enter IFSC Code" value="" />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                           
+                                        </CFormGroup>
+										
+									</CCardBody>
+									
+                                    
                                 </CTabPane>
                             </CTabContent>
 
@@ -716,44 +1614,7 @@ const Collapses = () => {
 
 
 
-            <br />
-
-            <CCard className="mb-0">
-
-                <CCardHeader id="headingThree">
-
-
-
-                    <h5 className="m-0 p-0" id ='remarks'>Remarks</h5>
-
-                </CCardHeader>
-
-                <CCardBody>
-
-                    <CFormGroup row className="my-0">
-
-                        <CCol xs="12">
-
-                            <CFormGroup>
-
-
-
-                                <CTextarea id="company" placeholder="Enter Remarks" />
-
-                            </CFormGroup>
-
-                        </CCol>
-
-
-
-                    </CFormGroup>
-
-                </CCardBody>
-
-
-
-            </CCard>
-
+            
             <br />
 
 

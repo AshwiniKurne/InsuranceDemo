@@ -45,7 +45,7 @@ console.log("user value at sidebar ",user.user.name);
       </CSidebarBrand>
       <CSidebarNav>
       {user.user.name =='Maker'?(<CCreateElement
-          items={navigation2}
+          items={navigation}
           components={{
             CSidebarNavDivider,
             CSidebarNavDropdown,
@@ -53,7 +53,7 @@ console.log("user value at sidebar ",user.user.name);
             CSidebarNavTitle
           }}
         />):(user.user.name == 'Checker'?(<CCreateElement
-          items={navigation3}
+          items={navigation}
           components={{
             CSidebarNavDivider,
             CSidebarNavDropdown,
@@ -62,7 +62,7 @@ console.log("user value at sidebar ",user.user.name);
           }}
         />):(user.user.name == 'Admin'?(
 		<CCreateElement
-          items={navigation4}
+          items={navigation}
           components={{
             CSidebarNavDivider,
             CSidebarNavDropdown,
