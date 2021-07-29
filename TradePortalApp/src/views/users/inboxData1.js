@@ -28,7 +28,7 @@ const inboxData1 = [
         "Policy Issue Date": "12-04-2021",
         "LA Name": "Ankita Shinde",
         "Sum Assured": "619918",
-        "Status" : 'Processed'
+        "Status" : 'Approved'
     },
     {
         "Claim ID": "26741",
@@ -46,7 +46,7 @@ const inboxData1 = [
         "Policy Issue Date": "03-05-2021",
         "LA Name": "Suchitra Jadhav",
         "Sum Assured": "280336",
-        "Status" : 'Terminated'
+        "Status" : 'Declined'
     },
     {
         "Claim ID": "49395",

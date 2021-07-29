@@ -1621,13 +1621,15 @@ const Collapses = () => {
 
             <CRow>
 
-                <CCol xs="6">
+                <CCol xs="12">
 
                     <Link to="/dashboard">
 
                     <CButton color="info" className="px-4"><CIcon name="cil-save" />&nbsp;Save</CButton> &nbsp;
-                        <CButton color="dark" className="px-4"><CIcon name="cil-x" />&nbsp;Close</CButton>&nbsp;
-                        <CButton color="danger" className="px-4"><CIcon name="cil-trash" />&nbsp;Trash</CButton>&nbsp;
+                        <CButton color="danger" className="px-4"><CIcon name="cil-x" />&nbsp;Close</CButton>&nbsp;
+                        <CButton color="dark" className="px-4"><CIcon name="cilPencil" />&nbsp;Register Claim</CButton>&nbsp;
+                        <CButton color="primary" className="px-4" disabled><CIcon name="cilPaperclip" />&nbsp;Attach Nominee </CButton>&nbsp;
+                        <CButton color="warning" className="px-4" disabled><CIcon name="cilPaperclip" />&nbsp;Attach Bank DOCS/EC </CButton>&nbsp;
                         <CButton color="success" className="px-4"><CIcon name="cil-cursor" />&nbsp;Submit</CButton>
 
                     </Link>

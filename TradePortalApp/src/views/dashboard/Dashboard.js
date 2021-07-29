@@ -64,45 +64,30 @@ export default class test2 extends Component {
         {this.state.userN =='Maker'?( columns = [
 
             {
-                name: "CustomerPortalRefNo",
-                label: "Ref No"
+                name: "ClaimID",
+                label: "Claim ID"
             },
 			{
-                name: "BDProduct",
-                label: "Product"
+                name: "ClaimDate",
+                label: "Claim Date"
             },
             {
-                name: "BDSubProduct",
-                label: "Sub Product"
+                name: "PolicyNumber",
+                label: "Policy Number"
             },
             {
-                name: "BDOperation",
-                label: "Operation"
+                name: "PolicyIssueDate",
+                label: "Policy Issue Date"
             },
             {
-                name: "BDCurrency",
-                label: "Currency"
+                name: "LAName",
+                label: "LA Name"
             },
 			{
-                name: "BDAmount",
-                label: "Amount"
+                name: "SumAssured",
+                label: "Sum Assured"
             },
-            {
-                name: "BDAccountNo",
-                label: "Account No"
-            },
-            
-            
-            {
-                name: "BenfName",
-                label: "Beneficiary Name"
-            },
-            
            
-            {
-                name: "EntryTime",
-                label: "Entry Date Time"
-            },
             {
                 name: "Action",
                 options: {
@@ -124,45 +109,30 @@ export default class test2 extends Component {
             columns = [
 
                 {
-                    name: "CustomerPortalRefNo",
-                    label: "Ref No"
+                    name: "ClaimID",
+                    label: "Claim ID"
                 },
                 {
-                    name: "BDProduct",
-                    label: "Product"
+                    name: "Claim Date",
+                    label: "ClaimDate"
                 },
                 {
-                    name: "BDSubProduct",
-                    label: "Sub Product"
+                    name: "PolicyNumber",
+                    label: "Policy Number"
                 },
                 {
-                    name: "BDOperation",
-                    label: "Operation"
+                    name: "PolicyIssueDate",
+                    label: "Policy Issue Date"
                 },
                 {
-                    name: "BDCurrency",
-                    label: "Currency"
+                    name: "LAName",
+                    label: "LA Name"
                 },
                 {
-                    name: "BDAmount",
-                    label: "Amount"
-                },
-                {
-                    name: "BDAccountNo",
-                    label: "Account No"
+                    name: "SumAssured",
+                    label: "Sum Assured"
                 },
                 
-                
-                {
-                    name: "BenfName",
-                    label: "Beneficiary Name"
-                },
-                
-               
-                {
-                    name: "EntryTime",
-                    label: "Entry Date Time"
-                },
                 {
                     name: "Action",
                     options: {
@@ -186,56 +156,31 @@ export default class test2 extends Component {
         let rejColumns =[];
         {this.state.userN =='Maker'?( rejColumns = [
             
-			{
-                name: "CustomerPortalRefNo",
-                label: "Ref No"
-            },
-			
-            {
-                name: "BDProduct",
-                label: "Product"
-            },
-            {
-                name: "BDSubProduct",
-                label: "Sub Product"
-            },
-            {
-                name: "BDOperation",
-                label: "Operation"
-            },
-            {
-                name: "BDCurrency",
-                label: "Currency"
-            },
-			{
-                name: "BDAmount",
-                label: "Amount"
-            },
-            {
-                name: "BDAccountNo",
-                label: "Account No"
-            },
-            
-            
-            {
-                name: "BenefName",
-                label: "Beneficiary Name"
-            },
-			{
-                name: "BDTxnNo",
-                label: "Txn No"
-
-            },
-            {
-                name: "BankRefRefNo",
-                label: "Bank Ref No"
-            },
-            
-            {
-                name: "EntryTime",
-                label: "Entry Date Time"
-            },
-            {
+				{
+                    name: "ClaimID",
+                    label: "Claim ID"
+                },
+                {
+                    name: "Claim Date",
+                    label: "ClaimDate"
+                },
+                {
+                    name: "PolicyNumber",
+                    label: "Policy Number"
+                },
+                {
+                    name: "PolicyIssueDate",
+                    label: "Policy Issue Date"
+                },
+                {
+                    name: "LAName",
+                    label: "LA Name"
+                },
+                {
+                    name: "SumAssured",
+                    label: "Sum Assured"
+                },
+				{
                 name: "Action",
                 options: {
                     filter: false,
@@ -248,61 +193,36 @@ export default class test2 extends Component {
                         return (
                           <Link to='/MakerChecker/Maker' ><PlayArrowIcon /></Link>
                         );
-                    }
-                }
-            },
+						}
+					}
+				},
 
         ]):( rejColumns = [
             
 			{
-                name: "CustomerPortalRefNo",
-                label: "Ref No"
-            },
-			
-            {
-                name: "BDProduct",
-                label: "Product"
-            },
-            {
-                name: "BDSubProduct",
-                label: "Sub Product"
-            },
-            {
-                name: "BDOperation",
-                label: "Operation"
-            },
-            {
-                name: "BDCurrency",
-                label: "Currency"
-            },
-			{
-                name: "BDAmount",
-                label: "Amount"
-            },
-            {
-                name: "BDAccountNo",
-                label: "Account No"
-            },
-            
-            
-            {
-                name: "BenefName",
-                label: "Beneficiary Name"
-            },
-			{
-                name: "BDTxnNo",
-                label: "Txn No"
-
-            },
-            {
-                name: "BankRefRefNo",
-                label: "Bank Ref No"
-            },
-            
-            {
-                name: "EntryTime",
-                label: "Entry Date Time"
-            },
+                    name: "ClaimID",
+                    label: "Claim ID"
+                },
+                {
+                    name: "Claim Date",
+                    label: "ClaimDate"
+                },
+                {
+                    name: "PolicyNumber",
+                    label: "Policy Number"
+                },
+                {
+                    name: "PolicyIssueDate",
+                    label: "Policy Issue Date"
+                },
+                {
+                    name: "LAName",
+                    label: "LA Name"
+                },
+                {
+                    name: "SumAssured",
+                    label: "Sum Assured"
+                },
             {
                 name: "Action",
                 options: {
@@ -334,33 +254,33 @@ export default class test2 extends Component {
 
         let inboxData =[];
  {this.state.userN =='Maker'?( inboxData = [
-    [ "92991265","LC","Import-LC","Issuance","USD","53992","39014177160","Sam Mathews","07-03-2021 10:30 AM"],
-    ["21551965","Guarantees","Inward Guarantee","Amendment","USD","19103","15494862853","John Almaida","11-03-2021 10:04 AM"],
-    ["25355519","Bill under collection","Import Bill","Acceptance","USD","48544","61991875450","Dwyane Rushhill","09-03-2021 2:30 PM"],
-    ["91921721","Bill under collection","Open Account","Import Payment","USD","21525","37934808227","Jaffery Dsouza","11-03-2021 2:12 PM"],
-    ["29430238","Bills under LC","Import-LC","Lodgement","USD","12047","28033677916","Jaffin Mahen","02-03-2021 11:54 AM"],
+    [ "92991265","03-02-2021","23123","12-02-2021","Abhishek Deshmukh","53992"],
+    ["21551965","07-04-2021","88872","02-11-2021","Ravi Singh","19103"],
+    ["25355519","11-02-2021","67676","13-09-2021","Avinash Kumar","48544"],
+    ["91921721","16-03-2021","20832","18-05-2021","Sumit Bugade","21525"],
+    ["29430238","21-02-2021","90232","24-09-2021","Swara Surve","12047"]
     
  ]):( inboxData = [
-    ["78773170","LC","Export-LC","Advising","USD","68007","88923439809","Ken Dcosta","10-03-2021 4:21 PM"],
-    ["52838775","Remittance","Outward Remittance","Issuance","USD","15852","26346547852","Ashwini Kurne","06-03-2021 6:10 PM"],
-    ["49442826","Guarantees","Inward Guarantee","Issuance","USD","78694","70936878051","Aparna Pandey","05-03-2021 1:45 PM"],
-    ["96064947","Bill under collection","Import Bill","Acceptance","USD","29989","51514445397","Sanchay Gupta","02-03-2021 5:17 PM"]
+    ["78773170","12-09-2020","12832","16-12-2020","Ritika Nile","68007"],
+    ["52838775","19-10-2020","23712","27-11-2020","Dhawni Bhat","15852"],
+    ["49442826","12-11-2020","75637","12-02-2021","Anvita ghosal","78694"],
+    ["96064947","12-02-2021","83672","26-05-2021","Arun Kale ","29989"]
     
  ])}
 
  let rejData =[];
  {this.state.userN =='Maker'?( rejData = [ 
-    ["28963122","LC","Export-LC","Closure","USD","52562","69014177160","Chintan Kumar","89807","92991265","12-03-2021 1:30 AM"],
-    ["29051965","LC","Import-LC","Crystalisation","USD","54686","1433442853","Abhijit Rai","54210","79774987", "13-03-2021 11:12 AM"],
-    ["29155519","Guarantees","Inward Guarantee","Issuance","USD","34678","56741875450","Ravish Chahal","46541","36991879","05-03-2021 2:40 PM"],
-    ["59612625","Guarantees","Outward Guarantee","Advising","USD","45689","12674808227","Erica Dsouza","85085","91921721","03-03-2021 7:12 PM"],
-    ["54085560","LC","Import-LC","Amendment","USD","95623","98323677916","Swati Sharma","84606","29430238","09-03-2021 12:54 AM"],
+    ["28963122","05-01-2021","32812","16-02-2021","Shrikant Tiwari","52562"],
+    ["29051965","29-03-2021","89326","17-05-2021","Akshay Lokhande","54686"],
+    ["29155519","15-01-2021","45628","23-06-2021","Mayur Jadhav","34678"],
+    ["59612625","23-08-2021","89712","10-09-2021","Nikita Hande","45689"],
+    ["54085560","14-01-2021","78963","17-04-2021","Simran Balodi","95623"]
     
     ]):(rejData = [ 
-    ["20873170","LC","Import-LC","Crystalisation","USD","90001","58973439809","Ken hyun","59620","41044359","14-03-2021 8:21 PM"],
-    ["78838775","Guarantees","Inward Guarantee","Issuance","USD","48932","45986547852","Sharad Balodi","33282","55159543","10-03-2021 3:10 PM"],
-    ["46742826","Bill under collection","Open Account","Advance payment","USD","89673","33446878051","Karan Rathod","23962","43147308","07-03-2021 6:45 PM"],
-    ["93104947","Bills under LC","Export-LC","Amedment", "USD","58964","76874445397","Shiv Shinde","65139","23901250","03-03-2021 2:17 PM"]
+    ["20873170","24-01-2021","34892","19-03-2021","Karan Jha","90001"],
+    ["78838775","22-04-2021","67021","28-06-2021","Hanu Singh","48932"],
+    ["46742826","21-02-2021","83578","27-04-2021","Suraj Bohra","89673"],
+    ["93104947","03-01-2021","38917","10-03-2021", "Amit Singh","58964"]
     ]
     )}
 
