@@ -11,9 +11,9 @@ import {
     CCardBody,
 
     CCardHeader,
-
+    CDataTable,
     CCol,
-
+    CBadge,
     CFormGroup,
 
     CInput,
@@ -56,6 +56,12 @@ const Collapses = () => {
 	const[value2,setValue2] =useState()
 
     const[modal2,setModal2] =useState(false);
+
+    const fields = ['FirstName','LastName', 'DateofBirth', 'Gender','RelationwithAssured','NomineeShare','Action']
+
+    const usersData =[
+        {id :0, FirstName: 'Sanchay ', LastName: 'John Doe', DateofBirth: '1990/10/28', Gender: 'Male', RelationwithAssured: 'Brother',NomineeShare :'Sanchay Gupta'},
+    ];
 
     const toggle = (e) => {
 
@@ -331,55 +337,30 @@ const Collapses = () => {
 
 
                                     <CCardBody>
-
-
-
-                                        <CFormGroup row className="my-0">
-
-                                            <CCol xs="4">
-
-                                                <CFormGroup>
-
-                                                    <CLabel htmlFor="company">Policy No</CLabel>
-
-                                                    <CInput id="company" placeholder="Enter your Policy No" value="" />
-
-                                                </CFormGroup>
-
-                                            </CCol>
-                                            <CCol xs="4">
-
-                                                <CFormGroup>
-
-                                                    <CLabel htmlFor="company">Plan Name</CLabel>
-
-                                                    <CInput id="company" placeholder="Enter your Plan Name" value="" />
-
-                                                </CFormGroup>
-
-                                            </CCol>
-
-                                            <CCol xs="4">
-
-                                                <CFormGroup>
-
-                                                    <CLabel htmlFor="company">Policy Start Date</CLabel>
-
-                                                    <CInput type="date" id="date-input" name="date-input" placeholder="date" />
-
-                                                </CFormGroup>
-
-                                            </CCol>
-                                            
-                                        </CFormGroup>
-
-
-
-                                       
-
-                                            
-                                       
-
+                                        <CButton color="dark">
+                                            ADD
+                                        </CButton>
+                                        <br/>
+                                        <br/>
+                                            <CDataTable
+                                               items={usersData}
+                                                 fields={fields}
+                                                  hover
+                                              striped
+                                               bordered
+                                                 size="sm"
+                                              
+                                                pagination
+                                                  scopedSlots = {{
+                                                  'Action':
+                                                  (item)=>(
+                                                  <td>
+                                                    <CButton color="primary">Edit</CButton>&nbsp;
+                                                    <CButton color="primary">Delete</CButton>
+                                                 </td>
+                  )
+              }}
+            />                                       
                                     </CCardBody>
 
 
