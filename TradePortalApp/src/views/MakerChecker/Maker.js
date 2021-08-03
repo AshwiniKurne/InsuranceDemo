@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import FileUpload from './FileUpload';
 import { Link } from 'react-router-dom'
+
+import ProgressBar from './ProgressBar';
 
 import {
     CAlert,
@@ -70,6 +72,9 @@ const Collapses = () => {
         e.preventDefault()
 
     }
+
+   
+
 
     const handleChange2 =(e)=>{
         var amt =e.target.value;
@@ -170,8 +175,10 @@ const Collapses = () => {
                                         <CCol sm="3"><b>Ref No.</b> : 3487534</CCol>
                                     </CRow>
                                 </CAlert>
-                                
-
+                                <br/><br/>
+                                <ProgressBar/>
+                                <br/>
+                                <br/>
                         <CTabs activeTab="Policy">
 
                             <CNav variant="tabs">
