@@ -59,7 +59,8 @@ const Collapses = () => {
 
     const[modal2,setModal2] =useState(false);
 
-    const fields = ['FirstName','LastName', 'DateofBirth', 'Gender','RelationwithAssured','NomineeShare','Action']
+    const fields = ['FirstName','LastName', 'DateofBirth', 'Gender','RelationwithAssured','NomineeShare']
+
 
     const usersData =[
         {id :0, FirstName: 'Sanchay ', LastName: 'John Doe', DateofBirth: '1990/10/28', Gender: 'Male', RelationwithAssured: 'Brother',NomineeShare :'Sanchay Gupta'},
@@ -176,7 +177,7 @@ const Collapses = () => {
                                     </CRow>
                                 </CAlert>
                                 <br/><br/>
-                                <ProgressBar/>
+                               
                                 <br/>
                                 <br/>
                         <CTabs activeTab="Policy">
@@ -329,6 +330,16 @@ const Collapses = () => {
 
                                             </CCol>
 
+                                            <CCol xs="4">
+
+                                                    <CFormGroup>
+
+                                                         <CLabel htmlFor="company">Policy Status</CLabel>
+                                                         <CInput id="company" placeholder="Enter your Premium Amount" value="In Force" disabled/>
+    
+                                                    </CFormGroup>
+
+                                            </CCol>
                                             
                                         </CFormGroup>
 
@@ -344,11 +355,7 @@ const Collapses = () => {
 
 
                                     <CCardBody>
-                                        <CButton color="dark">
-                                            ADD
-                                        </CButton>
-                                        <br/>
-                                        <br/>
+                                        
                                             <CDataTable
                                                items={usersData}
                                                  fields={fields}
@@ -358,15 +365,7 @@ const Collapses = () => {
                                                  size="sm"
                                               
                                                 pagination
-                                                  scopedSlots = {{
-                                                  'Action':
-                                                  (item)=>(
-                                                  <td>
-                                                    <CButton color="primary">Edit</CButton>&nbsp;
-                                                    <CButton color="primary">Delete</CButton>
-                                                 </td>
-                  )
-              }}
+                                                  
             />                                       
                                     </CCardBody>
 
@@ -1583,7 +1582,19 @@ const Collapses = () => {
 
                                             </CCol>
 
-                                           
+
+                                            <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Account Status</CLabel>
+
+													 <CInput id="company" placeholder="Enter IFSC Code" value="Not Verified" disabled />
+
+                                                </CFormGroup>
+
+                                            </CCol>
+                                         
                                         </CFormGroup>
 										
 									</CCardBody>
@@ -1618,6 +1629,7 @@ const Collapses = () => {
                         <CButton color="dark" className="px-4"><CIcon name="cilPencil" />&nbsp;Register Claim</CButton>&nbsp;
                         <CButton color="primary" className="px-4" disabled><CIcon name="cilPaperclip" />&nbsp;Attach Nominee </CButton>&nbsp;
                         <CButton color="warning" className="px-4" disabled><CIcon name="cilPaperclip" />&nbsp;Attach Bank DOCS/EC </CButton>&nbsp;
+                        <CButton color="dark" className="px-4" ><CIcon name="cil-Check" />&nbsp;Initiate Penny Checking </CButton>&nbsp;
                         <CButton color="success" className="px-4"><CIcon name="cil-cursor" />&nbsp;Submit</CButton>
 
                     </Link>
