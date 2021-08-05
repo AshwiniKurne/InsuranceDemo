@@ -215,6 +215,43 @@ const Collapses = () => {
                                     </CNavLink>
 
                                 </CNavItem>
+                                <CNavItem>
+
+                                    <CNavLink data-tab="document">
+
+                                         Document Details
+
+                                    </CNavLink>
+
+                                </CNavItem>
+                                 <CNavItem>
+
+                                    <CNavLink data-tab="document">
+
+                                         Document Details
+
+                                    </CNavLink>
+
+                                </CNavItem>
+
+                                   <CNavItem>
+
+                                    <CNavLink data-tab="document">
+
+                                         Document Details
+
+                                    </CNavLink>
+
+                                </CNavItem>
+                                <CNavItem>
+
+                                    <CNavLink data-tab="accessorDecision">
+
+                                    Accessor Decision
+
+                                    </CNavLink>
+
+                                </CNavItem>
 
                             </CNav>
 
@@ -889,13 +926,11 @@ const Collapses = () => {
                                 </CTabPane>
 
                                 <CTabPane data-tab="Claim">
-
                                     <br />
-
-                                   							<CCardHeader id="headingOne">
-                                    <h5 className="m-0 p-0">Details of Life Assured</h5>
-                            </CCardHeader>
-                            <CCardBody>
+                                 <CCardHeader id="headingOne">
+                                     <h5 className="m-0 p-0">Details of Life Assured</h5>
+                                 </CCardHeader>
+                                <CCardBody>
 								<CFormGroup row className="my-0">
                                             <CCol xs="4">
 
@@ -1601,6 +1636,32 @@ const Collapses = () => {
 									
                                     
                                 </CTabPane>
+
+                                <CTabPane data-tab="document">
+
+                                    <br />
+
+                                    <CCardHeader id="headingOne">
+
+                                        <h5 className="m-0 p-0">Document Details</h5>
+
+                                    </CCardHeader>
+                                    <CCardBody>
+
+                                        <CFormGroup row className="my-0">
+
+                                            <div className='container mt-4'>
+                                                <FileUpload />
+                                            </div>
+
+                                        </CFormGroup>
+
+                                    </CCardBody>
+
+                                </CTabPane>
+
+
+
                             </CTabContent>
 
                         </CTabs>
