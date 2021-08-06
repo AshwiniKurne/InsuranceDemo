@@ -1088,7 +1088,7 @@ const Collapses = () => {
 
                                             </CCol>
 
-                                            
+                                             
                                         </CFormGroup>
                                     </CCardBody>
 
