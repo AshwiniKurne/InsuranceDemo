@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import FileUpload from './FileUpload';
 import { Link } from 'react-router-dom'
-
+import Ruleset from './RuleSet';
 import ProgressBar from './ProgressBar';
 
 import {
@@ -1633,8 +1633,30 @@ const Collapses = () => {
 
                                 </CCardBody>
 
-                            </CTabPane>
+                                <br/>
+									 <CCardHeader id="headingOne">
 
+                                        <h5 className="m-0 p-0">Ruleset</h5>
+
+                                    </CCardHeader>
+
+
+
+                                    <CCardBody>
+                                        
+                                    <CFormGroup row className="my-0">
+
+                                        <div className='container mt-4'>
+                                                         <Ruleset/>
+                                        </div>
+
+                                    </CFormGroup>
+
+                                    </CCardBody>
+
+
+                            </CTabPane>
+                            
 
                             </CTabContent>
 
