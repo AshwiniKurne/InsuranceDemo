@@ -1,0 +1,10 @@
+Issue List :
+
+
+1. When we submit last stage Offering from navigator its throwing below error :
+   javax.ejb.TransactionRolledbackLocalException: ; nested exception is: java.lang.RuntimeException: 		   com.ibm.bpm.wle.api.UnexpectedFailureException: CWTBG0019E: Unexpected exception during execution. Exception    information:   'Internal Error'.
+   If we run the individual process in BPM then its submitted Properly without throwing any error
+
+2.When we add document then two cases getting launch instead of one.
+
+3.Sales Stage : Under Credit score tab ,Chart is not visible

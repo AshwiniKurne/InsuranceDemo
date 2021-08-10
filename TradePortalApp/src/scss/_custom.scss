@@ -568,7 +568,9 @@ a.fixed-widgets:hover span, a.fixed-widgets i{display:inline-block;float:left;wi
     color: red;
 }
 
-.MuiTableCell-root MuiTableCell-body MUIDataTableBodyCell-root-52 MUIDataTableBodyCell-stackedParent-59 MUIDataTableBodyCell-responsiveStackedSmallParent-63{
 
-    display: none !important;
+
+#tableButton {
+    border: none !important;
+    background-color: white !important;
 }

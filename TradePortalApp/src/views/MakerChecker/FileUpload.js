@@ -116,7 +116,7 @@ const FileUpload = () => {
       // set the attributes.
       var newRowLen =rowLen+1;
       var btnName = "button"+newRowLen;
-      //alert("butttton "+btnName);
+      alert("butttton "+btnName);
       //button.setAttribute('type', 'button');
       button1.innerHTML = "&#10060;";
       button1.className ='btn';
@@ -293,6 +293,55 @@ const FileUpload = () => {
                     </thead>
                     <tbody>
                       <tr className='table-row' id='table-row'></tr>
+					  <tr id ='Nominee'>
+						<td className='table-header'>Nominee Bank Details.pdf</td>
+                        <td className='table-header'>application/pdf</td>
+                        <td className='table-header'>67895</td>
+                        <td className='table-header'>Sale1</td>
+                        <td className='table-header'><button id ='tableButton' onClick ={() =>{document.getElementById('viewDoc').src = '/uploads/collateral2.png';console.log("ss");}} > &#128065; </button>&nbsp;&nbsp;<button id ='tableButton' onClick ={()=>{window.confirm("Are you sure you want to delete this item?");document.getElementById('Nominee').parentNode.removeChild(document.getElementById('Nominee'));}}> &#10060; </button></td>
+					  </tr>
+					  <tr id ='Claim'>
+						<td className='table-header'>Claim Form.pdf</td>
+                        <td className='table-header'>application/pdf</td>
+                        <td className='table-header'>45673</td>
+                        <td className='table-header'>Sale1</td>
+                        <td className='table-header'><button id ='tableButton' onClick ={() =>{document.getElementById('viewDoc').src = '/uploads/collateral2.png';console.log("ss");}}> &#128065; </button>&nbsp;&nbsp;<button id ='tableButton' onClick ={()=>{window.confirm("Are you sure you want to delete this item?");document.getElementById('Claim').parentNode.removeChild(document.getElementById('Claim'));}}> &#10060; </button></td>
+					  </tr>
+					  <tr id ='Other'>
+						<td className='table-header'>Other Documents.pdf</td>
+                        <td className='table-header'>application/pdf</td>
+                        <td className='table-header'>32657</td>
+                        <td className='table-header'>Sale1</td>
+                        <td className='table-header'><button id ='tableButton' onClick ={() =>{document.getElementById('viewDoc').src = '/uploads/collateral2.png';console.log("ss");}}> &#128065; </button>&nbsp;&nbsp;<button id ='tableButton' onClick ={()=>{window.confirm("Are you sure you want to delete this item?");document.getElementById('Other').parentNode.removeChild(document.getElementById('Other'));}}> &#10060; </button></td>
+					  </tr>
+					  <tr id ='Aadhar'>
+						<td className='table-header'>Claimant Aadhar Card.pdf</td>
+                        <td className='table-header'>application/pdf</td>
+                        <td className='table-header'>54678</td>
+                        <td className='table-header'>Sale1</td>
+                        <td className='table-header'><button id ='tableButton' onClick ={() =>{document.getElementById('viewDoc').src = '/uploads/collateral2.png';console.log("ss");}}> &#128065; </button>&nbsp;&nbsp;<button id ='tableButton' onClick ={()=>{window.confirm("Are you sure you want to delete this item?");document.getElementById('Aadhar').parentNode.removeChild(document.getElementById('Aadhar'));}}> &#10060; </button></td>
+					  </tr>
+					  <tr id ='Pan'>
+						<td className='table-header'>Claimant PAN Card.pdf</td>
+                        <td className='table-header'>application/pdf</td>
+                        <td className='table-header'>34322</td>
+                        <td className='table-header'>Sale1</td>
+                        <td className='table-header'><button id ='tableButton' onClick ={() =>{document.getElementById('viewDoc').src = '/uploads/collateral2.png';console.log("ss");}}> &#128065; </button>&nbsp;&nbsp;<button id ='tableButton' onClick ={()=>{window.confirm("Are you sure you want to delete this item?");document.getElementById('Pan').parentNode.removeChild(document.getElementById('Pan'));}}> &#10060; </button></td>
+					  </tr>
+					   <tr id ='Death'>
+						<td className='table-header'>Death Certificate.pdf</td>
+                        <td className='table-header'>application/pdf</td>
+                        <td className='table-header'>87532</td>
+                        <td className='table-header'>Sale1</td>
+                        <td className='table-header'><button id ='tableButton' onClick ={() =>{document.getElementById('viewDoc').src = '/uploads/collateral2.png';console.log("ss");}}> &#128065; </button>&nbsp;&nbsp;<button id ='tableButton' onClick ={()=>{window.confirm("Are you sure you want to delete this item?");document.getElementById('Death').parentNode.removeChild(document.getElementById('Death'));}}> &#10060; </button></td>
+					  </tr>
+					   <tr id ='Policy'>
+						<td className='table-header'>Policy Document.pdf</td>
+                        <td className='table-header'>application/pdf</td>
+                        <td className='table-header'>76845</td>
+                        <td className='table-header'>Sale1</td>
+                        <td className='table-header'><button id ='tableButton' onClick ={() =>{document.getElementById('viewDoc').src = '/uploads/collateral2.png';console.log("ss");}}> &#128065; </button>&nbsp;&nbsp;<button id ='tableButton' onClick ={()=>{window.confirm("Are you sure you want to delete this item?");document.getElementById('Policy').parentNode.removeChild(document.getElementById('Policy'));}}> &#10060; </button></td>
+					  </tr>
                     </tbody>
                   </table>
                 </td>
