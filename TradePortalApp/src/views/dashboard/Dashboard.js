@@ -144,7 +144,7 @@ export default class test2 extends Component {
                             let rowData = data[tableMeta.rowIndex];
     
                             return (
-                              <Link to='/MakerChecker/Checker' ><PlayArrowIcon /></Link>
+                              <Link to='/MakerChecker/ClaimAccesor' ><PlayArrowIcon /></Link>
                             );
                         }
                     }
@@ -234,7 +234,7 @@ export default class test2 extends Component {
                         let rowData = data[tableMeta.rowIndex];
 
                         return (
-                          <Link to='/MakerChecker/Checker'><PlayArrowIcon  /></Link>
+                          <Link to='/MakerChecker/ClaimAccesor'><PlayArrowIcon  /></Link>
                         );
                     }
                 }

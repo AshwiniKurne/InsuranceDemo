@@ -50,7 +50,7 @@ const trashedCases =React.lazy(()=>import('./views/dashboard/trashedCases'));
 const addUser =React.lazy(()=>import('./views/dashboard/addUser'));
 const assignRole =React.lazy(()=>import('./views/dashboard/assignRole'));
 const TrashCopy = React.lazy(()=>import('./views/MakerChecker/TrashCopy'));
-
+const ClaimAccesor =React.lazy(()=>import('./views/MakerChecker/ClaimAccesor'));
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -105,6 +105,7 @@ const routes = [
   { path: '/addUser', name: 'Add user', component: addUser},
   { path: '/assignRole', name: 'Assign role', component: assignRole},
   { path: '/MakerChecker/TrashCopy', name: 'Copy Trash Cases', component: TrashCopy},
+  {path: '/MakerChecker/ClaimAccesor', name: 'Claim Accesor', component: ClaimAccesor}
 ];
 
 export default routes;

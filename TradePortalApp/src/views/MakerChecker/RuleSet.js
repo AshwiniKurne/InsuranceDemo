@@ -22,7 +22,7 @@ import {
   } from '@coreui/react';
   import UserContext from '../../UserContext';
   import CIcon from '@coreui/icons-react'
-import { cilDisabled } from '@coreui/icons';
+
 
 
 export default class Ruleset extends Component {
@@ -51,6 +51,8 @@ export default class Ruleset extends Component {
     console.log(user);
     console.log(user.user.name);
     this.setData(user.user.name);
+    
+    
   }
   
   setData = (e) =>{
@@ -179,7 +181,7 @@ toggle2 = () => {
             </div>
             <div>
             <CModal show={this.state.modal} onClose={this.toggle}>
-                                                <CModalBody>Case created successfully with Ref no. 1234567
+                                                <CModalBody>
 					                            </CModalBody>
                                                 <CModalFooter>
                                                    

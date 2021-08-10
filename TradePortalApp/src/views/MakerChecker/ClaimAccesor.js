@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import FileUpload from './FileUpload';
 import { Link } from 'react-router-dom'
-
+import Ruleset from './RuleSet';
 import ProgressBar from './ProgressBar';
 
 import {
@@ -176,9 +176,7 @@ const Collapses = () => {
                                         <CCol sm="3"><b>Ref No.</b> : 3487534</CCol>
                                     </CRow>
                                 </CAlert>
-                                <br/><br/>
                                
-                                <br/>
                                 <br/>
                         <CTabs activeTab="Policy">
 
@@ -224,25 +222,7 @@ const Collapses = () => {
                                     </CNavLink>
 
                                 </CNavItem>
-                                 <CNavItem>
-
-                                    <CNavLink data-tab="document">
-
-                                         Document Details
-
-                                    </CNavLink>
-
-                                </CNavItem>
-
-                                   <CNavItem>
-
-                                    <CNavLink data-tab="document">
-
-                                         Document Details
-
-                                    </CNavLink>
-
-                                </CNavItem>
+                                
                                 <CNavItem>
 
                                     <CNavLink data-tab="accessorDecision">
@@ -1660,6 +1640,85 @@ const Collapses = () => {
 
                                 </CTabPane>
 
+                                <CTabPane data-tab="accessorDecision">
+                                    
+
+                                    <br/>
+									 <CCardHeader id="headingOne">
+
+                                        <h5 className="m-0 p-0">Rule Results</h5>
+
+                                    </CCardHeader>
+
+
+
+                                    <CCardBody>
+                                        
+                                    <CFormGroup row className="my-0">
+
+                                        <div className='container mt-4'>
+                                                         <Ruleset/>
+                                        </div>
+
+                                    </CFormGroup>
+
+                                    </CCardBody>
+
+                                    <br/>
+									 <CCardHeader id="headingOne">
+
+                                        <h5 className="m-0 p-0">Accessor Decision</h5>
+
+                                    </CCardHeader>
+
+
+
+                                    <CCardBody>
+                                        
+                                    <CFormGroup row className="my-0">
+
+                                    <CCol xs="4">
+
+                                                <CFormGroup>
+
+                                                    <CLabel htmlFor="company">Accessor Recommendation</CLabel>
+
+                                                    <CSelect id="select"  >
+
+                                                        <option value="0" >Please select Accessor Recommendation </option>
+
+                                                        <option value="1">Approve</option>
+
+                                                        <option value="2">Deny</option>
+
+                                                        <option value="3">Investigate</option>
+													</CSelect>
+
+                                                </CFormGroup>
+
+                                            </CCol>
+
+                                            </CFormGroup>
+                                    <CFormGroup row className="my-0">
+                                    <CCol xs="12">
+
+                                        <CFormGroup>
+
+                                             <CLabel htmlFor="company">Comments</CLabel>
+
+                                             <CTextarea id="company" placeholder="Enter Remarks" />
+
+                                        </CFormGroup>
+
+                                    </CCol>
+
+
+                                    </CFormGroup>
+
+                                    </CCardBody>
+
+
+                                </CTabPane>
 
 
                             </CTabContent>
