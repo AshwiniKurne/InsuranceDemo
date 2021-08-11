@@ -901,8 +901,50 @@ const Collapses = () => {
                                 <CTabPane data-tab="Claim">
 
                                     <br />
+                            <CCardHeader id ='headingTwo'>
+                                    <h5 className="m-0 p-0">Basic Claim Details</h5>
+                            </CCardHeader>
+                            <CCardBody>
+                            <CFormGroup row className="my-0">
+                            <CCol xs="4">
+                                <CFormGroup>
 
-                                   							<CCardHeader id="headingOne">
+                                  <CLabel htmlFor="company">Claim ID</CLabel>
+
+                                  <CInput id="company" placeholder="Enter Claim ID " value="" />
+
+                                </CFormGroup>
+                                </CCol>
+                                <CCol xs="4">
+                                <CFormGroup>
+
+                                  <CLabel htmlFor="company">Claim Date</CLabel>
+
+                                  <CInput type="date" id="date-input" name="date-input" placeholder="date" />
+
+                                </CFormGroup>
+                                </CCol>
+                                <CCol xs="4">
+                                <CFormGroup>
+
+                                  <CLabel htmlFor="company">Raised By</CLabel>
+
+                                  <CInput id="company" placeholder="Enter Raised By" value="" />
+
+                                </CFormGroup>
+                                </CCol>
+                                </CFormGroup>
+                                <CFormGroup row className="my-0">
+                                    <CCol xs="4">
+                                  <CLabel htmlFor="company">Claim Type</CLabel>
+
+                                  <CInput id="company" placeholder="Enter" value="Early Claim" disabled />
+                                  </CCol>
+                                </CFormGroup>
+
+                            </CCardBody>
+                            <br/>
+                            <CCardHeader id="headingOne">
                                     <h5 className="m-0 p-0">Details of Life Assured</h5>
                             </CCardHeader>
                             <CCardBody>
