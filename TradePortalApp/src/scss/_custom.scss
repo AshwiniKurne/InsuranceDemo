@@ -574,3 +574,7 @@ a.fixed-widgets:hover span, a.fixed-widgets i{display:inline-block;float:left;wi
     border: none !important;
     background-color: white !important;
 }
+
+.MUIDataTable-tableRoot-4 tr:nth-last-child(3){
+        display: none !important;
+}

@@ -174,9 +174,9 @@ toggle2 = () => {
 
         return (
             <Fragment>
-            <div>
+            <div id ='Rule'>
               
-                 <MUIDataTable data={data} columns={columns} options={options} />
+                 <MUIDataTable id='RuleTble' data={data} columns={columns} options={options} />
                 
             </div>
             <div>
