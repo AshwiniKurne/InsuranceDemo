@@ -69,6 +69,7 @@
     "react-native-progress-steps": "^1.3.4",
     "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
+    "react-step-progress": "^1.0.3",
     "redux": "4.0.5",
     "remove-node-modules": "^1.7.6"
   },

@@ -96,7 +96,7 @@ const routes = [
   { path: '/users', exact: true,  name: 'Users', component: Users },
   { path: '/users/:id', exact: true, name: 'User Details', component: User },
   { path: '/MakerChecker/Checker', name: 'Checker', component: Checker},
-  { path: '/MakerChecker/Maker', name: 'Maker', component: Maker},
+  { path: '/MakerChecker/Maker', name: 'Claim Processor', component: Maker},
   { path: '/MakerChecker/test', name: 'test', component: test},
   { path: '/MakerChecker/test2', name: 'test2', component: test2},
   { path: '/newDashboard', name: 'Dashboard', component: newDashboard},

@@ -4,12 +4,9 @@ import { Fragment } from 'react';
 import StepProgressBar from 'react-step-progress';
 import 'react-step-progress/dist/index.css';
 
-
-
 const step1Content = <h1>Claims Processor</h1>;
 const step2Content = <h1>Claims Accesor</h1>;
 const step3Content = <h1>Claims Approver</h1>;
-
 
 function step2Validator() {
   return true;
@@ -19,7 +16,7 @@ function step3Validator() {
   return true;
 }
 
-function ProgressApp() {
+function ProgressApp1() {
   const onSubmit = () => {
     alert('submit data');
   };
@@ -28,7 +25,7 @@ function ProgressApp() {
     <Fragment>
     <div class="progressbar">
       <StepProgressBar
-        startingStep={0}
+        startingStep={1}
         wrapperClass="progress-wrapper-custom"
        
        
@@ -42,7 +39,7 @@ function ProgressApp() {
             label: 'Claims Accesor',
             name: 'CLAIMS ACCESOR',
             
-            validator: step2Validator
+           
           },
           {
             label: 'Claims Approver',
@@ -58,4 +55,4 @@ function ProgressApp() {
   );
 }
 
-export default ProgressApp;
+export default ProgressApp1;

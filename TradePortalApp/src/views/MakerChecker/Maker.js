@@ -168,18 +168,12 @@ const Collapses = () => {
 
                     <CCardBody>
 
-                    <CAlert color="primary">
-                                    <CRow>
-                                        <CCol sm="3"><b>Product</b> : LC</CCol>
-                                        <CCol sm="3"><b>Sub Product</b> : Lodgement</CCol>
-                                        <CCol sm="3"><b>Operation</b> : Issuance</CCol>
-                                        <CCol sm="3"><b>Ref No.</b> : 3487534</CCol>
-                                    </CRow>
-                                </CAlert>
-                                <br/><br/>
-                               
+                   
+                                    <ProgressBar></ProgressBar>
+                                    
                                 <br/>
-                                <br/>
+                              
+                                
                         <CTabs activeTab="Policy">
 
                             <CNav variant="tabs">

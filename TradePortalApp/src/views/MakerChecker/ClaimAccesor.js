@@ -2,7 +2,7 @@ import React, { useState,useEffect } from 'react'
 import FileUpload from './FileUpload';
 import { Link } from 'react-router-dom'
 import Ruleset from './RuleSet';
-import ProgressBar from './ProgressBar';
+import ProgressBar1 from './ProgressBar1'
 
 import {
     CAlert,
@@ -164,20 +164,8 @@ const Collapses = () => {
 
                 <CCard>
 
-
-
                     <CCardBody>
-
-                    <CAlert color="primary">
-                                    <CRow>
-                                        <CCol sm="3"><b>Product</b> : LC</CCol>
-                                        <CCol sm="3"><b>Sub Product</b> : Lodgement</CCol>
-                                        <CCol sm="3"><b>Operation</b> : Issuance</CCol>
-                                        <CCol sm="3"><b>Ref No.</b> : 3487534</CCol>
-                                    </CRow>
-                                </CAlert>
-                               
-                                <br/>
+                            <ProgressBar1></ProgressBar1>         
                         <CTabs activeTab="Policy">
 
                             <CNav variant="tabs">
